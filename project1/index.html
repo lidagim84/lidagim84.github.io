@@ -2,23 +2,118 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>프로젝트명</title>
+    <title>studio take one</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="wrap">
-    <div id="header" class="header">header</div>
-    <div id="container">
-        <div id="sidebar">사이드바</div>
-        <div id="contents">
-            <div class="section">섹션</div>
-            <div class="section">섹션</div>
-            <div class="section">섹션</div>
+    <div id="header" class="header">
+        <h1 class="logo"><a href="#none"><img src="images/img_logo.png" alt="studio take one"></a></h1>
+        <div class="wrap_gnb">
+            <ul class="list_gnb">
+                <li><a href="#none">COMPANY</a></li>
+                <li><a href="#none">BUSINESS</a></li>
+                <li><a href="#none">PORTFOLIO</a></li>
+                <li><a href="#none">NEWS</a></li>
+            </ul>
+            <div class="list_util">
+                <a href="#none" class="link_contact">CONTACT US</a>
+                <a href="#none" class="link_recuit">RECRUIT</a>
+            </div>
         </div>
     </div>
-    <div id="footer" class="footer">footer</div>
+
+
+    <div id="container">
+        <div class="main_slide">
+            <h2 class="blind">메인슬라이드</h2>
+            <div class="slider">
+				<div class="item">
+					<a href="#none"><img src="images/img_slide1.png" alt=""></a>
+				</div>
+				<div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+				<div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#none"><img src="images/img_slide1.png" alt=""></a>
+                </div>
+			</div>
+        </div>
+        <div id="contents">
+            <h2 class="h_title"><img src="images/h2_take_ones_works.png" alt=""></h2>
+            <ul class="list_works" style="height:720px;background:url(images/img_works.png) no-repeat 0 0;">
+                <li></li>
+            </ul>
+
+            <div>
+                <div class="news">
+                    <h2>News</h2>
+                    <ul>
+                        <li><a href="#none">MBC 애브라원에서 대한외국인 방송이 진행되고 있습니다.</a><span class="txt_date">2019-10-10</span></li>
+                        <li><a href="#none">MBC 애브라원에서 대한외국인 방송이 진행되고 있습니다.</a><span class="txt_date">2019-10-10</span></li>
+                        <li><a href="#none">MBC 애브라원에서 대한외국인 방송이 진행되고 있습니다.</a><span class="txt_date">2019-10-10</span></li>
+                    </ul>
+                    <a href="#none" class="link_more">더보기</a>
+                </div>
+                <div class="customer">
+                    <h2>고객센터</h2>
+                    <ul>
+                        <li><a href="#none"></a><span class="txt_date">2019-10-10</span></li>
+                    </ul>
+                    <a href="#none" class="link_more"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="inner">
+            <ul class="list_sns">
+                <li><a href="#none" class="link_youtube">youtube</a></li>
+                <li><a href="#none" class="link_facebook">facebook</a></li>
+                <li><a href="#none" class="link_instargram">instargram</a></li>
+            </ul>
+
+            <div class="info_company">
+                <p class="txt_info">
+                    03909 서울특별시 마포구 상암산로 34,14층(상암동,디지털큐브)<br>
+                    TEL. 02) 6350-5700 / FAX. 02) 6350-5701
+                </p>
+                <small class="txt_copyright">COPYRIGHT &copy;2019 STUDIO TAKEONE CO., LTD.ALL RIGHT RESERVED.</small>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script>
+    $( document ).ready(function() {
+    
+        $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: false,
+        nextArrow: false
+        });
+    
+    });
+</script>
 </html>
