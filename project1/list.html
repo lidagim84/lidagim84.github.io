@@ -6,17 +6,63 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
   <style>
-  
+/* 포트폴리오 index 화면 */
+.wrap_pf { }
+.wrap_pf .container_pf {max-width:1200px;margin:20px auto;padding:0 20px;color:#000;box-sizing:border-box}
+.wrap_pf .header_pf {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;position:relative;height:400px;padding:20px;box-sizing:border-box;background-size:cover;background-repeat:no-repeat;background-position:0 0;}
+.wrap_pf .header_pf .tit_pf {position:relative;font-size:30px;color:#000;text-align:center;}
+.wrap_pf .header_pf:after {content:'';position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;background-color:rgba(0,0,0,.15)}
+.wrap_pf .area_pf_title {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;margin:50px 0 20px}
+.wrap_pf .area_pf_title .txt_append {-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end;font-size:12px;}
+.wrap_pf .tit_pf {font-size:20px}
+.wrap_pf .txt_pf {font-size:15px}
+.wrap_pf .list_index {font-size:15px}
+.wrap_pf .list_index li {border-bottom:1px solid #efefef}
+.wrap_pf .list_index .link_index {display:-webkit-flex;display:-ms-flex;display:flex;position:relative;width:100%;padding:10px 0;text-decoration:none;box-sizing:border-box}
+.wrap_pf .list_index .link_index:after{font-family:"Font Awesome 5 Pro";content: "\f0a4"; color:#FCE72E;-webkit-align-self:center;-ms-align-self:center;align-self:center;margin-left:auto;padding:0 10px}
+
+@media only screen and (max-width:738px){ 
+
+}
+/*.wrap_pf .list_index .link_index:hover:after { visibility:visible}*/
+@media only screen and (min-width:739px){ 
+.wrap_pf .list_index .link_index:hover {font-weight:bold;cursor:pointerf}
+.wrap_pf .list_index .link_index:after {visibility:hidden}
+.wrap_pf .list_index .link_index:hover:after {visibility:visible}
+.wrap_pf .list_index .link_index .txt_index {display:inline-block;position:relative}
+.wrap_pf .list_index .link_index .txt_index:before { content: '';position: absolute;width:100%;height:3px;bottom:-5px;left:0;z-index:-1;background-color: #FCE72E;
+-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;
+-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);
   
   </style>
 </head>
 <body>
-<div id="wrap">
-    
-
-    
-
-    
+<div class="wrap_pf">
+    <div id="container" class="container_pf">
+        <section class="section">
+            <div class="area_pf_title">
+                <h2 class="tit_pf">about</h2>
+            </div>
+            <p class="txt_pf">
+                cafe24 쇼핑몰 반응형 템플릿입니다.<br>
+                css3 grid로 레이아웃 구성되었습니다.
+            </p>
+            <div class="area_pf_title">
+                <h2 class="tit_pf">list</h2>
+                <p class="txt_append">*리스트를 클릭해보세요</p>
+            </div>
+            <ul class="list_index">
+                <li><a href="http://uidevsample.cafe24.com/" class="link_index" target="_blank"><span class="txt_index">메인</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/product/페이지-팬츠-default-조합분리선택형/107/category/1/display/2/" class="link_index" target="_blank"><span class="txt_index">상품상세</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/board/product/list.html?board_no=6&product_category_depth1=&product_category_depth2=&product_category_depth3=&product_category_depth4=&page=1" class="link_index" target="_blank"><span class="txt_index">상품문의리스트(게시판)</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/article/qa/6/5/" class="link_index" target="_blank"><span class="txt_index">상품문의상세</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/member/login.html" class="link_index" target="_blank"><span class="txt_index">로그인</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/member/join.html" class="link_index" target="_blank"><span class="txt_index">회원가입</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/product/search.html?banner_action=&keyword=상품"><span class="txt_index">검색</span></a></li>
+                <li><a href="http://uidevsample.cafe24.com/category/best/24/"><span class="txt_index">상품리스트</span></a></li>
+            </ul>
+        </section>
+    </div>
 </div>
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
