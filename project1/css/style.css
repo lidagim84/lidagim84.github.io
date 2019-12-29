@@ -17,27 +17,109 @@ body, html {height:100%;}
 #header .wrap_gnb  .list_util .link_contact:before {width:30px;height:40px;margin-left:-15px;background:url(../images/ico_contact.png) no-repeat 0 0;}
 #header .wrap_gnb  .list_util .link_recuit:before {width:40px;height:40px;margin-left:-20px;background:url(../images/ico_recruit.png) no-repeat 0 0;}
 
-#container {min-height:100%;margin:-198px auto -266px;padding:198px 0 266px;box-sizing:border-box;}
+#container {min-height:100%;margin:-198px auto -150px;padding:198px 0 150px;box-sizing:border-box;}
 .main_slide {position:relative;overflow:hidden;min-width:812px;height:440px;margin:40px 0;}
 .main_slide .slider {position: absolute;top:0;left:50%;width:2436px;margin-left:-1218px;}
 .main_slide .slider .item > a {display:block;position:relative;}
 .main_slide .slider .slick-active.slick-current > a:after {content:'';position: absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.3);}
 
 
-#contents {width:1000px;margin:0 auto;}
-#contents .h_title {text-align:center;}
+#contents {width:1000px;margin:0 auto 50px;box-sizing:border-box;}
+/* main */
+.section.work .tit_main {text-align:center;}
+.section.other {overflow:hidden;margin:32px 0 0;}
+.section.other .tit_main {float:left;display:block;overflow:hidden;width:40px;height:40px;background:url(../images/h2_main.png) no-repeat 0 0;font-size:1px;line-height:0;color:transparent;text-indent:-9999px;}
+.section.other .tit_main_news {}
+.section.other .tit_main_customer {background-position:-50px 0;}
+.section.other .news {position:relative;overflow:hidden;float:left;width:767px;}
+.section.other .news .list_news {overflow:hidden;width:628px;padding-left:12px;box-sizing:border-box;}
+.section.other .news .list_news li {position:relative;display:-webkit-flex;display:-ms-flex;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-ms-align-items:center;align-items:center;}
+.section.other .news .list_news .link_news {display:block;font-size:18px;color:#333;font-weight:700;height:44px;line-height:43px;box-sizing:border-box;text-decoration:none;}
+.section.other .news .list_news .txt_date {padding-right:25px;color:#ccc;font-size:18px;font-weight:700;}
+.section.other .news .link_more {position:absolute;right:30px;top:8px;font-size:18px;font-weight:700;color:#333;text-decoration:none;}
+.section.other .news .link_more:after {content:'';display:inline-block;width:18px;height:11px;margin:0 0 0 2px;background:url(../images/ico_arrow_down.png) no-repeat 0 0;}
+.section.other .customer {overflow:hidden;float:left;width:233px;}
+.section.other .customer .img_customer {margin-left:14px;overflow:hidden;}
+
+/* sub 공통 */
+#container.sub {width:1000px;}
+#container.sub #contents {margin-top:50px;padding:30px 50px 80px 80px;border:1px solid #e0e0e0;}
+#container.sub .desc_intro {font-size:20px;color:#e50065;line-height:35px;font-weight:500;}
+
+.section.organization:after,
+.section.eh:after,
+.section.recruit:after {content:'';display:block;height:225px;background:url(../images/bg_takeone.png) no-repeat 50% 35px;}
+
+/* sub 타이틀 */
+.tit_sub {overflow:hidden;height:24px;background:url(../images/tit_sub.png) no-repeat 0 0;font-size:1px;line-height:0;color:transparent;text-indent:-9999px;}
+.tit_organization {width:257px;}
+.tit_eh {width:386px;background-position:0 -50px;}
+.tit_recruit {width:143px;background-position:0 -100px;}
+.tit_contact {width:209px;background-position:0 -150px;}
+.tit_dkr {width:185px;height:14px;margin:42px 0 0 82px;background-position:0 -200px;}
+.tit_s_production {width:356px;background-position:0 -250px;}
+.tit_s_contents {width:316px;background-position:0 -300px;}
+/* company */
+#contents.company .section {padding-top:40px;}
+.txt_company {margin-top:15px;font-size:13px;color:#666;line-height:30px;}
+
+.section.organization {}
+.organization_tree {position:relative;min-height:300px;background:url(../images/bg_company_tree.png) no-repeat 50% 0;}
+.organization_tree .item {position:absolute;left:50%;}
+.organization_tree .item1 {margin-left:-65px;}
+.organization_tree .item2 {top:55px;margin-left:165px;}
+.organization_tree .item3 {top:205px;margin-left:-316px;}
+.organization_tree .item4 {top:205px;margin-left:-65px;}
+.organization_tree .item5 {top:205px;margin-left:180px;}
+.organization_tree .item .name {display:block;height:36px;width:131px;padding:0 10px;font-size:13px;color:#fff;font-weight:400;line-height:35px;background:#e50065;box-sizing:border-box;text-align:center;}
+.organization_tree .item [class^='list'] {}
+.organization_tree .item [class^='list'] li {position:relative;margin-top:6px;padding-left:8px;font-size:13px;color:#666;}
+.organization_tree .item .list_dot li:before {content:'';position:absolute;left:0;top:10px;width:2px;height:2px;background:#8f8f8f;}
+.organization_tree .item .list_dash li:before {content:'';position:absolute;left:0;top:11px;width:3px;height:1px;background:#666;}
+.section.eh {}
+.section.eh .img_company_eh {margin-top:20px;}
+.section.recruit {}
+.section.recruit .info_recruit {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-ms-align-items:center;align-items:center;margin-top:25px;}
+.info_recruit dl {}
+.info_recruit .benefit {-webkit-flex:3;-ms-flex:3;flex:3;}
+.info_recruit .info {-webkit-flex:4;-ms-flex:4;flex:4;}
+.info_recruit dl dt {float:left;width:152px;height:152px;margin-right:30px;border-radius:152px;font-size:20px;color:#fff;font-weight:400;line-height:151px;text-align:center;background:#e50065;}
+.info_recruit dl dd {padding:5px 0;font-size:13px;color:#666;}
+.info_recruit dl dd a {color:currentColor;}
+.section.contact .img_map {margin-top:10px;}
+
+/* business */
+#container.sub #contents.business {margin-top:37px;background:url(../images/bg_takeone.png) no-repeat 50% 180px;}
+#contents.business .list_dot {margin-top:10px;}
+#contents.business .list_dot li {position:relative;padding-left:7px;font-size:13px;line-height:30px;color:#666;}
+#contents.business .list_dot li:before {content:'';position:absolute;left:0;top:14px;width:2px;height:2px;background:#858585;}
+.section.smart_production {margin-top:50px;}
+.section.smart_contents {margin:100px 0 0 470px;}
+ 
+/* news */
+.tbl_news {}
+.tbl_news thead tr {border:1px solid #e0e0e0;}
+.tbl_news thead th {padding:8px 0 9px;font-size:13px;color:#666;font-weight:400;background:#f2f2f2;}
+.tbl_news td {padding:13px 0 14px;font-size:12px;color:#666;font-weight:400;text-align:center;border-bottom:1px solid #e0e0e0;}
+.tbl_news .row_view {display:none;}
+.tbl_news .row_view.show {display:table-row;}
+.tbl_news .row_view td {padding:20px 27px;font-size:13px;line-height:24px;text-align:left;}
+.tbl_news td .link_view {display:block;padding-left:30px;text-align:left;font-size:15px;color:#333;font-weight:500;text-decoration:none;box-sizing:border-box;}
+
+.wrap_paginate {margin:34px 0 0;text-align:center;}
+.wrap_paginate [class*="btn"] {display:inline-block;overflow:hidden;width:24px;height:24px;font-size:1px;line-height:0;text-indent:-9999px;color:transparent;}
+.wrap_paginate .btn_prev {}
+.wrap_paginate .btn_next {}
+.wrap_paginate .list_page {display:inline-block;font-size:0;text-align:center;vertical-align:top;}
+.wrap_paginate .list_page li {display:inline-block;margin:0 4px;}
+.wrap_paginate .list_page .link_page {color:#888;font-size:14px;line-height:23px;}
+.wrap_paginate .list_page .current .link_page {color:#444;}
 
 
-#footer { height:266px; background:#e0e0e0; }
+
+#footer { height:150px;padding:50px 0;background:#e0e0e0;box-sizing:border-box;}
 #footer .inner {width:1000px;margin:0 auto;}
-#footer .list_sns {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-ms-align-items:center;align-items:center;width:96px;margin:0 auto;padding:22px 0 18px}
-#footer .list_sns li {}
-#footer .list_sns [class^='link'] {display:block;overflow:hidden;font-size:1px;line-height:0;color:transparent;text-indent:-9999px;background-repeat:no-repeat;background-position:0 0;}
-#footer .list_sns .link_youtube {width:22px;height:15px;background-image:url(../images/ico_youtube.png);}
-#footer .list_sns .link_facebook {width:8px;height:18px;background-image:url(../images/ico_facebook.png);}
-#footer .list_sns .link_instargram {width:18px;height:18px;background-image:url(../images/ico_instargram.png);}
-
-#footer .info_company {text-align:center;color:#888;}
+#footer .info_company {text-align:center;font-size:13px;color:#888;line-height:18px;}
 
 
 
