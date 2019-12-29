@@ -30,10 +30,10 @@
     <div id="container" class="sub">
         <h2 class="blind">portfolio</h2>
         <ul class="tab_portfolio">
-            <li class="selected"><a href="#none" class="link_tab">Broadcast</a></li>
-            <li><a href="#none" class="link_tab">contents</a></li>
+            <li class="tab1 selected"><a href="#none" class="link_tab">Broadcast</a></li>
+            <li class="tab2"><a href="#none" class="link_tab">contents</a></li>
         </ul>
-        <div id="contents">
+        <div id="contents" class="portfolio">
             <section class="section pf_broadcast">
                 <h3 class="blind">Broadcast</h3>
                 <ul class="tab_year">
@@ -41,7 +41,27 @@
                     <li><a href="#none" class="link_tab">2018</a></li>
                     <li><a href="#none" class="link_tab">2017</a></li>
                 </ul>
+<style>
 
+
+
+#contents.portfolio .tab_year {margin:0 0 10px;}
+#contents.portfolio .tab_year:after {content:'';display:block;clear:both;}
+#contents.portfolio .tab_year li {float:left;margin:0 20px 0 0;}
+#contents.portfolio .tab_year li .link_tab {font-size:16px;font-weight:700;}
+
+#contents.portfolio .list_pf {display:flex;align-items:stretch;flex-wrap:wrap;border:1px solid #e0e0e0;border-width:1px 0 0 1px;box-sizing:border-box;}
+#contents.portfolio .list_pf li {width:289px;border:1px solid #e0e0e0;border-width:0 1px 1px 0;box-sizing:border-box;}
+#contents.portfolio .list_pf .link_pf {display:block;padding:0 10px 20px;text-align:center;text-decoration:none;}
+#contents.portfolio .list_pf .img_thumb {width:275px;height:275px;margin:0 auto;}
+#contents.portfolio .list_pf .tit_pf {display:block;margin-bottom:5px;font-size:14px;color:#333;line-height:18px;font-weight:700;}
+#contents.portfolio .list_pf .txt_pf {display:block;font-size:12px;color:#999;line-height:18px;}
+#contents.portfolio .list_pf .info_pf {display:block;font-size:12px;color:#999;line-height:18px;}
+.section.pf_broadcast {}
+
+
+.section.pf_contents {}
+</style>
                 <div class="tab_view">
                     <ul class="list_pf">
                         <li>
@@ -63,6 +83,22 @@
                         <li>
                             <a href="#none" class="link_pf">
                                 <img src="images/temp3.png" alt="" class="img_thumb">
+                                <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
+                                <span class="txt_pf">2019.07.05 ~ 방영중</span>
+                                <span class="info_pf">Mnet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="link_pf">
+                                <img src="images/temp1.png" alt="" class="img_thumb">
+                                <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
+                                <span class="txt_pf">2019.07.05 ~ 방영중</span>
+                                <span class="info_pf">Mnet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="link_pf">
+                                <img src="images/temp2.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
                                 <span class="info_pf">Mnet</span>

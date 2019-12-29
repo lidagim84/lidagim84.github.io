@@ -60,6 +60,7 @@ body, html {height:100%;}
 .tit_s_production {width:356px;background-position:0 -250px;}
 .tit_s_contents {width:316px;background-position:0 -300px;}
 /* company */
+#contents.company {}
 #contents.company .section {padding-top:40px;}
 .txt_company {margin-top:15px;font-size:13px;color:#666;line-height:30px;}
 
@@ -89,12 +90,23 @@ body, html {height:100%;}
 .section.contact .img_map {margin-top:10px;}
 
 /* business */
-#container.sub #contents.business {margin-top:37px;background:url(../images/bg_takeone.png) no-repeat 50% 180px;}
+#contents.business {margin-top:37px;background:url(../images/bg_takeone.png) no-repeat 50% 180px;}
 #contents.business .list_dot {margin-top:10px;}
 #contents.business .list_dot li {position:relative;padding-left:7px;font-size:13px;line-height:30px;color:#666;}
 #contents.business .list_dot li:before {content:'';position:absolute;left:0;top:14px;width:2px;height:2px;background:#858585;}
 .section.smart_production {margin-top:50px;}
 .section.smart_contents {margin:100px 0 0 470px;}
+
+/* portfolio */
+#contents.portfolio {margin-top:37px;}
+.tab_portfolio {margin:36px 0 0;font-size:0;text-align:center;}
+.tab_portfolio li {display:inline-block;height:25px;padding:6px 20px 5px;box-sizing:border-box;}
+.tab_portfolio li + li {border-left:1px solid #e0e0e0;}
+.tab_portfolio li .link_tab {display:block;height:14px;background:url(../images/img_tab.png) no-repeat 0 0;}
+.tab_portfolio li.tab1 .link_tab {width:116px;}
+.tab_portfolio li.tab2 .link_tab {width:104px;background-position:-150px 0;}
+.tab_portfolio li.tab1.selected .link_tab {background-position:0 -50px;}
+.tab_portfolio li.tab2.selected .link_tab {background-position:-150px -50px;}
  
 /* news */
 .tbl_news {}
