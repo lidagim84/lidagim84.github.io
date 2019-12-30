@@ -15,12 +15,245 @@
         <h1 class="logo"><a href="index.html"><img src="images/img_logo.png" alt="studio take one"></a></h1>
     </div>
 
-    <div id="container">
+        <div id="container">
+        <div id="sidebar">
+            <ul class="lnb">
+                <li class="server parent"><!-- 참고 : 선택시 .selected, 하위 메뉴 있을 시 .root -->
+                    <a href="#none" class="eFold">cafe24 클라우드 서버</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">가상서버</a></li><!-- 참고 : 선택시 .selected -->
+                        <li><a href="#none" class="eFold">오토스케일</a></li>
+                        <li><a href="#none" class="eFold">오토스케일</a></li>
+                    </ul>
+                </li>
+                <li class="storage parent">
+                    <a href="#none" class="eFold">스토리지</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">블록 스토리지</a></li>
+                        <li><a href="#none" class="eFold">블록 스토리지 스냅샷</a></li>
+                    </ul>
+                </li>
+                <li class="network parent">
+                    <a href="#none" class="eFold">네트워킹</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">로드밸런서</a></li>
+                        <li><a href="#none" class="eFold">DNS</a></li>
+                    </ul>
+                </li>
+                <li class="security parent">
+                    <a href="#none" class="eFold">보안서비스</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">방화벽</a></li>
+                        <li><a href="#none" class="eFold">SSH키페어</a></li>
+                    </ul>
+                </li>
+                <!--
+                <li class="monitoring"><a href="#none" class="eFold">모니터링</a></li> -->
+                <li class="cs parent">
+                    <a href="#none" class="eFold">고객지원</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">공지사항</a></li>
+                        <li><a href="#none" class="eFold">자주 찾는 질문</a></li>
+                        <li><a href="#none" class="eFold">1:1 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
         <div id="contents">
+            <div class="section">
+                <div class="mTitle gBorder">
+                    <h2>고객지원</h2>
+                </div>
+                <div class="mTitle">
+                    <h3>1:1 문의</h3>
+                </div>
+                <div class="gridSet">
+                    <div class="grid">
+                        <div class="mBox typeBasic">
+                            <div class="mTitle">
+                                <strong class="title ">자주 찾는 질문 검색</strong>
+                            </div>
+                            <span class="fTextEdit">
+                                <input type="text" placeholder="검색어를 입력해 주세요." style="width:360px;">
+                                <button type="button" class="btnReset"></button>
+                            </span>
+                            <button type="button" class="btnNormalM em gSideS">검색</button>
+                        </div>
+                    </div>
+                    <div class="grid gSideM">
+                        <div class="mBox typeBasic">
+                            <div class="mTitle">
+                                <strong class="title ">1:1 문의신청</strong>
+                            </div>
+                            <div class="gridSet">
+                                <div class="left">
+                                    자주 찾는 질문에서 원하는 답변을 찾지 못하셨다면 <br >
+                                    문의 사항을 남겨주세요. 최대한 신속하게 답변 드리겠습니다.
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="btnNormalM em">문의신청</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="mTitle gBlankXL">
+                    <strong class="title">나의 문의 내역</strong>
+                </div>
+                <div class="gridSet gBreakM">
+                    <div class="left">
+                        <span class="fTextEdit">
+                            <input type="text" placeholder="검색어를 입력해 주세요." style="width:300px;">
+                            <button type="button" class="btnReset"></button>
+                        </span>
+                        <button type="button" class="btnNormalM em gSideS">검색</button>
+                    </div>
+                    <div class="right">
+                        <select class="fSelect" style="width:130px;">
+                            <option selected="">10개씩 보기</option>
+                            <option>15개씩 보기</option>
+                            <option>20개씩 보기</option>
+                            <option>25개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
 
-
-           
+                <div class="mBoard typeView eBoard">
+                    <table border="1">
+                        <caption>공지사항</caption>
+                        <colgroup>
+                            <col style="width:120px;">
+                            <col style="width:140px;">
+                            <col style="width:120px;">
+                            <col style="width:410px;">
+                            <col style="width:120px;">
+                            <col style="width:120px;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">접수번호</th>
+                            <th scope="col">문의유형</th>
+                            <th scope="col">분류</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">접수일자</th>
+                            <th scope="col">상태
+                                <div class="mTooltip ePosTarget posLeft posBottom">
+                                    <button type="button" class="btnWarn ePosClick"></button>
+                                    <div class="tooltip ePosLayer" style="display:none; width:332px">
+                                        <ul>
+                                            <li><strong>접수완료/재문의중</strong> : 현재 문의가 접수되어 담당자 배정을 기다리고 있습니다.</li>
+                                            <li><strong>처리중</strong> : 담당자가 지정되어 문의를 처리하고 있습니다.</li>
+                                            <li><strong>답변완료</strong> : 답변이 완료 되었습니다.</li>
+                                        </ul>
+                                        <button type="button" class="btnClose eClose"></button>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2017-010</td>
+                            <td>결제/서비스/로그인</td>
+                            <td>로그인</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td>접수완료</td>
+                        </tr>
+                        <tr>
+                            <td>2017-009</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtCaution">처리중</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-008</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtEm">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-007</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtWarn">재문의중</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-006</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td>접수완료</td>
+                        </tr>
+                        <tr>
+                            <td>2017-005</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtEm">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-004</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtEm">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-003</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span  class="txtEm">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-002</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtEm">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2017-001</td>
+                            <td>클라우드 웹콘솔</td>
+                            <td>가상서버</td>
+                            <td>로그인이 안되는데 어떡하나요? 로그인이 잘 되는 방법을 알려주세요.</td>
+                            <td>2017-08-08</td>
+                            <td><span class="txtEm">답변완료</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mPaginate">
+                    <a href="#none" class="btnPrev disabled"></a><!-- 참고: 이전,다음 페이지가 없는 경우, class "disabled" 추가. -->
+                    <span class="page">
+                                <a href="#none" class="selected" title="현재페이지">1</a>
+                                <a href="#none">2</a>
+                                <a href="#none">3</a>
+                                <a href="#none">4</a>
+                                <a href="#none">5</a>
+                                <a href="#none">6</a>
+                                <a href="#none">7</a>
+                                <a href="#none">8</a>
+                                <a href="#none">9</a>
+                                <a href="#none">10</a>
+                            </span>
+                    <a href="#none" class="btnNext"></a>
+                </div>
+            </div>
         </div>
     </div>
 
