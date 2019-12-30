@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>admin-studio take one</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e5a4fbfef4.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="header">
+        <h1 class="logo"><a href="index.html"><img src="images/img_logo.png" alt="studio take one"></a></h1>
+    </div>
+
+        <div id="container">
+        <div id="sidebar">
+            <ul class="lnb">
+                <li class="selected"><a href="#none">News</a></li>
+                <li><a href="#none">Portfolio</a></li>
+            </ul>
+        </div>
+        
+        <div id="contents">
+            <div class="section">
+                <div class="mTitle">
+                    <h2>News</h2>
+                </div>
+
+                <div class="mBoard typeView gRow">
+                    <table border="1">
+                        <caption>News 글쓰기</caption>
+                        <colgroup>
+                            <col style="width:190px;">
+                            <col >
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">제목</th>
+                            <td><input type="text" class="fText"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">첨부</th>
+                            <td>
+                                <span class="fFile">
+                                    <label for="file1" class="btnFile">파일선택</label>
+                                    <span class="name">선택된 파일 없음</span>
+                                    <input type="file" id="file1" title="파일첨부">
+                                </span>
+                                 <div class="mAttach">
+                                    <ul class="attach">
+                                        <li>Label.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                        <li>Label.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                        <li>Label.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                        <li>Label.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">내용</th>
+                             <td>
+                                <textarea cols="127" rows="18" class="fTextarea"></textarea>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mButton">
+                    <div class="right">
+                        <a href="#none" class="btnNormalL strong">저장</a>
+                        <a href="#none" class="btnNormalL">목록</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer" class="footer">
+        
+    </div>
+</div>
+</body>
+</html>
