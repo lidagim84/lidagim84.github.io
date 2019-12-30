@@ -246,22 +246,8 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
   #wrap { height:100%; }
   #header { position:fixed; left:0; right:0; top:0; z-index:20; height:58px; background:#29344a; }
   #header:after { content:''; display:block; clear:both; }
-  #header .logo { float:left; margin:19px 0 0 20px; }
-  #header .logo a { float:left; height:18px; }
-  #header .util { float:right; margin:16px 20px 18px 0; }
-  #header .util a:hover { text-decoration:none; }
-  #header .userInfo { display:inline-block; position:relative; height:40px; margin:2px 0 0; vertical-align:top; }
-  #header .userInfo .message { display:inline-block; margin-right:14px; border-bottom:1px solid #6a7181; font-size:14px; color:#9ea1a6; line-height:18px; }
-  #header .userInfo .message:after { content:''; position:absolute; right:0; top:9px; width:9px; height:5px; background-position:-50px -350px; }
-  #header .userInfo .user { font-weight:300; color:#fff; }
-  #header .userInfo .menu { display:none; position:absolute; right:17px; top:22px; z-index:1; width:90px; border:1px solid #d4d4d4; font-size:13px; background:#fff; }
-  #header .userInfo.selected .menu { display:block; }
-  #header .userInfo .menu a { display:block; padding:5px 11px 6px; }
-  #header .userInfo .menu a:hover { background:#e9f4fa; }
-  #header .btnManual { height:24px; margin:0 0 0 17px; padding:0 13px; border-radius:4px; font-size:13px; color:#bdc2ca; line-height:22px; background:#3b4355; }
-  #header .userSupport .link { display:inline-block; margin:0 0 0 24px; border-bottom:1px solid #6a7181; font-size:14px; color:#9ea1a6; line-height:18px; }
-  #header .userSupport .link:first-child { margin-left:0; }
-
+  #header .logo { float:left; margin:19px 0 0 20px; width:100px;}
+ 
   #container { position:relative; min-height:100%; padding:0 0 102px 210px; box-sizing:border-box; background:#fff; }
   * html #container { height:100%; }
   #contents { padding:58px 0 0; }
