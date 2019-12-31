@@ -26,46 +26,25 @@
         </div>
     </div>
 
-
     <div id="container" class="sub">
         <h2 class="blind">portfolio</h2>
-        <ul class="tab_portfolio">
-            <li class="tab1 selected"><a href="#none" class="link_tab">Broadcast</a></li>
-            <li class="tab2"><a href="#none" class="link_tab">contents</a></li>
-        </ul>
         <div id="contents" class="portfolio">
-            <section class="section pf_broadcast">
+            <ul class="tab_portfolio defaultTab">
+                <li class="tab1"><a href="#tab1" class="link_tab">Broadcast</a></li>
+                <li class="tab2"><a href="#tab2" class="link_tab">contents</a></li>
+            </ul>
+            <section class="section pf_broadcast" id="tab1">
                 <h3 class="blind">Broadcast</h3>
-                <ul class="tab_year">
-                    <li><a href="#none" class="link_tab">2019</a></li>
-                    <li><a href="#none" class="link_tab">2018</a></li>
-                    <li><a href="#none" class="link_tab">2017</a></li>
+                <ul class="tab_year defaultTab">
+                    <li><a href="#tab1-1" class="link_tab">2019</a></li>
+                    <li><a href="#tab1-2" class="link_tab">2018</a></li>
+                    <li><a href="#tab1-3" class="link_tab">2017</a></li>
                 </ul>
-<style>
 
-
-
-#contents.portfolio .tab_year {margin:0 0 10px;}
-#contents.portfolio .tab_year:after {content:'';display:block;clear:both;}
-#contents.portfolio .tab_year li {float:left;margin:0 20px 0 0;}
-#contents.portfolio .tab_year li .link_tab {font-size:16px;font-weight:700;}
-
-#contents.portfolio .list_pf {display:flex;align-items:stretch;flex-wrap:wrap;border:1px solid #e0e0e0;border-width:1px 0 0 1px;box-sizing:border-box;}
-#contents.portfolio .list_pf li {width:289px;border:1px solid #e0e0e0;border-width:0 1px 1px 0;box-sizing:border-box;}
-#contents.portfolio .list_pf .link_pf {display:block;padding:0 10px 20px;text-align:center;text-decoration:none;}
-#contents.portfolio .list_pf .img_thumb {width:275px;height:275px;margin:0 auto;}
-#contents.portfolio .list_pf .tit_pf {display:block;margin-bottom:5px;font-size:14px;color:#333;line-height:18px;font-weight:700;}
-#contents.portfolio .list_pf .txt_pf {display:block;font-size:12px;color:#999;line-height:18px;}
-#contents.portfolio .list_pf .info_pf {display:block;font-size:12px;color:#999;line-height:18px;}
-.section.pf_broadcast {}
-
-
-.section.pf_contents {}
-</style>
-                <div class="tab_view">
+                <div class="tab_view" id="tab1-1">
                     <ul class="list_pf">
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp1.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -73,7 +52,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp2.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -81,7 +60,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp3.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -89,7 +68,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp1.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -97,7 +76,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp2.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -106,26 +85,26 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab_view">
+                <div class="tab_view" id="tab1-2">
                     2018 포트폴리오 Broadcast 리스트
                 </div>
-                <div class="tab_view">
+                <div class="tab_view" id="tab1-3">
                     2017 포트폴리오 Broadcast 리스트
                 </div>
             </section>
 
-            <section class="section pf_contents">
+            <section class="section pf_contents" id="tab2">
                 <h2 class="blind">contents</h2>
-                <ul class="tab_year">
-                    <li><a href="#none" class="link_tab">2019</a></li>
-                    <li><a href="#none" class="link_tab">2018</a></li>
-                    <li><a href="#none" class="link_tab">2017</a></li>
+                <ul class="tab_year defaultTab">
+                    <li><a href="#tab2-1" class="link_tab">2019</a></li>
+                    <li><a href="#tab2-2" class="link_tab">2018</a></li>
+                    <li><a href="#tab2-3" class="link_tab">2017</a></li>
                 </ul>
 
-                <div class="tab_view">
+                <div class="tab_view" id="tab2-1">
                     <ul class="list_pf">
                         <li>
-                            <a href="#none" class="link_pf">
+                            <a href="#none" class="link_pf dialog__trigger">
                                 <img src="images/temp1.png" alt="" class="img_thumb">
                                 <strong class="tit_pf">하나의 목소리 전쟁 - 300</strong>
                                 <span class="txt_pf">2019.07.05 ~ 방영중</span>
@@ -134,15 +113,42 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab_view">
+                <div class="tab_view" id="tab2-2">
                     2018 포트폴리오 contents 리스트
                 </div>
-                <div class="tab_view">
+                <div class="tab_view" id="tab2-3">
                     2017 포트폴리오 contents 리스트
                 </div>
             </section>
         </div>
     </div>
+
+    <div class="layer_pf">
+        <h2 class="blind">상세</h2>
+        <div class="layer_content">
+            <div class="inner">
+                <div class="detail_pf">
+                    <div class="thumbnail">
+                        <img src="images/temp4.png" alt="" class="big">
+                        <img src="images/temp5.png" alt="" class="mini">
+                        <img src="images/temp6.png" alt="" class="mini">
+                    </div>
+                    <div class="detail">
+                        <strong class="label"></strong>
+                        <p class="value"></p>
+                        <strong class="label"></strong>
+                        <p class="value"></p>
+                        <strong class="label"></strong>
+                        <p class="value"></p>
+                        <strong class="label"></strong>
+                        <p class="value"></p>
+                    </div>
+                </div>
+                <button type="button" class="btn_close">&#x2715;</button>
+            </div>
+            
+        </div>
+    </div>  
 
 
     <div id="footer" class="footer">
