@@ -6,7 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/e5a4fbfef4.js"></script>
-  <style>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
 /* 포트폴리오 index 화면 */
 .wrap_pf { }
 .wrap_pf .container_pf {max-width:1200px;margin:20px auto;padding:0 20px;color:#000;box-sizing:border-box}
@@ -22,9 +24,6 @@
 .wrap_pf .list_index .link_index {display:-webkit-flex;display:-ms-flex;display:flex;position:relative;width:100%;padding:10px 0;text-decoration:none;box-sizing:border-box}
 .wrap_pf .list_index .link_index:after{font-family:"Font Awesome 5 Pro";content: "\f0a4"; color:#FCE72E;-webkit-align-self:center;-ms-align-self:center;align-self:center;margin-left:auto;padding:0 10px}
 
-@media only screen and (max-width:738px){ 
-
-}
 /*.wrap_pf .list_index .link_index:hover:after { visibility:visible}*/
 @media only screen and (min-width:739px){ 
 .wrap_pf .list_index .link_index:hover {font-weight:bold;cursor:pointerf}
@@ -33,35 +32,46 @@
 .wrap_pf .list_index .link_index .txt_index {display:inline-block;position:relative}
 .wrap_pf .list_index .link_index .txt_index:before { content: '';position: absolute;width:100%;height:3px;bottom:-5px;left:0;z-index:-1;background-color: #FCE72E;
 -webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;
--webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);
-  
-  </style>
+-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);}
+}
+              
+</style>
 </head>
 <body>
 <div class="wrap_pf">
     <div id="container" class="container_pf">
         <section class="section">
-            <div class="area_pf_title">
-                <h2 class="tit_pf">about</h2>
-            </div>
-            <p class="txt_pf">TAKE ONE</p>
-            <div class="area_pf_title">
-                <h2 class="tit_pf">list</h2>
+             <div class="area_pf_title">
+                <h2 class="tit_pf">TAKE ONE</h2>
                 <p class="txt_append">*리스트를 클릭해보세요</p>
             </div>
             <ul class="list_index">
                 <li><a href="index.html" class="link_index" target="_blank"><span class="txt_index">메인</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">COMPANY</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">BUSSINESS</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">PORTFOLIO</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">NEWS</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">CONTACTUS</span></a></li>
-                <li><a href="#none" class="link_index" target="_blank"><span class="txt_index">RECRUIT</span></a></li>
+                <li><a href="company.html" class="link_index" target="_blank"><span class="txt_index">COMPANY</span></a></li>
+                <li><a href="business.html" class="link_index" target="_blank"><span class="txt_index">BUSSINESS</span></a></li>
+                <li><a href="portfolio.html" class="link_index" target="_blank"><span class="txt_index">PORTFOLIO</span></a></li>
+                <li><a href="news.html" class="link_index" target="_blank"><span class="txt_index">NEWS</span></a></li>
+                <li><a href="company.html#contactUs" class="link_index" target="_blank"><span class="txt_index">CONTACTUS</span></a></li>
+                <li><a href="company.html#recruit" class="link_index" target="_blank"><span class="txt_index">RECRUIT</span></a></li>
+            </ul>
+
+            <div class="area_pf_title">
+                <h2 class="tit_pf">TAKE ONE ADMIN</h2>
+                <p class="txt_append">*리스트를 클릭해보세요</p>
+            </div>
+            <ul class="list_index">
+                <li><a href="takeone_admin/login.html" class="link_index" target="_blank"><span class="txt_index">로그인</span></a></li>
+                <li><a href="takeone_admin/news.html" class="link_index" target="_blank"><span class="txt_index">news</span></a></li>
+                <li><a href="takeone_admin/news_view.html" class="link_index" target="_blank"><span class="txt_index">news 상세</span></a></li>
+                <li><a href="takeone_admin/news_write.html" class="link_index" target="_blank"><span class="txt_index">news 작성</span></a></li>
+                <li><a href="takeone_admin/news_modify.html" class="link_index" target="_blank"><span class="txt_index">news 수정</span></a></li>
+                <li><a href="takeone_admin/portfolio.html" class="link_index" target="_blank"><span class="txt_index">portfolio</span></a></li>
+                <li><a href="takeone_admin/portfolio_view.html" class="link_index" target="_blank"><span class="txt_index">portfolio 상세</span></a></li>
+                <li><a href="takeone_admin/portfolio_write.html" class="link_index" target="_blank"><span class="txt_index">portfolio 작성</span></a></li>
+                <li><a href="takeone_admin/portfolio_modify.html" class="link_index" target="_blank"><span class="txt_index"></span>portfolio 수정</a></li>
             </ul>
         </section>
     </div>
 </div>
 </body>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </html>

@@ -1,17 +1,32 @@
 $( document ).ready(function() {
 
     dialog();
-    gnb(3);
     
     $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots: true,
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: false,
     nextArrow: false
     });
 
+   /* 페이지 이동후 스크롤 */ 
+    var page_url = window.location.href;
+    var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+    //alert(page_id);
+
+    if (page_id == 'contactUs') {
+        $('html, body').animate({
+            scrollTop: $('#contactUs').offset().top
+        }, 500);
+    } else if (page_id == 'recruit') {
+        $('html, body').animate({
+            scrollTop: $('#recruit').offset().top
+        }, 500);
+    }
+    
     $('.defaultTab').each(function(){
         // For each set of tabs, we want to keep track of
         // which tab is active and it's associated content
@@ -47,6 +62,15 @@ $( document ).ready(function() {
             e.preventDefault();
         });
     });
+
+
+    $('#toggleNews .link_view').click(function(){
+        if ($(this).parents('tr').hasClass('show')){
+            $(this).parents('tr').removeClass('show');
+        }else{ $(this).parents('tr').addClass('show');}
+       
+    });
+    
 
 });
 
@@ -85,14 +109,8 @@ function dialog() {
 
 };
 
-function gnb(num) {
-    var gnbList = ['company','business','portfolio','news'],
-        onPage = $('#header .list_gnb li');
+function gnb(num){
+   $('#header .list_gnb').children().eq(num).addClass('on');
+};
 
 
-onPage.removeClass('on');
-// onPage[num].addClass('on');
-
-alert(onPage[num]);
-    
-}

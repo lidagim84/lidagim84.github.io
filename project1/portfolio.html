@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/font/notosans.css" media="all">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -27,6 +29,11 @@
     </div>
 
     <div id="container" class="sub">
+        <script>
+        $(document).ready(function() {
+            gnb(2);
+        });
+        </script>
         <h2 class="blind">portfolio</h2>
         <div id="contents" class="portfolio">
             <ul class="tab_portfolio defaultTab">
@@ -122,7 +129,6 @@
             </section>
         </div>
     </div>
-
     <div class="layer_pf">
         <h2 class="blind">상세</h2>
         <div class="layer_content">
@@ -134,14 +140,18 @@
                         <img src="images/temp6.png" alt="" class="mini">
                     </div>
                     <div class="detail">
-                        <strong class="label"></strong>
-                        <p class="value"></p>
-                        <strong class="label"></strong>
-                        <p class="value"></p>
-                        <strong class="label"></strong>
-                        <p class="value"></p>
-                        <strong class="label"></strong>
-                        <p class="value"></p>
+                        <div class="inner_detail">
+                            <strong class="label">Title :</strong>
+                            <p class="value">The Call 시즌2</p>
+                            <strong class="label">Specification :</strong>
+                            <p class="value">대한민국 대표 아티스트들이 베일에 싸인 아티스트들에게 직접 ‘러브콜’을 보낸다! 이들이 함께 만들어낸 새로운 음악과 콜라보레이션 무대! 러브콜라보 반전뮤직쇼 ‘더 콜 (The Call)’</p>
+                            <strong class="label">Type :</strong>
+                            <p class="value">Broadcast</p>
+                            <strong class="label">Date :</strong>
+                            <p class="value">2019.07.05 ~ 방영중</p>
+                            <strong class="label">Client :</strong>
+                            <p class="value">Mnet</p>
+                        </div>
                     </div>
                 </div>
                 <button type="button" class="btn_close">&#x2715;</button>
@@ -164,8 +174,6 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript" src="js/ui.js"></script>
 </html>

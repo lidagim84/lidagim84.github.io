@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="wrap">
-    <div id="header" class="header">
+   <div id="header" class="header">
         <h1 class="logo"><img src="images/img_logo.png" alt="studio take one"></h1>
         <div class="append">
             <p class="msg">관리자님 환영합니다.</p>
@@ -34,7 +34,7 @@
 
                 <div class="mBoard typeView gRow">
                     <table border="1">
-                        <caption>Portfolio 글쓰기</caption>
+                        <caption>Portfolio 글보기</caption>
                         <colgroup>
                             <col style="width:190px;">
                             <col >
@@ -44,19 +44,19 @@
                         <tbody>
                         <tr>
                             <th scope="row">Title</th>
-                            <td><input type="text" class="fText"></td>
+                            <td><input type="text" class="fText" value="The Call 시즌2"></td>
                             <th scope="row">Type</th>
-                            <td><input type="text" class="fText"></td>
+                            <td><input type="text" class="fText" value="Broardcast"></td>
                         </tr>
                         <tr>
                             <th scope="row">시작일</th>
-                            <td><input type="text" class="fText"></td>
+                            <td><input type="text" class="fText" value="2019.11.30"></td>
                             <th scope="row">종료일</th>
-                            <td><input type="text" class="fText"></td>
+                            <td><input type="text" class="fText" value="2019.12.31"></td>
                         </tr>
                         <tr>
                             <th scope="row">Client</th>
-                            <td><input type="text" class="fText"></td>
+                            <td><input type="text" class="fText" value="Mnet"></td>
                             <td colspan="2"></td>
                         </tr>
                         <tr>
@@ -67,38 +67,61 @@
                                     <span class="name">선택된 파일 없음</span>
                                     <input type="file" id="file1" title="파일첨부">
                                 </span>
+                                 <div class="mAttach">
+                                    <ul class="attach">
+                                        <li>aa.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                    </ul>
+                                </div>
                             </td>
                             <th scope="row">첨부</th>
-                            <td>
+                             <td>
                                 <span class="fFile">
                                     <label for="file1" class="btnFile">파일선택</label>
                                     <span class="name">선택된 파일 없음</span>
                                     <input type="file" id="file1" title="파일첨부">
                                 </span>
+                                 <div class="mAttach">
+                                    <ul class="attach">
+                                        <li>bb.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">첨부</th>
-                            <td>
+                             <td>
                                 <span class="fFile">
                                     <label for="file1" class="btnFile">파일선택</label>
                                     <span class="name">선택된 파일 없음</span>
                                     <input type="file" id="file1" title="파일첨부">
                                 </span>
+                                 <div class="mAttach">
+                                    <ul class="attach">
+                                        <li>cc.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                    </ul>
+                                </div>
                             </td>
                             <th scope="row">첨부</th>
-                            <td>
+                             <td>
                                 <span class="fFile">
                                     <label for="file1" class="btnFile">파일선택</label>
                                     <span class="name">선택된 파일 없음</span>
                                     <input type="file" id="file1" title="파일첨부">
                                 </span>
+                                 <div class="mAttach">
+                                    <ul class="attach">
+                                        <li>dd.jpg <button type="button" class="btnDel"><i class="fas fa-times"></i></button></li>
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">Specification</th>
                             <td colspan="3">
-                                <textarea cols="127" rows="18" class="fTextarea"></textarea>
+                                대한외국인 방송중입니다.
+                                <br>
+                                <br>
+                                대한외국인 방송중입니다.대한외국인 방송중입니다.대한외국인 방송중입니다.
                             </td>
                         </tr>
                         </tbody>
@@ -107,7 +130,8 @@
 
                 <div class="mButton">
                     <div class="right">
-                        <a href="#none" class="btnNormalL strong">저장</a>
+                        <a href="#none" class="btnNormalL em">수정</a>
+                        <a href="#none" class="btnNormalL warn">삭제</a>
                         <a href="#none" class="btnNormalL">목록</a>
                     </div>
                 </div>
