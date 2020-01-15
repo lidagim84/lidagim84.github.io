@@ -7,6 +7,7 @@ body, html {height:100%;}
 #header .wrap_gnb .list_gnb {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;width:462px;margin:0 auto;}
 #header .wrap_gnb .list_gnb li {}
 #header .wrap_gnb .list_gnb li a {display:block;height:100%;line-height:50px;font-weight:bold;color:#fff;text-decoration:none;}
+#header .wrap_gnb .list_gnb li.on a {color:orange;}
 
 #header .wrap_gnb  .list_util {position:absolute;top:0;right:0;width:100%;}
 #header .wrap_gnb  .list_util a {position:absolute;height:50px;line-height:50px;text-decoration:none;font-size:12px;font-weight:bold;color:#a9a8a6;}
