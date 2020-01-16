@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     mTab();
-
+    adminLnb();
 
 
 
@@ -28,4 +28,8 @@ function mTab() {
         e.preventDefault();
     });
 }
+
+function adminLnb(num){
+   $('#sidebar .lnb .li').eq(num).addClass('selected');
+};
 
