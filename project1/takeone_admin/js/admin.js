@@ -29,6 +29,6 @@ function mTab() {
 }
 
 function adminLnb(num){
-   $('#sidebar .lnb .li').eq(num).addClass('selected');
+   $('#sidebar .lnb').children().eq(num).addClass('selected');
 };
 
