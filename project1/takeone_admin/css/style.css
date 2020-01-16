@@ -192,7 +192,8 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
   #contents .section { padding:25px 20px 30px; background:#fff; }
   #contents .section.dashboard { max-width:1030px; }
   #contents .section.gResult { border-top:1px solid #e4e4e4; background:#f7f7f7; }
-  #footer { position:fixed; left:0; bottom:0; z-index:20; width:100%; height:42px; font-size:12px; padding:10px 0; color:#8c8e92; font-family:"맑은 고딕", dotum, sans-serif; text-align:center; background:#29344a; }
+  #footer { position:fixed; left:0; bottom:0; z-index:20; width:100%; font-size:12px; padding:10px 0; color:#8c8e92; font-family:"맑은 고딕", dotum, sans-serif; text-align:center; background:#29344a; }
+#footer p {font-size:12px;margin:0;}
 
   #sidebar { position:fixed; left:0; top:0; bottom:0; z-index:10; width:210px; height:100%; padding-top:78px; box-sizing:border-box; background:#425373; }
   .lnb li { position:relative; }
