@@ -80,7 +80,7 @@ function dialog() {
     var dialogBox = $('.layer_pf'),
         dialogBoxInner = $('.layer_pf > .inner'),
 		dialogTrigger = $('.dialog__trigger'),
-		dialogClose = $('layer_pf .btn_close');
+		dialogClose = $('.layer_pf .btn_close');
 
 	// Open the dialog
 	dialogTrigger.on('click', function(e) {
@@ -90,6 +90,7 @@ function dialog() {
 
 	// Close the dialog - click close button
 	dialogClose.on('click', function() {
+        // alert('aaa');
 		dialogBox.removeClass('active');
 	});
 
@@ -101,11 +102,12 @@ function dialog() {
 	});
 
 	// Close dialog - click outside
-	$(document).on("click", function(e) {
-		if ($(e.target).is(dialogBoxInner) === false) {
-			dialogBox.removeClass("active");
-		}
-	});
+	// $(document).on("click", function(e) {
+    //     e.stopPropagation();
+	// 	if ($(e.target).is(dialogBoxInner) === false) {
+	// 		dialogBox.removeClass("active");
+	// 	}
+	// });
 
 };
 

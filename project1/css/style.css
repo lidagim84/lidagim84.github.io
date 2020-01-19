@@ -109,9 +109,9 @@ body, html {height:100%;}
 .tab_portfolio li {display:inline-block;height:25px;padding:6px 20px 5px;box-sizing:border-box;}
 .tab_portfolio li + li {border-left:1px solid #e0e0e0;}
 .tab_portfolio li .link_tab {display:block;height:14px;background:url(../images/img_tab.png) no-repeat 0 0;}
-.tab_portfolio li.tab1 .link_tab {width:116px;}
+.tab_portfolio li.tab1 .link_tab.active {background-position:0 0;}
+.tab_portfolio li.tab1 .link_tab {width:116px;background-position:0 -50px;}
 .tab_portfolio li.tab2 .link_tab {width:104px;background-position:-150px 0;}
-.tab_portfolio li.tab1 .link_tab.active {background-position:0 -50px;}
 .tab_portfolio li.tab2 .link_tab.active {background-position:-150px -50px;}
 #contents.portfolio .tab_year {margin:20px 0 15px;}
 #contents.portfolio .tab_year:after {content:'';display:block;clear:both;}
@@ -121,7 +121,7 @@ body, html {height:100%;}
 #contents.portfolio .list_pf {display:flex;align-items:stretch;flex-wrap:wrap;border-left:1px solid #e0e0e0;box-sizing:border-box;}
 #contents.portfolio .list_pf li {width:333px;border:1px solid #e0e0e0;border-width:1px 1px 1px 0;margin-top:-1px;box-sizing:border-box;}
 /* #contents.portfolio .list_pf li:nth-child(3n-1) {width:334px;} */
-#contents.portfolio .list_pf .link_pf {display:block;padding:10px 10px 20px;text-align:center;text-decoration:none;}
+#contents.portfolio .list_pf .link_pf {display:block;padding:15px 10px 20px;text-align:center;text-decoration:none;}
 #contents.portfolio .list_pf .img_thumb {width:275px;height:275px;margin:0 auto;}
 #contents.portfolio .list_pf .tit_pf {display:block;margin:10px 0 5px;font-size:14px;color:#333;line-height:18px;font-weight:700;}
 #contents.portfolio .list_pf .txt_pf {display:block;font-size:12px;color:#999;line-height:18px;}
@@ -160,7 +160,7 @@ body, html {height:100%;}
 .layer_pf {position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(255,255,255,.7);visibility:hidden;opacity:0;
 -webkit-transition: all 180ms ease-in;
 transition: all 180ms ease-in;}
-.layer_pf .inner {position:fixed;left:50%;top:50%;width:940px;height:640px;margin:-320px 0 0 -470px;background:#fff;
+.layer_pf .inner {position:fixed;left:50%;top:50%;z-index:1;width:940px;height:640px;margin:-320px 0 0 -470px;background:#fff;
 box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);}
 .layer_pf.active {visibility:visible;opacity:1;
 -webkit-transition: all 250ms ease-out;
