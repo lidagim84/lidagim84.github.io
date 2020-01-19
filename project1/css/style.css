@@ -27,11 +27,12 @@ body, html {height:100%;}
 #contents {width:1000px;margin:0 auto 50px;box-sizing:border-box;}
 /* main */
 .section.work .tit_main_works {height:15px;margin-bottom:20px;text-align:center;}
-.section.work .list_works {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;} 
-.section.work .list_works li {position:relative;width:33.3%;border:1px solid #e0e0e0;box-sizing:border-box;}
+.section.work .list_works {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;border-left:1px solid #e0e0e0;} 
+.section.work .list_works li {position:relative;width:33.3%;padding:15px;border:1px solid #e0e0e0;border-width:1px 1px 1px 0;margin-top:-1px;box-sizing:border-box;}
 .section.work .list_works li .list_works {display:block}
+.section.work .list_works li > a {display:block;}
 .section.work .list_works li img {width:100%;}
-.section.work .list_works li:nth-child(2n+1) {border-color:#041122}
+/* .section.work .list_works li:nth-child(2n+1) {border-color:#041122} */
 .section.other {overflow:hidden;margin:32px 0 0;}
 .section.other .tit_main {float:left;display:block;overflow:hidden;width:40px;height:40px;background:url(../images/h2_main.png) no-repeat 0 0;font-size:1px;line-height:0;color:transparent;text-indent:-9999px;}
 .section.other .tit_main_news {}
@@ -120,9 +121,9 @@ body, html {height:100%;}
 #contents.portfolio .list_pf {display:flex;align-items:stretch;flex-wrap:wrap;border-left:1px solid #e0e0e0;box-sizing:border-box;}
 #contents.portfolio .list_pf li {width:333px;border:1px solid #e0e0e0;border-width:1px 1px 1px 0;margin-top:-1px;box-sizing:border-box;}
 /* #contents.portfolio .list_pf li:nth-child(3n-1) {width:334px;} */
-#contents.portfolio .list_pf .link_pf {display:block;padding:0 10px 20px;text-align:center;text-decoration:none;}
+#contents.portfolio .list_pf .link_pf {display:block;padding:10px 10px 20px;text-align:center;text-decoration:none;}
 #contents.portfolio .list_pf .img_thumb {width:275px;height:275px;margin:0 auto;}
-#contents.portfolio .list_pf .tit_pf {display:block;margin-bottom:5px;font-size:14px;color:#333;line-height:18px;font-weight:700;}
+#contents.portfolio .list_pf .tit_pf {display:block;margin:10px 0 5px;font-size:14px;color:#333;line-height:18px;font-weight:700;}
 #contents.portfolio .list_pf .txt_pf {display:block;font-size:12px;color:#999;line-height:18px;}
 #contents.portfolio .list_pf .info_pf {display:block;font-size:12px;color:#999;line-height:18px;}
 .section.pf_broadcast {}
