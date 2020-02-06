@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KONECT국가임상시험지원재단</title>
+    <link rel="stylesheet" type="text/css" href="css/font/notosans.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="skipNavigation">
+        <a href="#sidebar">대메뉴 바로가기</a>
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    <hr class="layout">
+    <div id="header">
+        <h1 class="logo">
+            <a href="#none"><img src="../images/h1_logo.png" alt="KONECT국가임상시험지원재단"></a>
+        </h1>
+
+        <div class="gnb_area">
+            <ul class="list_gnb">
+                <li><a href="#none">메뉴1</a></li>
+                <li><a href="#none">메뉴2</a></li>
+                <li><a href="#none">메뉴3</a></li>
+                <li><a href="#none">메뉴4</a></li>
+            </ul>
+        </div>
+
+        <div class="util_area">
+            <div class="info_user">
+                <div class="thumnail"></div>
+                <strong class="name">홍길동</strong>
+            </div>
+            <a href="#none" class="btn_logout">로그아웃</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="sidebar">
+            <ul class="list_lnb">
+                <li class="parent"><!-- 참고 : 선택시 .selected, 하위 메뉴 있을 시 .root -->
+                    <a href="#none" class="eFold">메뉴1</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">메뉴1-1</a></li><!-- 참고 : 선택시 .selected -->
+                        <li><a href="#none" class="eFold">메뉴1-2</a></li>
+                        <li><a href="#none" class="eFold">메뉴1-3</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#none" class="eFold">메뉴2</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">메뉴2-1</a></li>
+                        <li><a href="#none" class="eFold">메뉴2-2</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#none" class="eFold">메뉴3</a>
+                    <ul class="children">
+                        <li><a href="#none" class="eFold">메뉴3-1</a></li>
+                        <li><a href="#none" class="eFold">메뉴3-2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="contents">
+            <div class="page_path">HOME &gt; 기본정보 &gt; 연구과제목록</div>
+            <div class="section">
+                <div class="tit_area">
+                    <h2>연구 과제 목록</h2>
+                    <div class="append"><a href="#none" class="btn_strong">작성</a></div>
+                </div>
+
+                <div class="brd_comp type_view">
+                    <table>
+                        <caption>연구 과제 목록</caption>
+                        <colgroup>
+                            <col style="width:260px;">
+                            <col style="width:350px;">
+                            <col style="width:210px;">
+                            <col style="width:210px;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">리전 이름</th>
+                            <th scope="col">지원되는 IP 대역</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">신규 서비스 생성</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>리전 A - 카페24 IDC 32F 24G</td>
+                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
+                            <td><span class="txtGood">쾌적</span></td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <td>리전 A - 카페24 IDC 32F 24G</td>
+                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
+                            <td><span class="txtCaution">보통</span></td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <td>리전 A - 카페24 IDC 32F 24G</td>
+                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
+                            <td><span class="txtWarn">혼잡</span></td>
+                            <td><span class="txtWarn">불가</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging_comp">
+                    <a href="#none" class="btn_prev disabled"></a><!-- 참고: 이전,다음 페이지가 없는 경우, class "disabled" 추가. -->
+                    <span class="page">
+                        <a href="#none" class="selected" title="현재페이지">1</a>
+                        <a href="#none">2</a>
+                        <a href="#none">3</a>
+                        <a href="#none">4</a>
+                        <a href="#none">5</a>
+                        <a href="#none">6</a>
+                        <a href="#none">7</a>
+                        <a href="#none">8</a>
+                        <a href="#none">9</a>
+                        <a href="#none">10</a>
+                    </span>
+                    <a href="#none" class="btn_next"></a>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <hr class="layout">
+    
+    <div id="footer">
+        <div class="inner_foot">
+            <div class="footer_top">
+                <ul class="list_util">
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none"><strong>개인정보 처리 방침</strong></a></li>
+                    <li><a href="#none">이메일무단수집거부</a></li>
+                    <li><a href="#none">SITEMAP</a></li>
+                    <li><a href="#none">모바일버전보기</a></li>
+                </ul>
+                <div class="family_site">
+                    <a href="#none" class="name eDropDown">관련사이트</a>
+                    <ul class="site">
+                        <li><a href="#none" class="link" target="_blank">관련사이트1</a></li>
+                        <li><a href="#none" class="link" target="_blank">관련사이트2</a></li>
+                        <li><a href="#none" class="link" target="_blank">관련사이트3</a></li>
+                        <li><a href="#none" class="link" target="_blank">관련사이트4</a></li>
+                        <li><a href="#none" class="link" target="_blank">관련사이트5</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <h2 class="logo"></h2>
+                <small class="info_company">
+                    서울특별시 마포구 마포대로 137
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
