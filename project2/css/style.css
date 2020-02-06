@@ -98,62 +98,46 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
 
 /* form */
   input[type='text']::-ms-clear { display:none; }
-  .fChk, .fRadio { position:absolute; top:0; left:0; z-index:1; width:18px; height:18px; opacity:0; filter:alpha(opacity=0); cursor:pointer; }
-  .gLabel,
-  .gLabelClear { display:inline-block; position:relative; min-height:18px; padding:0 0 0 18px; line-height:17px; }
-  .gLabel .fLabel,
-  .gLabelClear .fLabel {display:inline-block; font-size:14px; }
+  .inp_check, .inp_radio { position:absolute; top:0; left:0; z-index:1; width:18px; height:18px; opacity:0; filter:alpha(opacity=0); cursor:pointer; }
+  .grid_label,
+  .grid_label_clear { display:inline-block; position:relative; min-height:18px; padding:0 0 0 18px; line-height:17px; }
+  .grid_label .txt_label,
+  .grid_label_clear .txt_label {display:inline-block; font-size:14px; }
 
-  .gLabelGroup { display:inline-block; position:relative; width:100%; padding-top:18px; cursor:pointer; }
-  .gLabelGroup .fRadio,
-  .gLabelGroup .fChk { z-index:-1; width:100%; height:100%; }
-  .gLabelGroup .fLabel:before { left:50%; margin-left:-9px; }
-  .gLabelGroup .fSelect { z-index:1; }
 
   .mForm { display:inline-block; margin-bottom:15px; }
   .mForm .title { display:inline-block; position:relative; margin:0 5px 0 0px; font-weight:500; font-size:14px; color:#333; }
-  .mForm .gLabel { margin:0 26px 0 0; padding:0 0 0 26px; }
+  .mForm .grid_label { margin:0 26px 0 0; padding:0 0 0 26px; }
 
 
-  .fLabel:before { content:''; position:absolute; left:0; top:0; background:url('../images/img_form.png') no-repeat 0 0; }
-  .fRadio +.fLabel:before { width:18px; height:18px; background-position:0 -50px; }
-  .gLabel:not(.disabled) .fRadio:checked +.fLabel:before { background-position:-50px -50px; }
-  .gLabelClear:not(.disabled) .fRadio:checked +.fLabel:before { background-position:-50px -50px; }
-  .fChk +.fLabel:before { width:18px; height:18px; background-position:0 -100px; }
-  .gLabel:not(.disabled) .fChk:checked +.fLabel:before { background-position:-50px -100px; }
-  .gLabelClear:not(.disabled) .fChk:checked +.fLabel:before { background-position:-50px -100px; }
-  label.gLabel.disabled .fChk + .fLabel:before,
-  label.gLabelClear.disabled .fChk + .fLabel:before,
-  span.gLabel .fLabel:before { background-position:-100px -100px; }
-  span.gLabel .fChk:checked +.fLabel:before { background-position:-50px -100px; }
-  .gLabel.disabled .fChk,
-  .gLabel.disabled .fRadio,
-  .gLabelClear.disabled .fChk,
-  .gLabelClear.disabled .fRadio { cursor:default; }
-  span.gLabel .fChk,
-  span.gLabel .fRadio,
-  span.gLabelClear .fChk,
-  span.gLabelClear .fRadio { display:none; }
-
-
+  .txt_label:before { content:''; position:absolute; left:0; top:0; background:url('../images/img_form.png') no-repeat 0 0; }
+  .inp_radio +.txt_label:before { width:18px; height:18px; background-position:0 -50px; }
+  .grid_label:not(.disabled) .inp_radio:checked +.txt_label:before { background-position:-50px -50px; }
+  .grid_label_clear:not(.disabled) .inp_radio:checked +.txt_label:before { background-position:-50px -50px; }
+  .inp_check +.txt_label:before { width:18px; height:18px; background-position:0 -100px; }
+  .grid_label:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -100px; }
+  .grid_label_clear:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -100px; }
+  label.grid_label.disabled .inp_check + .txt_label:before,
+  label.grid_label_clear.disabled .inp_check + .txt_label:before,
+  span.grid_label .txt_label:before { background-position:-100px -100px; }
+  span.grid_label .inp_check:checked +.txt_label:before { background-position:-50px -100px; }
+  .grid_label.disabled .inp_check,
+  .grid_label.disabled .inp_radio,
+  .grid_label_clear.disabled .inp_check,
+  .grid_label_clear.disabled .inp_radio { cursor:default; }
+  span.grid_label .inp_check,
+  span.grid_label .inp_radio,
+  span.grid_label_clear .inp_check,
+  span.grid_label_clear .inp_radio { display:none; }
 
   .fText { width:100%; height:30px; padding:0 9px; border:1px solid #d4d4d4; font-size:14px; line-height:30px; outline:0; box-sizing:border-box; background:#fff; }
   .fText.right { text-align:right; }
   .fText.center { text-align:center; }
   .fText:focus { border-color:#3e87e6; }
   .fText:disabled { border-color:#e5e5e5; color:#b6b6b6; }
-  .fTextEdit { display:inline-block; position:relative; }
-  .fTextEdit input { width:100%; height:30px; padding:0 9px; border:1px solid #d4d4d4; font-size:14px; line-height:30px; outline:0; box-sizing:border-box; background:#fff; }
-  .fTextEdit input.right { text-align:right; }
-  .fTextEdit input:focus { padding-right:35px; border-color:#3e87e6; }
-  .fTextEdit .btnReset { display:none; position:absolute; right:0; top:2px; }
-  .fTextEdit input:focus + .btnReset { display:block; }
-  .fTextEdit input:disabled { padding-right:9px; border-color:#e5e5e5; color:#b6b6b6; }
+
+
   textarea.fTextarea { width:100%; min-height:100px; padding:4px 9px; border:1px solid #d4d4d4; box-sizing:border-box; resize:none; font-size:14px; }
-    .brd_comp.gRow td .fTextarea { margin:8px 0 14px; }
-  .fTitle { position:relative; padding-top:28px; }
-  span.fTitle { display:inline-block; }
-  .fTitle .title { position:absolute; left:0; top:0; }
 
   /* fSelect */
     .fSelect { display:inline-block; position:relative; width:100px; height:30px; padding:0 28px 0 11px; box-sizing:border-box; border:1px solid #d4d4d4; font-size:14px; -webkit-appearance:none; background:#fff url('../images/bg_select.png') no-repeat right 1px; }
@@ -163,19 +147,8 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
     ul.mForm { width:100%; margin:0; }
     ul.mForm li { padding-top:10px; }
     ul.mForm li:first-child { padding-top:0; }
-    /* typeGrid */
-      .mForm.typeGrid { width:100%; }
-      .mForm.typeGrid:after { content:''; display:block; clear:both; }
-      .mForm.typeGrid > li { float:left; width:25%; padding:0 4px; line-height:18px; text-align:center; box-sizing:border-box; }
-      .mForm.typeGrid.grid2 > li { width:50%; }
-      .mForm.typeGrid.grid3 > li { width:33%; }
-      .mForm.typeGrid.grid4 > li { width:25%; }
-      .mForm.typeGrid.grid5 > li { width:20%; }
-      .mForm.typeGrid img { margin-top:14px; }
-      .mForm.typeGrid .name { display:block; margin:5px 0 6px; }
-      .mForm.typeGrid .os { display:block; }
-      .mForm.typeGrid .version { display:block; }
-      .mForm.typeGrid .selectDesign { margin-top:5px; }
+
+    
     /* typeCalendar */
       .mForm.typeCalendar { margin-bottom:0; vertical-align:middle; }
       .mForm.typeCalendar .fCalendar,
