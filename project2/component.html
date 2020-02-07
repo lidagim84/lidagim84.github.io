@@ -24,7 +24,7 @@
 <style>
     #container { padding-left:0;}
     .tit_area .bar { display:inline-block; overflow:hidden; width:2px; height:20px; margin:0 12px; font-size:1px; line-height:0; color:transparent; text-indent:-150%; background:#555; }
-    .tit_area .txt_light {-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end;}
+    .tit_area .txt_light {-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end; margin:0 0 0 10px;}
     
     .section { margin-bottom:20px;}
     .wrap_sample { margin-top:15px; padding:20px; border:1px solid #dedede; }
@@ -55,17 +55,13 @@
                     <h2 class="title">버튼<span class="bar">|</span>button</h2>
                 </div>
                 <div class="wrap_sample">
-                    <div class="gBlankM">
-                        <a href="#none" class="btn_normal">중</a>
-                        <button type="button" class="btn_normal">중</button>
-                        <button type="button" class="btn_strong">중</button>
-                        <span>높이 32px</span>
-                    </div>
-
-                    <div class="gBlankM">
-                        <a href="#none" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 a태그</a>
-                        <button type="button" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 button태그</button>
-                    </div> 
+                    <a href="#none" class="btn_normal">중</a>
+                    <button type="button" class="btn_normal">중</button>
+                    <button type="button" class="btn_strong">중</button>
+                    <span>높이 32px</span>
+                    <br><br>
+                    <a href="#none" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 a태그</a>
+                    <button type="button" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 button태그</button>
                 </div>
             </div>
             <div class="section">
@@ -123,7 +119,8 @@
                             <li><a href="#none">탭3</a></li>
                         </ul>
                     </div>
-                    <div class="tab_comp gBlankL">
+                    <br>
+                    <div class="tit_area">
                         <h3>tab_comp + type_tab</h3>
                     </div>
                     <div class="tab_comp type_tab eTab">
@@ -153,6 +150,7 @@
                     <li class="em">기본이 center 정렬, 다른 정렬을 하고 싶을때는 td에 left, right 추가</li>
                     <li class="em">td 전체의 정렬을 바꾸고 싶은 경우 tbody에 left, right 클래스 추가</li>
                 </ul>
+                <br>
                 <div class="brd_comp type_view">
                     <table>
                         <caption>가상서버</caption>
@@ -223,7 +221,7 @@
                 </div>
 
                 <div class="tit_area gBlankL">
-                    <h3 class="title">테이블 Edit형</h3><span class="txtLight">: typeEdit형</span>
+                    <h3 class="title">테이블 Edit형</h3><span class="txt_light">: typeEdit형</span>
                 </div>
                 <ul class="list_comp type_info">
                     <li>단독으로 사용가능</li>
@@ -273,16 +271,18 @@
                 </div>
                 <div class="wrap_sample">
                     <div class="tit_area">
-                        <h3>텍스트필드 input type="text", textarea</h3>
+                        <h3 class="title">텍스트필드 input type="text", textarea</h3>
                     </div>
-                    <div class="tit_area gBlankL">
+                    <div class="tit_area">
                         <strong class="title">기본 input</strong>
                     </div>
                     <input type="text" class="fText" value="가상서버 A" style="width:200px;">
                     <input type="text" class="fText" value="가상서버 A" style="width:200px;" disabled>
                     <textarea cols="111" rows="5" class="fTextarea">이 인스턴스는 1970년에 시작된 인스턴스로 새로운 인스턴스를 24시간 내에 만들지 않을 시 분열하여 돈을 두배로 내게 만드는 전설적인 인스턴스 임을 밝힙니다.</textarea>
 
-                    <div class="tit_area gBlankL">
+                    <br><br>
+
+                    <div class="tit_area">
                         <strong class="title">파일첨부 form_file</strong>
                     </div>
                     <span class="form_file">
@@ -291,7 +291,8 @@
                         <input type="file" id="file1" title="파일첨부">
                     </span>
 
-                    <div class="tit_area gBlankL">
+                    <br><br>
+                    <div class="tit_area">
                         <h3 class="title">라디오 버튼, 체크버튼 </h3>
                     </div>
                     <div class="tit_area">
@@ -305,11 +306,14 @@
                     </div>
                     <label class="form_label disabled"><input type="checkbox" class="inp_check"><span class="txt_label"></span></label>
 
+                    <br><br>
 
-                    <div class="tit_area gBlankL">
+                    <div class="tit_area">
                         <strong class="title">아이콘 + 텍스트 label 함께 사용</strong>
                     </div>
-                    <p class="list_comp type_info em">form_group 으로 감싼다</p>
+                    <ul class="list_comp type_info">
+                        <li class="em">form_group 으로 감싼다</li>
+                    </ul>
                     <div class="form_group">
                         <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">스냅샷에서 설치</span></label>
                         <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">기존 OS 재설치</span></label>
@@ -318,15 +322,15 @@
                     <div class="tit_area">
                         <strong class="title">텍스트와 함께 사용 : 오른쪽 여백을 없애고 싶을 때</strong>
                     </div>
-                    <br><br>
                     <div class="form_group">
                         <label class="form_label_clear"><input type="radio" class="inp_radio"><span class="txt_label">스냅샷에서 설치</span></label>
                         텍스트텍스트 텍스트
                     </div>
 
+                    <br><br>
 
-                    <div class="tit_area gBlankL">
-                        <h3>날짜선택 | form_group + type_cal</h3>
+                    <div class="tit_area">
+                        <h3 class="title">날짜선택 | form_group + type_cal</h3>
                     </div>
                     <div class="form_group type_cal">
                         <span class="form_cal">
