@@ -19,9 +19,9 @@
     </div>
     <hr class="layout">
     <div id="header">
-        <h1 class="logo">
+        <!-- <h1 class="logo">
             <a href="#none"><img src="../images/h1_logo.png" alt="KONECT국가임상시험지원재단"></a>
-        </h1>
+        </h1> -->
 
         <div class="gnb_area">
             <ul class="list_gnb">
@@ -41,12 +41,13 @@
         </div>
     </div>
     <div id="container">
-        <div id="sidebar">
+        <!-- <div id="sidebar">
             <ul class="list_lnb">
-                <li class="parent"><!-- 참고 : 선택시 .selected, 하위 메뉴 있을 시 .root -->
+                <li class="parent"><!-- 참고 : 선택시 .selected -->
+                    <!--
                     <a href="#none" class="eFold">메뉴1</a>
                     <ul class="children">
-                        <li><a href="#none" class="eFold">메뉴1-1</a></li><!-- 참고 : 선택시 .selected -->
+                        <li><a href="#none" class="eFold">메뉴1-1</a></li>
                         <li><a href="#none" class="eFold">메뉴1-2</a></li>
                         <li><a href="#none" class="eFold">메뉴1-3</a></li>
                     </ul>
@@ -66,14 +67,14 @@
                     </ul>
                 </li>
             </ul>
-        </div>
+        </div> -->
         
         <div id="contents">
             <div class="page_path">HOME &gt; 기본정보 &gt; 연구과제목록</div>
             <div class="section">
                 <div class="tit_area">
-                    <h2>연구 과제 목록</h2>
-                    <div class="append"><a href="#none" class="btn_strong">작성</a></div>
+                    <h2 class="title">연구 과제 목록</h2>
+                    <div class="append_group"><a href="#none" class="btn_strong">작성</a></div>
                 </div>
 
                 <div class="brd_comp type_view">
@@ -131,6 +132,21 @@
                     </span>
                     <a href="#none" class="btn_next"></a>
                 </div>
+
+
+                <div class="tab_comp type_tab eTab"><!-- 스크립트 클래스 eTab -->
+                    <ul>
+                        <li class="selected"><a href="#tabCont1_1">글자를 길게길게길게길게길게</a></li>
+                        <li><a href="#tabCont1_2">탭2</a></li>
+                    </ul>
+                </div>
+                <div id="tabCont1_1" class="tabCont">
+                    탭1 상세내용
+                </div>
+                <div id="tabCont1_2" class="tabCont">
+                    탭2 상세내용
+                </div>
+
 
                 
 
