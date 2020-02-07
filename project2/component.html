@@ -107,7 +107,6 @@
                 <div class="tit_area">
                     <h2 class="title">탭 기본형<span class="bar">|</span>tab_comp</h2>
                 </div>
-                <p class="list_comp type_info">탭안에 툴팁이 들어가는 경우가 생겨 a태그와 텍스트를 분리</p>
                 <div class="wrap_sample">
                     <div class="tit_area">
                         <h3 class="title">tab_comp + type_nav</h3>
@@ -267,18 +266,22 @@
            
             <div class="section">
                 <div class="tit_area">
-                    <h2>폼<span class="bar">|</span>form</h2>
+                    <h2 class="title">폼<span class="bar">|</span>form</h2>
                 </div>
                 <div class="wrap_sample">
                     <div class="tit_area">
-                        <h3 class="title">텍스트필드 input type="text", textarea</h3>
+                        <h3 class="title">텍스트필드</h3>
                     </div>
                     <div class="tit_area">
                         <strong class="title">기본 input</strong>
                     </div>
-                    <input type="text" class="fText" value="가상서버 A" style="width:200px;">
-                    <input type="text" class="fText" value="가상서버 A" style="width:200px;" disabled>
-                    <textarea cols="111" rows="5" class="fTextarea">이 인스턴스는 1970년에 시작된 인스턴스로 새로운 인스턴스를 24시간 내에 만들지 않을 시 분열하여 돈을 두배로 내게 만드는 전설적인 인스턴스 임을 밝힙니다.</textarea>
+                    <input type="text" class="tf_text" value="value값" style="width:200px;">
+                    <input type="text" class="tf_text" value="value값" style="width:200px;" disabled>
+                    <br><br>
+                    <div class="tit_area">
+                        <strong class="title">기본 input</strong>
+                    </div>
+                    <textarea cols="111" rows="5" class="tf_area">이 인스턴스는 1970년에 시작된 인스턴스로 새로운 인스턴스를 24시간 내에 만들지 않을 시 분열하여 돈을 두배로 내게 만드는 전설적인 인스턴스 임을 밝힙니다.</textarea>
 
                     <br><br>
 
@@ -315,15 +318,15 @@
                         <li class="em">form_group 으로 감싼다</li>
                     </ul>
                     <div class="form_group">
-                        <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">스냅샷에서 설치</span></label>
-                        <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">기존 OS 재설치</span></label>
+                        <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">라디오1</span></label>
+                        <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">라디오2</span></label>
                     </div>
                     <br><br>
                     <div class="tit_area">
                         <strong class="title">텍스트와 함께 사용 : 오른쪽 여백을 없애고 싶을 때</strong>
                     </div>
                     <div class="form_group">
-                        <label class="form_label_clear"><input type="radio" class="inp_radio"><span class="txt_label">스냅샷에서 설치</span></label>
+                        <label class="form_label_clear"><input type="radio" class="inp_radio"><span class="txt_label">라디오</span></label>
                         텍스트텍스트 텍스트
                     </div>
 
@@ -346,10 +349,10 @@
 
             <div class="section">
                 <div class="tit_area">
-                    <h2>box_comp</h2>
+                    <h2 class="title">box_comp</h2 class="title">
                 </div>
                 <div class="tit_area gBlankL">
-                    <h3>box_comp + type_basic</h3>
+                    <h3 class="title">box_comp + type_basic</h3>
                 </div>
                 <div class="box_comp type_basic">
                     내용을 넣어서 쓰세요.
@@ -363,7 +366,9 @@
                 <div class="tit_area">
                     <h3 class="title">gridSet</h3 class="title">
                 </div>
-                <p class="mList typeInfo txtEm">div.left, div.right를 이용하여 왼쪽, 오른쪽 정렬을 한다.</p>
+                <ul class="list_comp type_info">
+                    <li class="em">div.left, div.right를 이용하여 왼쪽, 오른쪽 정렬을 한다.</li>
+                </ul>
                 <div class="wrap_sample">
                     <div class="gridSet">
                         <div class="left">
@@ -374,7 +379,9 @@
                         </div>
                     </div>
                 </div>
-                <p class="list_comp type_info em">div.grid를 이용하면 grid의 넓이는 1/grid 갯수가 된다.</p>
+                <ul class="list_comp type_info">
+                    <li class="em">div.grid를 이용하면 grid의 넓이는 1/grid 갯수가 된다.</li>
+                </ul>
                 <div class="wrap_sample">
                     <style>
                         .gridSet .grid { outline:1px solid red; background:pink }
