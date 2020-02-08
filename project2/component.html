@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KONECT국가임상시험지원재단</title>
+    <link rel="stylesheet" type="text/css" href="css/font/notosans.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <hr class="layout">
+    <div id="header">
+        <!-- <h1 class="logo">
+            <a href="#none"><img src="../images/h1_logo.png" alt="KONECT국가임상시험지원재단"></a>
+        </h1> -->
+    </div>
+    <div id="container">
+
+<style>
+    #container { padding-left:0;}
+    .tit_area .bar { display:inline-block; overflow:hidden; width:2px; height:20px; margin:0 12px; font-size:1px; line-height:0; color:transparent; text-indent:-150%; background:#555; }
+    .tit_area .txt_light {-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end; margin:0 0 0 10px;}
+    
+    .section { margin-bottom:20px;}
+    .wrap_sample { margin-top:15px; padding:20px; border:1px solid #dedede; }
+
+</style>
+        <div id="contents">
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">타이틀 <span class="ico_bar">|</span> tit_area</h2>
+                    <span class="txt_light">: tit 우측에 어떤 요소를 넣고 싶을 때 append_group을 사용함</span>
+                    <div class="append_group">
+                        <button type="button" class="btn_strong">버튼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">텍스트<span class="bar">|</span>text</h2>
+                </div>
+                <div class="wrap_sample">
+                    <p class="txt_normal">일반 텍스트 (# 14px)</p>
+                    <p class="txt_em">강조 (#3e87e6 14px)</p>
+                    <p class="txt_warn">부정 (#ea0000 14px)</p>  
+                </div>
+            </div>
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">버튼<span class="bar">|</span>button</h2>
+                </div>
+                <div class="wrap_sample">
+                    <a href="#none" class="btn_normal">중</a>
+                    <button type="button" class="btn_normal">중</button>
+                    <button type="button" class="btn_strong">중</button>
+                    <span>높이 32px</span>
+                    <br><br>
+                    <a href="#none" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 a태그</a>
+                    <button type="button" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 button태그</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">btn_comp</h2>
+                </div>
+                <div class="wrap_sample">
+                    <div class="btn_comp">
+                        <button type="button" class="btn_normal">중앙정렬</button>
+                    </div>
+                    <div class="tit_area gBlankL">
+                        <strong class="title">왼쪽 정렬</strong>
+                    </div>
+                    <div class="btn_comp">
+                        <div class="left">
+                            <button type="button" class="btn_normal">왼쪽 정렬</button>
+                        </div>
+                    </div>
+                    <div class="tit_area gBlankL">
+                        <strong class="title">오른쪽 정렬</strong>
+                    </div>
+                    <div class="btn_comp">
+                        <div class="right">
+                            <button type="button" class="btn_normal">오른쪽 정렬</button>
+                        </div>
+                    </div>
+                    <div class="tit_area gBlankL">
+                        <strong class="title">정렬 모두 사용</strong>
+                    </div>
+                    <div class="btn_comp">
+                        <div class="left">
+                            <button type="button" class="btn_normal">왼쪽 정렬</button>
+                        </div>
+                        <button type="button" class="btn_normal">중앙정렬</button>
+                        <div class="right">
+                            <button type="button" class="btn_normal">오른쪽 정렬</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">탭 기본형<span class="bar">|</span>tab_comp</h2>
+                </div>
+                <div class="wrap_sample">
+                    <div class="tit_area">
+                        <h3 class="title">tab_comp + type_nav</h3>
+                    </div>
+                    <div class="tab_comp type_nav">
+                        <ul>
+                            <li class="selected"><a href="#none">탭1</a></li>
+                            <li><a href="#none">탭2</a></li>
+                            <li><a href="#none">탭3</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="tit_area">
+                        <h3>tab_comp + type_tab</h3>
+                    </div>
+                    <div class="tab_comp type_tab eTab">
+                        <ul>
+                            <li class="selected"><a href="#tabCont1_1">글자를 길게길게길게길게길게</a></li>
+                            <li><a href="#tabCont1_2">탭2</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabCont1_1" class="tabCont">
+                        탭1 상세내용
+                    </div>
+                    <div id="tabCont1_2" class="tabCont">
+                        탭2 상세내용
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">테이블<span class="bar">|</span>brd_comp</h2>
+                </div>
+                <div class="tit_area">
+                    <h3 class="title">테이블 view형</h3 class="title"><span class="txt_light">: type_view형</span>
+                </div>
+                <ul class="list_comp type_info">
+                    <li class="em">기본이 center 정렬, 다른 정렬을 하고 싶을때는 td에 left, right 추가</li>
+                    <li class="em">td 전체의 정렬을 바꾸고 싶은 경우 tbody에 left, right 클래스 추가</li>
+                </ul>
+                <br>
+                <div class="brd_comp type_view">
+                    <table>
+                        <caption>가상서버</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">가상서버명</th>
+                            <th scope="col">공인IP</th>
+                            <th scope="col">하드웨어 사양</th>
+                            <th scope="col">OS이미지</th>
+                            <th scope="col">CPU</th>
+                            <th scope="col">RAM</th>
+                            <th scope="col">디스크 용량</th>
+                            <th scope="col">현재 상태</th>
+                            <th scope="col">사용 트래픽</th>
+                            <th scope="col">모니터링</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>가상서버A</td>
+                            <td>123.123.123.123</td>
+                            <td>일반형</td>
+                            <td>Ubuntu</td>
+                            <td>2vCore</td>
+                            <td>2GB</td>
+                            <td>200GB(100GB)</td>
+                            <td>켜짐</td>
+                            <td>24.353GB</td>
+                            <td><button type="button" class="btn_normal">보기</button></td>
+                        </tr>
+                        <tr>
+                            <td>가상서버A</td>
+                            <td>123.123.123.123</td>
+                            <td>일반형</td>
+                            <td>Ubuntu</td>
+                            <td>2vCore</td>
+                            <td>2GB</td>
+                            <td>200GB(100GB)</td>
+                            <td>켜짐</td>
+                            <td>24.353GB</td>
+                            <td><button type="button" class="btn_normal">보기</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br><br>
+                <div class="tit_area">
+                    <h3 class="title">테이블 Edit형</h3><span class="txt_light">: typeEdit형</span>
+                </div>
+                <ul class="list_comp type_info">
+                    <li>단독으로 사용가능</li>
+                    <li class="em">상하좌우여백, 보더가 있는 경우 gCell을 넣어 사용한다.</li>
+                </ul>
+
+            </div>
+
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">페이지네이션<span class="bar">|</span>paging_comp</h2>
+                </div>
+                <div class="wrap_sample">
+                    <div class="tit_area">
+                    <strong class="title">기본</strong>
+                </div>
+                    <div class="paging_comp">
+                        <a href="#none" class="btn_prev disabled"></a><!-- 참고: 이전,다음 페이지가 없는 경우, class "disabled" 추가. -->
+                        <span class="page">
+                            <a href="#none" class="selected" title="현재페이지">1</a>
+                            <a href="#none">2</a>
+                            <a href="#none">3</a>
+                            <a href="#none">4</a>
+                            <a href="#none">5</a>
+                            <a href="#none">6</a>
+                            <a href="#none">7</a>
+                            <a href="#none">8</a>
+                            <a href="#none">9</a>
+                            <a href="#none">10</a>
+                        </span>
+                        <a href="#none" class="btn_next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">레이어 팝업<span class="bar">|</span>layer_comp</h2>
+                </div>
+                <div class="wrap_sample">
+                    <a href="#layerSample" class="btn_normal eModal">OS관리 레이어 팝업</a>
+                </div>
+            </div>
+           
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">폼<span class="bar">|</span>form</h2>
+                </div>
+                <div class="wrap_sample">
+                    <div class="tit_area">
+                        <h3 class="title">텍스트필드</h3>
+                    </div>
+                    <div class="tit_area">
+                        <strong class="title">기본 input</strong>
+                    </div>
+                    <input type="text" class="tf_text" value="value값" style="width:200px;">
+                    <input type="text" class="tf_text" value="value값" style="width:200px;" disabled>
+                    <br><br>
+                    <div class="tit_area">
+                        <strong class="title">기본 input</strong>
+                    </div>
+                    <textarea cols="111" rows="5" class="tf_area">이 인스턴스는 1970년에 시작된 인스턴스로 새로운 인스턴스를 24시간 내에 만들지 않을 시 분열하여 돈을 두배로 내게 만드는 전설적인 인스턴스 임을 밝힙니다.</textarea>
+
+                    <br><br>
+
+                    <div class="tit_area">
+                        <strong class="title">파일첨부 form_file</strong>
+                    </div>
+                    <span class="form_file">
+                        <label for="file1" class="label_file">파일선택</label>
+                        <span class="name">선택된 파일 없음</span>
+                        <input type="file" id="file1" title="파일첨부">
+                    </span>
+
+                    <br><br>
+                    <div class="tit_area">
+                        <h3 class="title">라디오 버튼, 체크버튼 </h3>
+                    </div>
+                    <div class="tit_area">
+                        <strong class="title">라디오 아이콘, 체크박스 아이콘 단독사용</strong>
+                    </div>
+                    <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label"></span></label>
+                    <label class="form_label"><input type="checkbox" class="inp_check"><span class="txt_label"></span></label>
+
+                    <div class="tit_area">
+                        <strong class="title">disabled(비활성화)</strong>
+                    </div>
+                    <label class="form_label disabled"><input type="checkbox" class="inp_check"><span class="txt_label"></span></label>
+
+                    <br><br>
+
+                    <div class="tit_area">
+                        <strong class="title">아이콘 + 텍스트 label 함께 사용</strong>
+                    </div>
+                    <ul class="list_comp type_info">
+                        <li class="em">form_group 으로 감싼다</li>
+                    </ul>
+                    <div class="form_group">
+                        <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">라디오1</span></label>
+                        <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">라디오2</span></label>
+                    </div>
+                    <br><br>
+                    <div class="tit_area">
+                        <strong class="title">텍스트와 함께 사용 : 오른쪽 여백을 없애고 싶을 때</strong>
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label_clear"><input type="radio" class="inp_radio"><span class="txt_label">라디오</span></label>
+                        텍스트텍스트 텍스트
+                    </div>
+
+                    <br><br>
+
+                    <div class="tit_area">
+                        <h3 class="title">날짜선택 | form_group + type_cal</h3>
+                    </div>
+                    <div class="form_group type_cal">
+                        <span class="form_cal">
+                            <input type="text" value="2017.08.08" class="datepicker">
+                        </span>
+                        <span class="bar"></span>
+                        <span class="form_cal">
+                            <input type="text" value="2017.08.08" class="datepicker">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">box_comp</h2 class="title">
+                </div>
+                <div class="tit_area gBlankL">
+                    <h3 class="title">box_comp + type_basic</h3>
+                </div>
+                <div class="box_comp type_basic">
+                    내용을 넣어서 쓰세요.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="tit_area">
+                    <h2 class="title">그리드<span class="bar">|</span>grid</h2>
+                </div>
+                <div class="tit_area">
+                    <h3 class="title">gridSet</h3 class="title">
+                </div>
+                <ul class="list_comp type_info">
+                    <li class="em">div.left, div.right를 이용하여 왼쪽, 오른쪽 정렬을 한다.</li>
+                </ul>
+                <div class="wrap_sample">
+                    <div class="gridSet">
+                        <div class="left">
+                            왼쪽에 넣을 것
+                        </div>
+                        <div class="right">
+                            <a href="#none" class="btn_link">텍스트링크</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list_comp type_info">
+                    <li class="em">div.grid를 이용하면 grid의 넓이는 1/grid 갯수가 된다.</li>
+                </ul>
+                <div class="wrap_sample">
+                    <style>
+                        .gridSet .grid { outline:1px solid red; background:pink }
+                    </style>
+                    <div class="gridSet">
+                        <div class="grid" >
+                            50%
+                        </div>
+                        <div class="grid">
+                            50%
+                        </div>
+                    </div>
+                    <div class="gridSet gBlankM">
+                        <div class="grid" >
+                            33.3%
+                        </div>
+                        <div class="grid">
+                            33.3%
+                        </div>
+                        <div class="grid">
+                            33.3%
+                        </div>
+                    </div>
+                    <div class="gridSet gBlankM">
+                        <div class="grid" >
+                            25%
+                        </div>
+                        <div class="grid" >
+                            25%
+                        </div>
+                        <div class="grid" >
+                            25%
+                        </div>
+                        <div class="grid" >
+                            25%
+                        </div>
+                    </div>
+                </div>
+                <div class="tit_area gBlankL">
+                    <h3 class="title">gBlank, gSide, gSpace, gBreak</h3>
+                </div>
+                <div class="wrap_sample">
+                    <p class="gBlankS">gBlankS : 상 여백 5px</p>
+                    <p class="gBlankM">gBlankM : 상 여백 10px</p>
+                    <p class="gBlankL">gBlankL : 상 여백 20px</p>
+                    <p class="gBlankXL">gBlankXL : 상 여백 30px</p>
+                    <p class="gSideS">gSideS : 좌 여백 5px</p>
+                    <p class="gSideM">gSideM : 좌 여백 10px</p>
+                    <p class="gSideL">gSideL : 좌 여백 20px</p>
+                    <p class="gSideXL">gSideXL : 좌 여백 30px</p>
+                    <p class="gSpaceS">gSpaceS : 우 여백 5px</p>
+                    <p class="gSpaceM">gSpaceM : 우 여백 10px</p>
+                    <p class="gSpaceL">gSpaceL : 우 여백 20px</p>
+                    <p class="gSpaceXL">gSpaceXL : 우 여백 30px</p>
+                    <p class="gBreakS">gBreakS : 하 여백 5px</p>
+                    <p class="gBreakM">gBreakM : 하 여백 10px</p>
+                    <p class="gBreakL">gBreakL : 하 여백 20px</p>
+                    <p class="gBreakXL">gBreakXL : 하 여백 30px</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+   <!-- 참고 : OS관리 -->
+    <div id="layerSample" class="layer_comp medium">
+        <h2>OS 관리</h2>
+        <div class="wrap_layer">
+            <div class="section">
+                <div class="tit_area">
+                    <h3>변경할 인스턴스</h3>
+                </div>
+                <div class="brd_comp type_view">
+                    <table>
+                        <caption>변경할 인스턴스</caption>
+                        <colgroup>
+                            <col style="width:25%;">
+                            <col style="width:25%;">
+                            <col style="width:25%;">
+                            <col style="width:25%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">인스턴스명</th>
+                                <th scope="col">OS플랫폼</th>
+                                <th scope="col">버전</th>
+                                <th scope="col">인스턴스 상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>인스턴스A</td>
+                                <td>Ubuntu</td>
+                                <td>x86_64_001</td>
+                                <td>정지</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#none" class="btn_strong">OS 재설치</a>
+        </div>
+        <button type="button" class="btn_close eClose"></button>
+    </div>
+</div>
+
+<script>
+    // ※ 개발작업시 datepicker 플러그인 수정요청: 최상위에 mCalendar 클래스를 추가해주세요.
+    $( function() {
+        //한글설정
+        $.datepicker.regional['ko'] = {
+            closeText: '닫기',
+            prevText: '이전달',
+            nextText: '다음달',
+            currentText: '오늘',
+            monthNames: ['1월','2월','3월','4월','5월','6월',
+                '7월','8월','9월','10월','11월','12월'],
+            monthNamesShort: ['1월','2월','3월','4월','5월','6월',
+                '7월','8월','9월','10월','11월','12월'],
+            dayNames: ['일','월','화','수','목','금','토'],
+            dayNamesShort: ['일','월','화','수','목','금','토'],
+            dayNamesMin: ['일','월','화','수','목','금','토'],
+            weekHeader: 'Wk',
+            dateFormat: 'yy.mm.dd',
+            firstDay: 1,
+            isRTL: false,
+            duration:200,
+            showAnim:'show',
+            yearSuffix: ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ko']);
+        $( ".datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        $('.typeCalendar .fCalendar').on('click', function() {
+            $(this).find('.datepicker').datepicker('show');
+        });
+
+    } );
+</script>
+</body>
+</html>
