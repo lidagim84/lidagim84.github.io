@@ -19,32 +19,31 @@
     </div>
     <hr class="layout">
     <div id="header">
-        <!-- <h1 class="logo">
+        <h1 class="logo">
             <a href="#none"><img src="../images/h1_logo.png" alt="KONECT국가임상시험지원재단"></a>
-        </h1> -->
+        </h1>
 
-        <div class="gnb_area">
+        <!-- <div class="gnb_area">
             <ul class="list_gnb">
                 <li><a href="#none">메뉴1</a></li>
                 <li><a href="#none">메뉴2</a></li>
                 <li><a href="#none">메뉴3</a></li>
                 <li><a href="#none">메뉴4</a></li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="util_area">
             <div class="info_user">
-                <div class="thumnail"></div>
+                <div class="thumbnail"></div>
                 <strong class="name">홍길동</strong>
             </div>
             <a href="#none" class="btn_logout">로그아웃</a>
         </div>
     </div>
     <div id="container">
-        <!-- <div id="sidebar">
+        <div id="sidebar">
             <ul class="list_lnb">
-                <li class="parent"><!-- 참고 : 선택시 .selected -->
-                    <!--
+                <li class="parent selected"><!-- 참고 : 선택시 .selected -->
                     <a href="#none" class="eFold">메뉴1</a>
                     <ul class="children">
                         <li><a href="#none" class="eFold">메뉴1-1</a></li>
@@ -67,56 +66,238 @@
                     </ul>
                 </li>
             </ul>
-        </div> -->
+        </div>
         
         <div id="contents">
             <div class="page_path">HOME &gt; 기본정보 &gt; 연구과제목록</div>
             <div class="section">
-                <div class="tit_area">
+                <div class="tit_area major">
                     <h2 class="title">연구 과제 목록</h2>
-                    <div class="append_group"><a href="#none" class="btn_strong">작성</a></div>
                 </div>
-
+                <div class="brd_comp type_write">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:100px">
+                            <col style="width:320px">
+                            <col style="width:160px;">
+                            <col style="width:320px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>검색키워드</th>
+                            <td colspan="3">
+                                <div class="gridSet">
+                                    <div class="grid">
+                                        <select class="form_select" style="width:150px;">
+                                            <option>기관명</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid flex1">
+                                        <input type="text" class="tf_text">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지역</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>연구책임자</th>
+                            <td>
+                                <div class="gridSet">
+                                    <div class="grid flex1">
+                                        <select class="form_select full">
+                                            <option>기관을 선택하세요</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid flex1">
+                                        <select class="form_select full">
+                                            <option>전체</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>의뢰사</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>연구주체</th>
+                            <td>
+                                <div class="form_group">
+                                    <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">전체</span></label>
+                                    <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">SIT</span></label>
+                                    <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">IIT</span></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Phase</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>대상질환</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>대상자수</th>
+                            <td>
+                                <div class="gridSet">
+                                    <div class="column flex1">
+                                        <input type="text" class="tf_text">
+                                        <div class="unit">
+                                            명
+                                        </div>
+                                    </div>
+                                    <div class="unit">
+                                        ~
+                                    </div>
+                                    <div class="column flex1">
+                                        <input type="text" class="tf_text">
+                                        <div class="unit">
+                                            명
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <th>기간</th>
+                            <td>
+                               <div class="gridSet">
+                                    <div class="grid">
+                                        <select class="form_select" style="width:130px;">
+                                            <option>IRB신청</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                   <div class="grid">
+                                        <div class="form_group type_cal">
+                                            <span class="form_cal">
+                                                <input type="text" value="08.08" class="datepicker">
+                                            </span>
+                                            <span class="unit">~</span>
+                                            <span class="form_cal">
+                                                <input type="text" value="08.08" class="datepicker">
+                                            </span>
+                                        </div>
+                                   </div>
+                               </div> 
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn_comp type_search">
+                    <button type="button" class="btn_strong large">검색</button>
+                    <button type="button" class="btn_general large">초기화</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sorting_group gridSet">
+                    <div class="grid">
+                        <select class="form_select">
+                            <option>승인일 오름차순</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                        </select>
+                    </div>
+                    <div class="grid">
+                        <select class="form_select">
+                            <option>10개씩 보기</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="brd_comp type_view">
                     <table>
-                        <caption>연구 과제 목록</caption>
+                        <caption>검색결과 목록</caption>
                         <colgroup>
-                            <col style="width:260px;">
-                            <col style="width:350px;">
-                            <col style="width:210px;">
-                            <col style="width:210px;">
+                            <col style="width:80px;">
+                            <col style="width:105px;">
+                            <col style="">
+                            <col style="width:90px;">
+                            <col style="width:70px;">
+                            <col style="width:135px;">
+                            <col style="width:90px;">
+                            <col style="width:90px;">
                         </colgroup>
                         <thead>
                         <tr>
-                            <th scope="col">리전 이름</th>
-                            <th scope="col">지원되는 IP 대역</th>
-                            <th scope="col">상태</th>
-                            <th scope="col">신규 서비스 생성</th>
+                            <th scope="col">NO</th>
+                            <th scope="col">지역</th>
+                            <th scope="col">연구과제명</th>
+                            <th scope="col">연구책임자</th>
+                            <th scope="col">연구주체</th>
+                            <th scope="col">대상질환</th>
+                            <th scope="col">IRB신청일</th>
+                            <th scope="col">진행상태</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">연도</th>
+                            <th scope="col">기관명</th>
+                            <th scope="col">연구과제코드</th>
+                            <th scope="col">의뢰자</th>
+                            <th scope="col">Phase</th>
+                            <th scope="col">대상자수(실제/목표)</th>
+                            <th scope="col">IRB승인일</th>
+                            <th scope="col">종료일</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>리전 A - 카페24 IDC 32F 24G</td>
-                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
-                            <td><span class="txtGood">쾌적</span></td>
-                            <td>가능</td>
+                            <td>1</td>
+                            <td>서울</td>
+                            <td><a href="#none" class="btn_link_em line2">건강한건강한건강한 남성 지원자를 대상으로 HY209 결제의 경피 투여후 결과를 봐야하고 이건 2줄 이상일때 말줄임이 되어야한다.</a></td>
+                            <td><a href="#none" class="btn_link_em">홍길동</a></td>
+                            <td>SIT</td>
+                            <td>HEMATOLOGY</td>
+                            <td>2020.02.01</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td>리전 A - 카페24 IDC 32F 24G</td>
-                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
-                            <td><span class="txtCaution">보통</span></td>
-                            <td>가능</td>
-                        </tr>
-                        <tr>
-                            <td>리전 A - 카페24 IDC 32F 24G</td>
-                            <td>aaa.bbb.ccc.ddd ~ aaa.bbb.ccc.ddd</td>
-                            <td><span class="txtWarn">혼잡</span></td>
-                            <td><span class="txtWarn">불가</span></td>
+                            <td>2020년</td>
+                            <td><a href="#none" class="btn_link_em">서울대학교병원</a></td>
+                            <td>HY209-202</td>
+                            <td><a href="#none" class="btn_link_em">한국화이자</a></td>
+                            <td>1상</td>
+                            <td>목표:100<br>진행중:20<br>완료:78<br>탈락:1</td>
+                            <td>2020.02.01</td>
+                            <td>-</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="paging_comp">
+                    <a href="#none" class="btn_start"></a>
                     <a href="#none" class="btn_prev disabled"></a><!-- 참고: 이전,다음 페이지가 없는 경우, class "disabled" 추가. -->
                     <span class="page">
                         <a href="#none" class="selected" title="현재페이지">1</a>
@@ -131,39 +312,27 @@
                         <a href="#none">10</a>
                     </span>
                     <a href="#none" class="btn_next"></a>
-                </div>
-
-
-                <div class="tab_comp type_tab eTab"><!-- 스크립트 클래스 eTab -->
-                    <ul>
-                        <li class="selected"><a href="#tabCont1_1">글자를 길게길게길게길게길게</a></li>
-                        <li><a href="#tabCont1_2">탭2</a></li>
-                    </ul>
-                </div>
-                <div id="tabCont1_1" class="tabCont">
-                    탭1 상세내용
-                </div>
-                <div id="tabCont1_2" class="tabCont">
-                    탭2 상세내용
+                    <a href="#none" class="btn_end"></a>
                 </div>
             </div>
+
         </div>
     </div>
     
     <hr class="layout">
     
     <div id="footer">
-        <div class="inner_foot">
-            <div class="footer_top">
+       <div class="footer_top">
+            <div class="inner">
                 <ul class="list_util">
                     <li><a href="#none">이용약관</a></li>
-                    <li><a href="#none"><strong>개인정보 처리 방침</strong></a></li>
+                    <li><a href="#none"><strong class="private">개인정보 처리 방침</strong></a></li>
                     <li><a href="#none">이메일무단수집거부</a></li>
                     <li><a href="#none">SITEMAP</a></li>
                     <li><a href="#none">모바일버전보기</a></li>
                 </ul>
                 <div class="family_site">
-                    <a href="#none" class="name eDropDown">관련사이트</a>
+                    <a href="#none" class="name eDropDown">Family Site</a>
                     <ul class="site">
                         <li><a href="#none" class="link" target="_blank">관련사이트1</a></li>
                         <li><a href="#none" class="link" target="_blank">관련사이트2</a></li>
@@ -173,16 +342,18 @@
                     </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="footer_bottom">
-                <h2 class="logo"></h2>
-                <small class="info_company">
-                    서울특별시 마포구 마포대로 137
-                </small>
+        <div class="footer_bottom">
+            <div class="inner">
+                <h2 class="logo"><img src="../images/h2_footer_logo.png" alt="KONECT국가임상시험지원재단"></h2>
+                <p class="info_company">
+                    서울특별시 마포구 마포대로 137 KPX빌딩 15층 대표번호 02-398-5000 / 인증제 02-398-5032 / CRA교육 02-398-5031,3/<br>
+                    CRC교육 02-398-5034 / wjstks 02-398-5023 / FAX 02-3675-4777
+                </p>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>

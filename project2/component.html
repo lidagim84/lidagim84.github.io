@@ -13,16 +13,12 @@
 </head>
 <body>
 <div id="wrap">
-    <hr class="layout">
-    <div id="header">
-        <!-- <h1 class="logo">
-            <a href="#none"><img src="../images/h1_logo.png" alt="KONECT국가임상시험지원재단"></a>
-        </h1> -->
-    </div>
     <div id="container">
 
 <style>
-    #container { padding-left:0;}
+    body {min-width:auto;}
+    #container { padding-left:0;margin-top:10px;}
+    #contents {padding:0;margin:0 auto;}
     .tit_area .bar { display:inline-block; overflow:hidden; width:2px; height:20px; margin:0 12px; font-size:1px; line-height:0; color:transparent; text-indent:-150%; background:#555; }
     .tit_area .txt_light {-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end; margin:0 0 0 10px;}
     
@@ -58,10 +54,22 @@
                     <a href="#none" class="btn_normal">중</a>
                     <button type="button" class="btn_normal">중</button>
                     <button type="button" class="btn_strong">중</button>
-                    <span>높이 32px</span>
+                    <span>높이 36px</span>
                     <br><br>
-                    <a href="#none" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 a태그</a>
-                    <button type="button" class="btn_normal"><span class="img_sp ico_plus"></span> 아이콘 버튼 button태그</button>
+                    <a href="#none" class="btn_normal large">대</a>
+                    <button type="button" class="btn_normal large">대</button>
+                    <button type="button" class="btn_strong large">대</button>
+                    <span>높이 40px</span>
+                    <br><br>
+                    <button type="button" class="btn_square"><span class="img_sp ico_plus"></span></button>
+                    <br><br>
+                    <a href="#none" class="btn_link">텍스트 버튼 btn_link</a>
+                    <br>
+                    <a href="#none" class="btn_link_em">텍스트 버튼 강조 btn_link_em</a>
+                    <br><br>
+                    <div style="width:100px;">
+                        <a href="#none" class="btn_link line2">텍스트 버튼 2줄 말줄임말줄임말줄임말줄임말줄임말줄임</a>
+                    </div>
                 </div>
             </div>
             <div class="section">
@@ -120,11 +128,22 @@
                     </div>
                     <br>
                     <div class="tit_area">
+                        <h3 class="title">tab_comp + type_nav + full</h3>
+                    </div>
+                    <div class="tab_comp type_nav full">
+                        <ul>
+                            <li class="selected"><a href="#none">탭1</a></li>
+                            <li><a href="#none">탭2</a></li>
+                            <li><a href="#none">탭3</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="tit_area">
                         <h3>tab_comp + type_tab</h3>
                     </div>
                     <div class="tab_comp type_tab eTab">
                         <ul>
-                            <li class="selected"><a href="#tabCont1_1">글자를 길게길게길게길게길게</a></li>
+                            <li><a href="#tabCont1_1">글자를 길게길게길게길게길게</a></li>
                             <li><a href="#tabCont1_2">탭2</a></li>
                         </ul>
                     </div>
@@ -152,57 +171,52 @@
                 <br>
                 <div class="brd_comp type_view">
                     <table>
-                        <caption>가상서버</caption>
+                        <caption>검색결과 목록</caption>
                         <colgroup>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
+                            <col span="6">
                         </colgroup>
                         <thead>
                         <tr>
-                            <th scope="col">가상서버명</th>
-                            <th scope="col">공인IP</th>
-                            <th scope="col">하드웨어 사양</th>
-                            <th scope="col">OS이미지</th>
-                            <th scope="col">CPU</th>
-                            <th scope="col">RAM</th>
-                            <th scope="col">디스크 용량</th>
-                            <th scope="col">현재 상태</th>
-                            <th scope="col">사용 트래픽</th>
-                            <th scope="col">모니터링</th>
+                            <th scope="col">연도</th>
+                            <th scope="col">1상</th>
+                            <th scope="col">2상</th>
+                            <th scope="col">3상</th>
+                            <th scope="col">기타</th>
+                            <th scope="col">합계</th>
                         </tr>
                         </thead>
+                        <tfoot>
+                            <tr><td>합계</td>
+                            <td><a href="#none" class="btn_link">3,693건</a></td>
+                            <td><a href="#none" class="btn_link">3,693건</a></td>
+                            <td><a href="#none" class="btn_link">3,693건</a></td>
+                            <td><a href="#none" class="btn_link">3,693건</a></td>
+                            <td><a href="#none" class="btn_link">3,693건</a></td>
+                        </tr></tfoot>
                         <tbody>
                         <tr>
-                            <td>가상서버A</td>
-                            <td>123.123.123.123</td>
-                            <td>일반형</td>
-                            <td>Ubuntu</td>
-                            <td>2vCore</td>
-                            <td>2GB</td>
-                            <td>200GB(100GB)</td>
-                            <td>켜짐</td>
-                            <td>24.353GB</td>
-                            <td><button type="button" class="btn_normal">보기</button></td>
+                            <td>2018년</td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
                         </tr>
                         <tr>
-                            <td>가상서버A</td>
-                            <td>123.123.123.123</td>
-                            <td>일반형</td>
-                            <td>Ubuntu</td>
-                            <td>2vCore</td>
-                            <td>2GB</td>
-                            <td>200GB(100GB)</td>
-                            <td>켜짐</td>
-                            <td>24.353GB</td>
-                            <td><button type="button" class="btn_normal">보기</button></td>
+                            <td>2019년</td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                        </tr>
+                         <tr>
+                            <td>2020년</td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
+                            <td><a href="#none" class="btn_link">1,231건</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -210,13 +224,152 @@
 
                 <br><br>
                 <div class="tit_area">
-                    <h3 class="title">테이블 Edit형</h3><span class="txt_light">: typeEdit형</span>
+                    <h3 class="title">테이블 write형</h3><span class="txt_light">: type_write형</span>
                 </div>
                 <ul class="list_comp type_info">
-                    <li>단독으로 사용가능</li>
-                    <li class="em">상하좌우여백, 보더가 있는 경우 gCell을 넣어 사용한다.</li>
+                    <li class="em">select, input 등의 요소들이 들어간다</li>
                 </ul>
-
+                <div class="brd_comp type_write">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:100px">
+                            <col style="width:320px">
+                            <col style="width:160px;">
+                            <col style="width:320px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>검색키워드</th>
+                            <td colspan="3">
+                                <div class="gridSet">
+                                    <div class="grid">
+                                        <select class="form_select" style="width:150px;">
+                                            <option>기관명</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid flex1">
+                                        <input type="text" class="tf_text">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지역</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>연구책임자</th>
+                            <td>
+                                <div class="gridSet">
+                                    <div class="grid flex1">
+                                        <select class="form_select full">
+                                            <option>기관을 선택하세요</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid flex1">
+                                        <select class="form_select full">
+                                            <option>전체</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>의뢰사</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>연구주체</th>
+                            <td>
+                                <div class="form_group">
+                                    <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">전체</span></label>
+                                    <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">SIT</span></label>
+                                    <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label">IIT</span></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Phase</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                            <th>대상질환</th>
+                            <td>
+                                <select class="form_select full">
+                                    <option>전체</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>대상자수</th>
+                            <td>
+                                <div class="gridSet">
+                                    <div class="column flex1">
+                                        <input type="text" class="tf_text">
+                                        <div class="unit">
+                                            명
+                                        </div>
+                                    </div>
+                                    <div class="unit">
+                                        ~
+                                    </div>
+                                    <div class="column flex1">
+                                        <input type="text" class="tf_text">
+                                        <div class="unit">
+                                            명
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <th>기간</th>
+                            <td>
+                               <div class="gridSet">
+                                    <div class="grid">
+                                        <select class="form_select" style="width:130px;">
+                                            <option>IRB신청</option>
+                                            <option>옵션2</option>
+                                            <option>옵션3</option>
+                                        </select>
+                                    </div>
+                                   <div class="grid">
+                                        <div class="form_group type_cal">
+                                            <span class="form_cal">
+                                                <input type="text" value="08.08" class="datepicker">
+                                            </span>
+                                            <span class="unit">~</span>
+                                            <span class="form_cal">
+                                                <input type="text" value="08.08" class="datepicker">
+                                            </span>
+                                        </div>
+                                   </div>
+                               </div> 
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div class="section">
@@ -228,6 +381,7 @@
                     <strong class="title">기본</strong>
                 </div>
                     <div class="paging_comp">
+                        <a href="#none" class="btn_start"></a>
                         <a href="#none" class="btn_prev disabled"></a><!-- 참고: 이전,다음 페이지가 없는 경우, class "disabled" 추가. -->
                         <span class="page">
                             <a href="#none" class="selected" title="현재페이지">1</a>
@@ -242,17 +396,18 @@
                             <a href="#none">10</a>
                         </span>
                         <a href="#none" class="btn_next"></a>
+                        <a href="#none" class="btn_end"></a>
                     </div>
                 </div>
             </div>
-            <div class="section">
+            <!-- <div class="section">
                 <div class="tit_area">
                     <h2 class="title">레이어 팝업<span class="bar">|</span>layer_comp</h2>
                 </div>
                 <div class="wrap_sample">
                     <a href="#layerSample" class="btn_normal eModal">OS관리 레이어 팝업</a>
                 </div>
-            </div>
+            </div> -->
            
             <div class="section">
                 <div class="tit_area">
@@ -269,7 +424,7 @@
                     <input type="text" class="tf_text" value="value값" style="width:200px;" disabled>
                     <br><br>
                     <div class="tit_area">
-                        <strong class="title">기본 input</strong>
+                        <strong class="title">기본 textaear</strong>
                     </div>
                     <textarea cols="111" rows="5" class="tf_area">이 인스턴스는 1970년에 시작된 인스턴스로 새로운 인스턴스를 24시간 내에 만들지 않을 시 분열하여 돈을 두배로 내게 만드는 전설적인 인스턴스 임을 밝힙니다.</textarea>
 
@@ -294,13 +449,13 @@
                     <label class="form_label"><input type="radio" class="inp_radio"><span class="txt_label"></span></label>
                     <label class="form_label"><input type="checkbox" class="inp_check"><span class="txt_label"></span></label>
 
-                    <div class="tit_area">
+                    <!-- <div class="tit_area">
                         <strong class="title">disabled(비활성화)</strong>
                     </div>
                     <label class="form_label disabled"><input type="checkbox" class="inp_check"><span class="txt_label"></span></label>
 
+                    <br><br> -->
                     <br><br>
-
                     <div class="tit_area">
                         <strong class="title">아이콘 + 텍스트 label 함께 사용</strong>
                     </div>
@@ -327,11 +482,11 @@
                     </div>
                     <div class="form_group type_cal">
                         <span class="form_cal">
-                            <input type="text" value="2017.08.08" class="datepicker">
+                            <input type="text" value="08.08" class="datepicker">
                         </span>
-                        <span class="bar"></span>
+                        <span class="unit">~</span>
                         <span class="form_cal">
-                            <input type="text" value="2017.08.08" class="datepicker">
+                            <input type="text" value="08.08" class="datepicker">
                         </span>
                     </div>
                 </div>
@@ -370,43 +525,72 @@
                     </div>
                 </div>
                 <ul class="list_comp type_info">
-                    <li class="em">div.grid를 이용하면 grid의 넓이는 1/grid 갯수가 된다.</li>
+                    <li class="em">div.grid.flex1를 이용하면 grid의 넓이는 1/grid 갯수가 된다.</li>
                 </ul>
-                <div class="wrap_sample">
+                <div class="wrap_sample grid_sample">
                     <style>
-                        .gridSet .grid { outline:1px solid red; background:pink }
+                        .grid_sample .gridSet .grid { outline:1px solid red; background:pink }
                     </style>
                     <div class="gridSet">
-                        <div class="grid" >
+                        <div class="grid flex1" >
                             50%
                         </div>
-                        <div class="grid">
+                        <div class="grid flex1">
                             50%
                         </div>
                     </div>
-                    <div class="gridSet gBlankM">
-                        <div class="grid" >
+                    <br><br>
+                    <div class="gridSet">
+                        <div class="grid flex1">
                             33.3%
                         </div>
-                        <div class="grid">
+                        <div class="grid flex1">
                             33.3%
                         </div>
-                        <div class="grid">
+                        <div class="grid flex1">
                             33.3%
                         </div>
                     </div>
-                    <div class="gridSet gBlankM">
-                        <div class="grid" >
+                    <br><br>
+                    <div class="gridSet">
+                        <div class="grid flex1">
                             25%
                         </div>
-                        <div class="grid" >
+                        <div class="grid flex1">
                             25%
                         </div>
-                        <div class="grid" >
+                        <div class="grid flex1">
                             25%
                         </div>
-                        <div class="grid" >
+                        <div class="grid flex1">
                             25%
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="gridSet">
+                        <div class="grid flex1">
+                            25%
+                        </div>
+                        <div class="grid flex3">
+                            75%
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="gridSet">
+                        <div class="grid flex3">
+                            75%
+                        </div>
+                        <div class="grid flex1">
+                            25%
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="gridSet">
+                        <div class="grid flex2">
+                            20%
+                        </div>
+                        <div class="grid flex3">
+                            60%
                         </div>
                     </div>
                 </div>
@@ -484,40 +668,6 @@
     </div>
 </div>
 
-<script>
-    // ※ 개발작업시 datepicker 플러그인 수정요청: 최상위에 mCalendar 클래스를 추가해주세요.
-    $( function() {
-        //한글설정
-        $.datepicker.regional['ko'] = {
-            closeText: '닫기',
-            prevText: '이전달',
-            nextText: '다음달',
-            currentText: '오늘',
-            monthNames: ['1월','2월','3월','4월','5월','6월',
-                '7월','8월','9월','10월','11월','12월'],
-            monthNamesShort: ['1월','2월','3월','4월','5월','6월',
-                '7월','8월','9월','10월','11월','12월'],
-            dayNames: ['일','월','화','수','목','금','토'],
-            dayNamesShort: ['일','월','화','수','목','금','토'],
-            dayNamesMin: ['일','월','화','수','목','금','토'],
-            weekHeader: 'Wk',
-            dateFormat: 'yy.mm.dd',
-            firstDay: 1,
-            isRTL: false,
-            duration:200,
-            showAnim:'show',
-            yearSuffix: ''
-        };
-        $.datepicker.setDefaults($.datepicker.regional['ko']);
-        $( ".datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true
-        });
-        $('.typeCalendar .fCalendar').on('click', function() {
-            $(this).find('.datepicker').datepicker('show');
-        });
 
-    } );
-</script>
 </body>
 </html>
