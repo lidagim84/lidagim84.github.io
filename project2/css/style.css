@@ -258,7 +258,7 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 .inner_cont .append_group .link:first-child:before {display:none;}
 .inner_cont .info_company {}
 
-.login_wrap.type_full {background:url(https://i.postimg.cc/mZp5GKcT/tnvmffp.jpg) no-reapt 0 0;background-size:cover;} 
+.login_wrap.type_full {background:url(https://i.postimg.cc/mZp5GKcT/tnvmffp.jpg) no-repeat 50% 50%;background-size:cover;} 
 .login_wrap.type_full #wrap {position:relative;}
 .form_login_area {position:absolute;left:50%;top:50%;width:500px;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
 .form_login_area .inner_box {background:#fff;}
