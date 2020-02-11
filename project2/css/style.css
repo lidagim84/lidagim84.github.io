@@ -240,6 +240,40 @@ td [class*="btn_link"].line2 { padding:0 10px;}
   #footer .footer_bottom h2.logo {float:left;width:153px; height:61px; margin:0 0 0 13px;}
   #footer .footer_bottom .info_company {overflow:hidden;padding:6px 0 0 24px;line-height:24px;color:#777;font-size:13px;}
 
+  /* 로그인 */
+.login_wrap {min-width:auto;}
+
+.login_wrap.type_half #wrap {display:-webkit-flex;display:-ms-flex;display:flex;-webkit-align-items:stretch;-ms-align-items:stretch;align-items:stretch;}
+.login_wrap.type_half .left_cont {overflow:hidden;-webkit-flex:1;-ms-flex:1;flex:1;}
+.login_wrap.type_half .right_cont {overflow:hidden;-webkit-flex:1;-ms-flex:1;flex:1;background:url(https://i.postimg.cc/mZp5GKcT/tnvmffp.jpg) no-repeat 0 0;background-size:cover;}
+.login_wrap.type_half .left_cont .inner_cont {width:200px;float:right;}
+.login_wrap.type_half .right_cont .inner_cont {width:200px;float:left;}
+.inner_cont .form_login {}
+.inner_cont .form_login .tf_text {}
+.inner_cont .form_group {} 
+.inner_cont .form_group .button {}
+.inner_cont .append_group {text-align:center;} 
+.inner_cont .append_group .link {display:inline-block;vertical-align:top;} 
+.inner_cont .append_group .link:before {content:'';display:inline-block;vertical-align:top;width:1px;height:5px;margin:5px 5px 0;background:#777;}
+.inner_cont .append_group .link:first-child:before {display:none;}
+.inner_cont .info_company {}
+
+.login_wrap.type_full {background:url(https://i.postimg.cc/mZp5GKcT/tnvmffp.jpg) no-reapt 0 0;background-size:cover;} 
+.login_wrap.type_full #wrap {position:relative;}
+.form_login_area {position:absolute;left:50%;top:50%;width:500px;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.form_login_area .inner_box {background:#fff;}
+.form_login_area .tit_login {text-align:center;}
+.form_login_area .txt_login {}
+.form_login_area .form_login {}
+.form_login_area .form_login .tf_text {}
+.form_login_area .form_group {} 
+.form_login_area .form_group .button {}
+.form_login_area .append_group {text-align:center;} 
+.form_login_area .append_group .link {display:inline-block;vertical-align:top;} 
+.form_login_area .append_group .link:before {content:'';display:inline-block;vertical-align:top;width:1px;height:5px;margin:5px 5px 0;background:#777;}
+.form_login_area .append_group .link:first-child:before {display:none;}
+.form_login_area .info_company {color:#fff;font-size:14px;line-height:16px;}
+
 
   #sidebar { position: absolute; left:0; top:0; bottom:0; width:240px; height:100%; padding:88px 0 160px; box-sizing:border-box; background:#364860; }
   .list_lnb li { position:relative; }
