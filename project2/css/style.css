@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
   .tf_text { width:100%; height:36px; padding:0 9px; border:1px solid #d7d7d7; font-size:14px; font-weight:300; color:#464646; line-height:36px; outline:0; box-sizing:border-box; background:#f5f5f5; }
   .tf_text.right { text-align:right; }
   .tf_text.center { text-align:center; }
-  .tf_text:disabled { border-color:#e5e5e5; color:#b6b6b6; }
+  .tf_text:disabled { border-color:#dbdbdb;background:#e1e1e1;}
 
   textarea.tf_area { width:100%; min-height:100px; padding:4px 9px; border:1px solid #d7d7d7; box-sizing:border-box; resize:none; font-size:14px; font-weight:300; background:#f5f5f5; }
 
@@ -166,7 +166,8 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
 
 
   /* form_group : form 요소들을 나열할 때 사용 */
-  .form_group { display:inline-block;}
+  .form_group { display:inline-block;font-size:0;}
+  .form_group .row + .row {margin-top:10px;}
   .form_group .form_label { margin:0 26px 0 0; padding:0 0 0 26px; }
     ul.form_group { width:100%; margin:0; }
     ul.form_group li { padding-top:10px; }
@@ -180,6 +181,9 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
       .form_group.type_cal .form_cal:after { content:''; position:absolute; right:0; top:50%; width:16px; height:17px; margin-top:-8.5px; cursor:pointer; background-position:0 0; }
       .form_group.type_cal .form_cal input { width:50px; height:36px; padding:0; font-size:14px; line-height:36px; color:#464646; box-sizing:border-box; border:1px solid #d7d7d7; background:#f5f5f5; text-align:center; }
       .form_group.type_cal .unit { margin-top:8px; }
+    /* type_address */
+    .form_group.type_address {}
+    .form_group.type_address .btn_general {margin-left:10px;}
 
 /* icon */
 .ico_plus {width:14px; height:14px; background-position:0 -100px;}
