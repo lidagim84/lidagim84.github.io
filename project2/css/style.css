@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
   .txt_em { color:#3e87e6; }
   .txt_warn { color:#ea0000; }
 
+/* symbol */
+.symbol_require {margin-right:5px;color:#ff0100;}
+.symbol_require:before {content:'필수';overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0);}
+
 /* form */
   input[type='text']::-ms-clear { display:none; }
   /* check, radio */
@@ -118,31 +122,23 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
   .form_label:not(.disabled) .inp_radio:checked +.txt_label:before { background-position:-50px 0; }
   .form_label_clear:not(.disabled) .inp_radio:checked +.txt_label:before { background-position:-50px 0; }
 
-  /* .inp_check +.txt_label:before { width:18px; height:18px; background-position:0 -100px; }
-  .form_label:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -100px; }
-  .form_label_clear:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -100px; } */
-
-  /* check, radio - disabled */
-  /* label.form_label.disabled .inp_check + .txt_label:before,
+  .inp_check +.txt_label:before { width:16px; height:16px; background-position:0 -50px; }
+  .form_label:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -50px; }
+  .form_label_clear:not(.disabled) .inp_check:checked +.txt_label:before { background-position:-50px -50px; }
+  /* check - disabled */
+  label.form_label.disabled .inp_check + .txt_label:before,
   label.form_label_clear.disabled .inp_check + .txt_label:before,
-  span.form_label .txt_label:before { background-position:-100px -100px; }
-  span.form_label .inp_check:checked +.txt_label:before { background-position:-50px -100px; } */
+  span.form_label .txt_label:before { background-position:-100px -50px; }
+  span.form_label .inp_check { display:none; }
 
   .form_label.disabled .inp_check,
   .form_label.disabled .inp_radio,
   .form_label_clear.disabled .inp_check,
   .form_label_clear.disabled .inp_radio { cursor:default; }
 
-  /* span.form_label .inp_check,
-  span.form_label .inp_radio,
-  span.form_label_clear .inp_check,
-  span.form_label_clear .inp_radio { display:none; } */
-
-
   .tf_text { width:100%; height:36px; padding:0 9px; border:1px solid #d7d7d7; font-size:14px; font-weight:300; color:#464646; line-height:36px; outline:0; box-sizing:border-box; background:#f5f5f5; }
   .tf_text.right { text-align:right; }
   .tf_text.center { text-align:center; }
-  .tf_text:focus {}
   .tf_text:disabled { border-color:#e5e5e5; color:#b6b6b6; }
 
   textarea.tf_area { width:100%; min-height:100px; padding:4px 9px; border:1px solid #d7d7d7; box-sizing:border-box; resize:none; font-size:14px; font-weight:300; background:#f5f5f5; }
@@ -194,7 +190,7 @@ h1, h2, h3, h4, h5, strong { font-weight:500; }
 .btn_link_em {color:#005a93;}
 [class*="btn_link"].line2 { display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
 td [class*="btn_link"].line2 { padding:0 10px;}
-.btn_square {display:inline-block;width:40px;height:40px;border:1px solid #cbcbcb; background:#fff;box-sizing:border-box;}
+.btn_square {display:inline-block;width:40px;height:40px;border:1px solid #cbcbcb;font-size:0;background:#fff;box-sizing:border-box;}
 
 /* layout */
   #wrap { height:100%; }
@@ -339,6 +335,8 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 .tit_area.major h2.title {position:relative;padding:15px 0;font-size:28px;font-weight:700;color:#111;}
 .tit_area.major h2.title:after {content:'';position: absolute;left:0;bottom:0;width:52px;height:2px;background:#005a93;}
 .tit_area.major h3.title {font-size:20px;font-weight:700;color:#111;}
+.tit_area.major h3.title_em {font-size:20px;font-weight:700;color:#015a94;}
+.tit_area.major + .tit_area.major {margin-top:25px;}
 
 /* brd_comp */
 /* board 정렬 */
@@ -360,6 +358,7 @@ td [class*="btn_link"].line2 { padding:0 10px;}
     /* .brd_comp.type_view tbody th { padding:10px 20px 0; } */
     .brd_comp.type_view tbody { }
     .brd_comp.type_view td { height:28px; padding:6px 5px; font-size:14px; font-weight:400; color:#7d7d7d; background:#fff; border:1px solid #e1e1e1; }
+    .brd_comp.type_view td.left {padding-left:20px;padding-right:20px;}
     .brd_comp.type_view tfoot td {background:#f5f5f5;text-align:center;color:#111;}
     .brd_comp.type_view tfoot td [class*="btn_link"] {color:#111;}
     /* type_write */
