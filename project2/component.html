@@ -34,6 +34,18 @@
                         <button type="button" class="btn_strong">버튼</button>
                     </div>
                 </div>
+                <div class="tit_area major">
+                    <h2 class="title">h2 타이틀 major</h2>
+                    <span class="txt_light">: sub화면 메인 타이틀</span>
+                </div>
+                <div class="tit_area major">
+                    <h3 class="title">h3 타이틀 major</h3>
+                    <span class="txt_light">: sub화면 h3타이틀</span>
+                </div>
+                <div class="tit_area major">
+                    <h3 class="title_em">h3 타이틀 major</h3>
+                    <span class="txt_light">: sub화면 h3타이틀 파란색상</span>
+                </div>
             </div>
             <div class="section">
                 <div class="tit_area">
@@ -52,11 +64,13 @@
                 <div class="wrap_sample">
                     <a href="#none" class="btn_normal">중</a>
                     <button type="button" class="btn_normal">중</button>
+                    <button type="button" class="btn_general">중</button>
                     <button type="button" class="btn_strong">중</button>
                     <span>높이 36px</span>
                     <br><br>
                     <a href="#none" class="btn_normal large">대</a>
                     <button type="button" class="btn_normal large">대</button>
+                    <button type="button" class="btn_general large">대</button>
                     <button type="button" class="btn_strong large">대</button>
                     <span>높이 40px</span>
                     <br><br>
@@ -209,7 +223,7 @@
                             <td><a href="#none" class="btn_link">1,231건</a></td>
                             <td><a href="#none" class="btn_link">1,231건</a></td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td>2020년</td>
                             <td><a href="#none" class="btn_link">1,231건</a></td>
                             <td><a href="#none" class="btn_link">1,231건</a></td>
@@ -239,7 +253,7 @@
                         </colgroup>
                         <tbody>
                         <tr>
-                            <th>검색키워드</th>
+                            <th scope="row">검색키워드</th>
                             <td colspan="3">
                                 <div class="gridSet">
                                     <div class="grid">
@@ -256,7 +270,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>지역</th>
+                            <th scope="row">지역</th>
                             <td>
                                 <select class="form_select full">
                                     <option>전체</option>
@@ -264,7 +278,7 @@
                                     <option>옵션3</option>
                                 </select>
                             </td>
-                            <th>연구책임자</th>
+                            <th scope="row">연구책임자</th>
                             <td>
                                 <div class="gridSet">
                                     <div class="grid flex1">
@@ -286,7 +300,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>의뢰사</th>
+                            <th scope="row">의뢰사</th>
                             <td>
                                 <select class="form_select full">
                                     <option>전체</option>
@@ -294,7 +308,7 @@
                                     <option>옵션3</option>
                                 </select>
                             </td>
-                            <th>연구주체</th>
+                            <th scope="row">연구주체</th>
                             <td>
                                 <div class="form_group">
                                     <label class="form_label"><input type="radio" class="inp_radio" checked=""><span class="txt_label">전체</span></label>
@@ -304,7 +318,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Phase</th>
+                            <th scope="row">Phase</th>
                             <td>
                                 <select class="form_select full">
                                     <option>전체</option>
@@ -312,7 +326,7 @@
                                     <option>옵션3</option>
                                 </select>
                             </td>
-                            <th>대상질환</th>
+                            <th scope="row">대상질환</th>
                             <td>
                                 <select class="form_select full">
                                     <option>전체</option>
@@ -322,7 +336,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>대상자수</th>
+                            <th scope="row">대상자수</th>
                             <td>
                                 <div class="gridSet">
                                     <div class="column flex1">
@@ -342,7 +356,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <th>기간</th>
+                            <th scope="row">기간</th>
                             <td>
                                <div class="gridSet">
                                     <div class="grid">
@@ -364,6 +378,26 @@
                                         </div>
                                    </div>
                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="symbol_require" aria-hidden="true">*</span>주소</th>
+                            <td colspan="3">
+                                <div class="form_group type_address">
+                                    <div class="row">
+                                        <input type="text" class="tf_text" value="" style="width:460px;" disabled="">
+                                        <button type="button" class="btn_general">우편번호검색</button>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class="tf_text" disabled="">
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class="tf_text" disabled="">
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class="tf_text">
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         </tbody>
@@ -469,10 +503,19 @@
                     <div class="tit_area">
                         <strong class="title">텍스트와 함께 사용 : 오른쪽 여백을 없애고 싶을 때</strong>
                     </div>
+                    <label class="form_toggle">
+                        <input type="checkbox" class="inp_check">
+                        <span class="ico_toggle"></span>
+                    </label>
+                    <br><br>
+                    <div class="tit_area">
+                        <strong class="title">check toggle</strong>
+                    </div>
                     <div class="form_group">
                         <label class="form_label_clear"><input type="radio" class="inp_radio"><span class="txt_label">라디오</span></label>
                         텍스트텍스트 텍스트
                     </div>
+
 
                     <br><br>
 
