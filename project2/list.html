@@ -39,7 +39,8 @@ a:hover { text-decoration:underline; }
 .wrap_pf .tit_pf {font-size:20px}
 .wrap_pf .txt_pf {font-size:15px}
 .wrap_pf .list_index {font-size:15px}
-.wrap_pf .list_index li {border-bottom:1px solid #efefef}
+.wrap_pf .list_index li {position: relative; border-bottom:1px solid #efefef}
+.wrap_pf .list_index li.empty:after {content:'진행예정';position:absolute;left:0;top:0;width:100%;height:100%;color:red;background:rgba(0,0,0,.1);}
 .wrap_pf .list_index .link_index {display:-webkit-flex;display:-ms-flex;display:flex;position:relative;width:100%;padding:10px 0;text-decoration:none;box-sizing:border-box}
 .wrap_pf .list_index .link_index:after{font-family:"Font Awesome 5 Pro";content: "\f0a4"; color:#FCE72E;-webkit-align-self:center;-ms-align-self:center;align-self:center;margin-left:auto;padding:0 10px}
 
@@ -68,10 +69,37 @@ a:hover { text-decoration:underline; }
                 <li><a href="component.html" class="link_index" target="_blank"><span class="txt_index">component</span></a></li>
                 <li><a href="login.html" class="link_index" target="_blank"><span class="txt_index">로그인1</span></a></li>
                 <li><a href="login2.html" class="link_index" target="_blank"><span class="txt_index">로그인2</span></a></li>
-                <li><a href="index.html" class="link_index" target="_blank"><span class="txt_index">기본정보 &gt; 연구과제목록</span></a></li>
-                <li><a href="data.html" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구통계</span></a></li>
-                <li><a href="data_linkage.html" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 연동데이처관리</span></a></li>
-                <li><a href="group_register.html" class="link_index" target="_blank"><span class="txt_index">그룹관리 &gt; 그룹관리 &gt; 그룹등록</span></a></li>
+                <li><a href="index.html" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구과제현황 &gt; 연구과제목록</span></a></li>
+                <li><a href="detail_view.htm" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구과제현황 &gt; 연구과제상세</span></a></li>
+                <li><a href="data.html" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구통계 &gt; 연구통계탭</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구통계 &gt; 기관통계탭 - 조회할 기관 선택</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">연구정보 &gt; 연구통계 &gt; 기관통계탭</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 기관관리 &gt; 기관 목록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 기관관리 &gt; 기관 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 기관관리 &gt; 기관 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 기관관리 &gt; 기관 수정</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 의뢰기관관리 &gt; 의뢰기관 목록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 의뢰기관관리 &gt; 의뢰기관 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 의뢰기관관리 &gt; 의뢰기관 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 의뢰기관관리 &gt; 의뢰기관 수정</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 성분관리 &gt; 성분 목록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 성분관리 &gt; 성분 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 성분관리 &gt; 성분 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 성분관리 &gt; 성분 수정</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; IP관리 &gt; IP 목록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; IP관리 &gt; IP 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; IP관리 &gt; IP 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; IP관리 &gt; IP 수정</span></a></li>
+                <li><a href="data_linkage.html" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 연동데이처관리 &gt; 연동데이터 목록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 연동데이처관리 &gt; 연동데이터 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 연동데이처관리 &gt; 연동데이터 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 연동데이처관리 &gt; 연동데이터 수정</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">기준정보 &gt; 진료코드관리</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">관리자관리 &gt; 그룹관리 &gt; 그룹 목록</span></a></li>
+                <li><a href="group_register.html" class="link_index" target="_blank"><span class="txt_index">관리자관리 &gt; 그룹관리 &gt; 그룹 등록</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">관리자관리 &gt; 그룹관리 &gt; 그룹 상세</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">관리자관리 &gt; 그룹관리 &gt; 그룹 수정</span></a></li>
+                <li class="empty"><a href="#none" class="link_index" target="_blank"><span class="txt_index">관리자관리 &gt; 사용자관리 &gt; 사용자 목록</span></a></li>
             </ul>
         </section>
     </div>
