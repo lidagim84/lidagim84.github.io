@@ -222,6 +222,7 @@ td [class*="btn_link"].line2 { padding:0 10px;}
   #header .gnb_area .list_gnb li:hover > a {color:#fff;background:#005a93;}
 
   #header .util_area { display:-webkit-flex;display:-ms-flex;display:flex; -webkit-align-items:center; -ms-align-items:center; align-items:center; float:right; margin:20px 40px 0 0; text-decoration:none; }
+  #header .util_area .limit_time {display:inline-block;margin-right:15px;}
   #header .info_user { display:-webkit-flex;display:-ms-flex;display:flex; -webkit-align-items:center; -ms-align-items:center; align-items:center;}
   #header .info_user:after {content:''; position:relative; display:inline-block; margin:0 15px 0; width:1px; height:12px; background:#acacac; vertical-align:middle;}
   #header .info_user .thumbnail { position:relative; width:48px;height:48px;margin-right:15px;border-radius:48px;background:url('/images/bg_thumbnail.png') no-repeat 0 0;}
@@ -456,49 +457,49 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 
 
 /* layer_comp */
-  .layer_comp { display:none; position:absolute; left:50%; top:73px; z-index:90; width:755px; margin-left:-379px; border:1px solid #4e505d; border-top:0; background:#fff; }
-  /* small */
-    .layer_comp.small { width:545px; margin-left:-274px; }
-    .layer_comp.small .wrap { margin-bottom:75px; }
-    .layer_comp.small .wrap .section { width:505px; }
-  /* medium */
-    .layer_comp.medium { width:755px; margin-left:-379px; }
-    .layer_comp.medium .wrap .section { width:715px; }
-  /* large */
-    .layer_comp.large { width:1070px; margin-left:-500px; }
-    .layer_comp.large .wrap .section { width:1030px; }
+.layer_wrap {position:fixed; left:0;top:0; z-index:80; width:100%; height:100%; background:rgba(0,0,0,.7);}
+.layer_comp { position:absolute; left:50%; top:50%; z-index:90; width:755px; margin-left:-379px; padding:16px 40px 40px; box-sizing:border-box; background:#fff; 
+  -webkit-transform: translate(0, -50%);transform: translate(0, -50%); }
+/* small */
+  .layer_comp.small { width:545px; margin-left:-274px; }
+/* medium */
+  .layer_comp.medium { width:755px; margin-left:-379px; }
+/* large */
+  .layer_comp.large { width:1070px; margin-left:-500px; }
 
 
 
-  .layer_comp h2 { padding:9px 0 8px 18px; font-size:17px; color:#fff; background:#29344a; }
-  .layer_comp .wrap_layer { overflow-x:hidden; overflow-y:auto; max-height:742px; margin-bottom:80px; background:#fff; }
-  .layer_comp .wrap_layer .section { padding:20px 20px 0; }
-  .layer_comp .wrap_layer .section.gResult { margin-top:27px; border-top:1px solid #e4e4e4; background:#f7f7f7; }
-  .layer_comp .txtStrong { font-size:16px; line-height:26px; text-align:center; }
-  .layer_comp .tit_area { margin-top:20px; }
+.layer_comp .layer_header {min-height:73px;}
+.layer_comp .layer_header h3 { position:relative;padding:15px 0;font-size:20px;font-weight:700;color:#111;}
+.layer_comp .layer_header h3:after {content:'';position: absolute;left:0;bottom:0;width:52px;height:2px;background:#005a93;}
+.layer_comp .brd_comp.type_write {margin-top:0;border:0;}
+.layer_comp .brd_comp.type_write tr {border:0;}
+.layer_comp .brd_comp.type_write th {height:50px;}
+.layer_comp .brd_comp.type_write td {padding:5px 0;}
+.layer_comp .layer_foot {text-align:center;margin-top:15px;}
+.layer_comp .layer_foot [class*="btn_"] {margin:0 5px;}
+.layer_comp > .btn_close { position:absolute; right:0; top:0; width:110px; height:110px; padding:40px; box-sizing:border-box;}
+.layer_comp > .btn_close:after { content:'닫기'; width:31px; height:30px; background-position:0 -150px; }
 
-  .layer_comp .footer { position:absolute; left:0; bottom:0; width:100%; height:40px; padding:20px 0; text-align:center; }
-  .layer_comp > .btn_close { position:absolute; right:0; top:0; width:42px; height:42px; padding:13px; }
-  .layer_comp > .btn_close:after { content:'닫기'; width:16px; height:16px; background-position:0 -200px; }
-  .layer_comp .empty_comp { margin:0; padding:20px 0; border-top: 1px solid #dedede; border-bottom:1px solid #dedede; font-size:14px; line-height:inherit; }
+.layer_comp .empty_comp { margin:0; padding:20px 0; border-top: 1px solid #dedede; border-bottom:1px solid #dedede; font-size:14px; line-height:inherit; }
 
-  .dimmed { position:fixed; left:0; top:0; right:0; bottom:0; z-index:80; background:#000; filter:alpha(opacity=60); opacity:0.6; }
-  .dimmed.hide { display:none; }
+.dimmed { position:fixed; left:0; top:0; right:0; bottom:0; z-index:80; background:#000; filter:alpha(opacity=60); opacity:0.6; }
+.dimmed.hide { display:none; }
 
 
 /* box_comp */
-  /* type_basic */
-    .box_comp.type_basic { height:100%; padding:27px 30px 30px 28px; border:1px solid #c1c1c1; box-sizing:border-box; background:#fff; }
+/* type_basic */
+  .box_comp.type_basic { height:100%; padding:27px 30px 30px 28px; border:1px solid #c1c1c1; box-sizing:border-box; background:#fff; }
 
 /* btn_comp */
-  .btn_comp { margin:20px 0 0; font-size:0; line-height:0; }
-  .btn_comp [class*="btn_"] {margin-left:10px;}
-  .btn_comp:after { content:''; display:block; clear:both; }
-  .btn_comp { text-align:center; }
-  .btn_comp .left { float:left; margin-left:-10px;}
-  .btn_comp .right { float:right; }
+.btn_comp { margin:20px 0 0; font-size:0; line-height:0; }
+.btn_comp [class*="btn_"] {margin-left:10px;}
+.btn_comp:after { content:''; display:block; clear:both; }
+.btn_comp { text-align:center; }
+.btn_comp .left { float:left; margin-left:-10px;}
+.btn_comp .right { float:right; }
 
-  .btn_comp.type_search {margin:20px 0;}
+.btn_comp.type_search {margin:20px 0;}
 
 
 
@@ -523,11 +524,11 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 
 
 /* periodArea */
-  .periodArea { padding:0 0 15px; }
-  .periodArea.gBorder { margin-top:25px; border-bottom:1px solid #c1c1c1; }
-    .tab_comp  ~ .periodArea { margin:-1px 0 18px; padding-top:25px; border-top:1px solid #c1c1c1; }
-  .layer_comp .periodArea,
-  #popup .periodArea { margin-top:10px; padding:0 0 10px; }
+.periodArea { padding:0 0 15px; }
+.periodArea.gBorder { margin-top:25px; border-bottom:1px solid #c1c1c1; }
+  .tab_comp  ~ .periodArea { margin:-1px 0 18px; padding-top:25px; border-top:1px solid #c1c1c1; }
+.layer_comp .periodArea,
+#popup .periodArea { margin-top:10px; padding:0 0 10px; }
 
 
 
@@ -537,26 +538,26 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 
 
 /* mCalendar plugin */
-  .mCalendar { display:none; width:251px; margin:4px 0 0; padding:20px 10px; box-sizing:border-box; border:1px solid #4e505d; background:#fff; }
-  .mCalendar .ui-datepicker-header { position:relative; margin:0 0 13px; padding:0 32px; text-align:center; }
-  .mCalendar .ui-datepicker-prev,
-  .mCalendar .ui-datepicker-next { position:absolute; top:0; border:0; display:inline-block; overflow:hidden; width:36px; height:30px; cursor:pointer; vertical-align:top; text-indent:120%; white-space:nowrap; box-sizing:border-box; background:#fff;
-    -webkit-transition:border .3s ease-out; transition:border .3s ease-out; }
-  .mCalendar .ui-datepicker-prev { left:-4px; }
-  .mCalendar .ui-datepicker-next { right:-4px; }
-  .mCalendar .ui-datepicker-prev:before,
-  .mCalendar .ui-datepicker-next:before { content:""; position:absolute; top:50%; left:50%; width:8px; height:14px; margin:-7px 0 0 -4px;
-    -webkit-transition:.3s ease-out; transition:.3s ease-out; }
-  .mCalendar .ui-datepicker-prev:before { background-position:-150px -200px; }
-  .mCalendar .ui-datepicker-next:before { background-position:-200px -200px; }
-  .mCalendar .ui-datepicker-prev:disabled:before,
-  .mCalendar .ui-datepicker-next:disabled:before { border-color:#b3b3b3; }
-  .mCalendar .ui-datepicker-title select { height:30px; max-width:78px; margin:0 2px; padding:0 18px 0 7px; border:1px solid #d4d4d4; font-size:14px; color:#555; outline:0; cursor:pointer; }
-  .mCalendar .ui-datepicker-calendar { font-size:14px; line-height:25px; }
-  .mCalendar .ui-datepicker-calendar th { font-weight:500; }
-  .mCalendar .ui-datepicker-calendar td { text-align:center; color:#555; }
-  .mCalendar .ui-datepicker-calendar .ui-state-default { display:inline-block; width:24px; }
-  .mCalendar .ui-datepicker-calendar .ui-state-default:hover { font-weight:500; color:#fff; text-decoration:none; background:#3e87e6; }
+.mCalendar { display:none; width:251px; margin:4px 0 0; padding:20px 10px; box-sizing:border-box; border:1px solid #4e505d; background:#fff; }
+.mCalendar .ui-datepicker-header { position:relative; margin:0 0 13px; padding:0 32px; text-align:center; }
+.mCalendar .ui-datepicker-prev,
+.mCalendar .ui-datepicker-next { position:absolute; top:0; border:0; display:inline-block; overflow:hidden; width:36px; height:30px; cursor:pointer; vertical-align:top; text-indent:120%; white-space:nowrap; box-sizing:border-box; background:#fff;
+  -webkit-transition:border .3s ease-out; transition:border .3s ease-out; }
+.mCalendar .ui-datepicker-prev { left:-4px; }
+.mCalendar .ui-datepicker-next { right:-4px; }
+.mCalendar .ui-datepicker-prev:before,
+.mCalendar .ui-datepicker-next:before { content:""; position:absolute; top:50%; left:50%; width:8px; height:14px; margin:-7px 0 0 -4px;
+  -webkit-transition:.3s ease-out; transition:.3s ease-out; }
+.mCalendar .ui-datepicker-prev:before { background-position:-150px -200px; }
+.mCalendar .ui-datepicker-next:before { background-position:-200px -200px; }
+.mCalendar .ui-datepicker-prev:disabled:before,
+.mCalendar .ui-datepicker-next:disabled:before { border-color:#b3b3b3; }
+.mCalendar .ui-datepicker-title select { height:30px; max-width:78px; margin:0 2px; padding:0 18px 0 7px; border:1px solid #d4d4d4; font-size:14px; color:#555; outline:0; cursor:pointer; }
+.mCalendar .ui-datepicker-calendar { font-size:14px; line-height:25px; }
+.mCalendar .ui-datepicker-calendar th { font-weight:500; }
+.mCalendar .ui-datepicker-calendar td { text-align:center; color:#555; }
+.mCalendar .ui-datepicker-calendar .ui-state-default { display:inline-block; width:24px; }
+.mCalendar .ui-datepicker-calendar .ui-state-default:hover { font-weight:500; color:#fff; text-decoration:none; background:#3e87e6; }
 
 
 
@@ -573,7 +574,7 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 .wrap_graph {margin:40px 0 0;}
 
 
-    #dk_overlay_img_layer { position:fixed !important; }
+  #dk_overlay_img_layer { position:fixed !important; }
 
 
 
