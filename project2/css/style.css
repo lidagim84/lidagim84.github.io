@@ -570,6 +570,14 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 .box_data .item_box .txt_staus {float:right;color:#7d7d7d;}
 .box_data .item_box .txt_staus .up {margin-left:4px;color:#ff0000;}
 .box_data .item_box .txt_staus .down {margin-left:4px;color:#13a5fa;}
+/* type_dash */
+.box_data.type_dash .item_box.theme1 {background:#f5f5f5;}
+.box_data.type_dash .item_box .value {color:#005a93;}
+.box_data.type_dash .item_box .value a.num {border-bottom:1px solid #005a93;color:#005a93;}
+
+
+
+
 
 .wrap_graph {margin:40px 0 0;}
 
