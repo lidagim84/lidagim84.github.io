@@ -52,7 +52,8 @@ table .middle { vertical-align:middle; }
 .mCalendar .ui-datepicker-prev:before,
 .mCalendar .ui-datepicker-next:before,
 .paging_comp [class*="btn_"]:after,
-#footer .footer_top .family_site .name:after { display:inline-block; overflow:hidden; font-size:1px; line-height:0; text-indent:150%; color:transparent; vertical-align:top; background-image:url('../images/img_konect.png'); background-repeat:no-repeat; }
+#footer .footer_top .family_site .name:after,
+.ctrl_schedule .control [class*="btn_ctrl_"]:before { display:inline-block; overflow:hidden; font-size:1px; line-height:0; text-indent:150%; color:transparent; vertical-align:top; background-image:url('../images/img_konect.png'); background-repeat:no-repeat; }
 
 .gBlankS { margin-top:5px; }
 .gBlankM { margin-top:10px; }
@@ -571,9 +572,32 @@ td [class*="btn_link"].line2 { padding:0 10px;}
 .box_data .item_box .txt_staus .up {margin-left:4px;color:#ff0000;}
 .box_data .item_box .txt_staus .down {margin-left:4px;color:#13a5fa;}
 /* type_dash */
+.box_data.type_dash .item_box .value {margin-top:43px;}
+.box_data.type_dash .item_box .label {font-size:14px;}
+.box_data.type_dash .item_box .value .num {font-size:40px;}
 .box_data.type_dash .item_box.theme1 {background:#f5f5f5;}
 .box_data.type_dash .item_box .value {color:#005a93;}
 .box_data.type_dash .item_box .value a.num {border-bottom:1px solid #005a93;color:#005a93;text-decoration:none;}
+
+.wrap_schedule {}
+.wrap_schedule .ctrl_schedule {font-size:16px;color:#111;line-height:23px;text-align:center;}
+.ctrl_schedule .control {display:inline-block;margin-left:8px;}
+.ctrl_schedule .control [class*="btn_ctrl_"]{position:relative;width:24px;height:24px;border:1px solid #d7d7d7;border-radius:2px;vertical-align:middle;}
+.ctrl_schedule .control [class*="btn_ctrl_"]:before {content:'';position:absolute;top:50%;left:50%;width:5px;height:10px;margin:-5px 0 0 -2.5px;}
+.ctrl_schedule .control .btn_ctrl_prev:before {background-position:0 -50px;}
+.ctrl_schedule .control .btn_ctrl_next:before {background-position:-100px -50px;}
+.ctrl_schedule .txt_year,
+.ctrl_schedule .control .txt_term {vertical-align:middle;}
+.ctrl_schedule .control .txt_term {margin:0 6px;}
+
+.wrap_schedule .list_schedule {display:-webkit-flex; display:-ms-flex; display:flex;margin-top:20px;border-left:1px solid #e1e1e1;}
+.wrap_schedule .list_schedule > li {width:14.28%;border:1px solid #e1e1e1;border-left:0;}
+.wrap_schedule .list_schedule > li .day_lang {display:block;height:38px;line-height:37px;margin: -1px -1px 0 0;text-align:center;border:1px solid #b7c0ca;border-left:0;background:#e5ebf2;}
+.wrap_schedule .list_schedule > li:first-child .day_lang {border-left:1px solid #b7c0ca;margin-left:-1px;}
+.wrap_schedule .list_schedule > li .day_num {display:block;height:38px;line-height:37px;text-align:center;border-bottom:1px solid #e1e1e1;background:#f5f5f5;}
+.wrap_schedule .list_schedule > li .list_day {height:200px;padding:15px 10px;box-sizing:border-box;}
+.wrap_schedule .list_schedule > li .list_day > li {overflow:hidden;line-height:24px;font-size:14px;color:#7d7d7d;white-space:nowrap;text-overflow:ellipsis;}
+                
 
 
 
