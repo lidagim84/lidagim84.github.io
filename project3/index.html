@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="header">
+        <h1 class="blind">gis</h1>
+    </div>
+    <div id="container">
+        <div id="editorbar">
+            <ul class="lnb">
+                <li><a href="#none"><span class="blind">레이어 관리</span><img src="images/layers-svgrepo-com.svg" alt=""></a></li>
+                <li class="selected "><a href="#none"><span class="blind">데이터 소스 관리</span><img src="images/data-settings-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="editorLayer">
+            <div class="editor_section explore"><!-- 탐색기 : explore -->
+                <div class="head_editor">
+                    <div class="gridSet">
+                        <h2 class="title grid">탐색기</h2>
+                        <button type="button" class="btn_square"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <button type="button" class="btn_square"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="control">
+                        <button type="button" class="btn_ctrl"><img src="images/ico_ctrl1.png" alt=""></button>
+                        <button type="button" class="btn_ctrl"><img src="images/ico_ctrl2.png" alt=""></button>
+                        <button type="button" class="btn_ctrl"><img src="images/ico_ctrl3.png" alt=""></button>
+                        <button type="button" class="btn_ctrl"><img src="images/ico_ctrl4.png" alt=""></button>
+                        <button type="button" class="btn_ctrl"><img src="images/ico_ctrl5.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="body_editor">
+                    <ul class="tree_menu">
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>Spatial Bookmarks</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>홈</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>C:₩</button>
+                            <ul>
+                                <li class="depth">
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>apache-tomcat</button>
+                                    <ul>
+                                        <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>apache-tomcat 하위메뉴</button></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>app</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>bin</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>BIOS</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>conf</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>DRIVERS</button>
+                                </li>
+                                <li class="depth">
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>gis</button>
+                                    <ul>
+                                        <li class="depth">
+                                            <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>sample_data</button>
+                                            <ul>
+                                                <li><button type="button" class="btn_fold"><span class="icon"><img src="images/ico_shp.png" alt=""></span>line.shp</button></li>
+                                                <li><button type="button" class="btn_fold"><span class="icon"><img src="images/ico_shp.png" alt=""></span>point.shp</button></li>
+                                                <li><button type="button" class="btn_fold"><span class="icon"><img src="images/ico_shp.png" alt=""></span>polygon.shp</button></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>home</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>D:₩</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_package.png" alt=""></span>GeoPackage</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_spatialite.png" alt=""></span>SpatiaLite</button>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_postgis.png" alt=""></span>PostGIS</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_mssql.png" alt=""></span>MSSQL</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_oracle.png" alt=""></span>Oracle</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_db2.png" alt=""></span>DB2</button>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_gis1.png" alt=""></span>WMS/WMTS</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_gis1.png" alt=""></span>WYZ Tiles</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_wcs.png" alt=""></span>WCS</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_wfs.png" alt=""></span>WFS / OGC API - Features</button>
+                        </li>
+                        <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_ows.png" alt=""></span>OWS</button>
+                            <ul>
+                                <li><button type="button" class="btn_fold"><span class="icon"><i class="fa fa-folder-o" aria-hidden="true"></i></span>하위메뉴</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_arcgismap.png" alt=""></span>ArcGisMapServer</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_arcgisfeature.png" alt=""></span>ArcGisFeaturesServer</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_fold"><span class="icon"><img src="images/ico_geonode.png" alt=""></span>GeoNode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="editor_section detail">
+                <ul class="tab_default eTab">
+                    <li><a href="#" class="link_tab">메타정보</a></li>
+                    <li><a href="#" class="link_tab">미리보기</a></li>
+                    <li><a href="#" class="link_tab">속성</a></li>
+                </ul>
+
+                <div class="tab_view">
+                    <div class="tit_area">
+                        <h3 class="title">제공자 정보</h3>
+                    </div>
+
+                    <ul class="list_default">
+                        <li>
+                            <strong class="label">이름</strong>
+                            <span class="value">line.shp</span>
+                        </li>
+                        <li>
+                            <strong class="label">경로</strong>
+                            <span class="value"><a href="#">C:\gis\sample_data\line.shp</a></span>
+                        </li>
+                        <li>
+                            <strong class="label">저장소</strong>
+                            <span class="value">ESRI Shapefile</span>
+                        </li>
+                        <li>
+                            <strong class="label">주석</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">인코딩</strong>
+                            <span class="value">UTF-8</span>
+                        </li>
+                        <li>
+                            <strong class="label">도형</strong>
+                            <span class="value">Line (MultiLineString)</span>
+                        </li>
+                        <li>
+                            <strong class="label">좌표계</strong>
+                            <span class="value">EPSG:4326 - WGS 84 - 경위도</span>
+                        </li>
+                        <li>
+                            <strong class="label">범위</strong>
+                            <span class="value">126.382.161122124546485940303003899 : 126.382.161122124546485940303003899</span>
+                        </li>
+                        <li>
+                            <strong class="label">단위</strong>
+                            <span class="value">도</span>
+                        </li>
+                        <li>
+                            <strong class="label">객체 개수</strong>
+                            <span class="value">499,566</span>
+                        </li>
+                    </ul>
+
+                    <div class="tit_area">
+                        <h3 class="title">식별 정보</h3>
+                    </div>
+
+                    <ul class="list_default col2">
+                        <li>
+                            <strong class="label">Identifier</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Parent Identifier</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Title</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Type</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Language</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Abstract</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Keywords</strong>
+                            <span class="value"></span>
+                        </li>
+                    </ul>
+
+                    <div class="tit_area">
+                        <h3 class="title">범위</h3>
+                    </div>
+
+                    <ul class="list_default col2">
+                        <li>
+                            <strong class="label">CRS</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Spatial Extent</strong>
+                            <span class="value"></span>
+                        </li>
+                        <li>
+                            <strong class="label">Temporal Extent</strong>
+                            <span class="value"></span>
+                        </li>
+                    </ul>
+
+                    <div class="tit_area">
+                        <h3 class="title">스키마</h3>
+                    </div>
+
+                    <div class="brd_comp type_view">
+                        <table>
+                            <caption>스키마</caption>
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">필드</th>
+                                    <th scope="col">유형</th>
+                                    <th scope="col">길이</th>
+                                    <th scope="col">정확도</th>
+                                    <th scope="col">주석</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ID_link</td>
+                                    <td>String</td>
+                                    <td>16</td>
+                                    <td>0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>MESH</td>
+                                    <td>String</td>
+                                    <td>16</td>
+                                    <td>0</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+            지도영역
+        </div>
+    </div>
+</div>
+</body>
+</html>

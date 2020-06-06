@@ -1,0 +1,93 @@
+body {height:100%;}
+#wrap {height:100%;}
+#header { }
+
+#container {display:flex;height:100%;}
+#editorbar {width:90px;background:#222;}
+#editorbar .lnb {width:60px;margin:40px auto;}
+#editorbar .lnb li {}
+#editorbar .lnb li.selected a {background:#afad2c;}
+#editorbar .lnb li + li {margin-top:20px}
+#editorbar .lnb li > a {display:block;width:60px;height:60px;padding:7px;box-sizing:border-box;background:#fff;}
+#editorLayer {display:-webkit-flex;display:-ms-flex;display:flex;position:fixed;left:90px;top:0;bottom:0;}
+#editorLayer .editor_section {width:250px;border-right:1px solid #ccc;display:-webkit-flex;display:-ms-flex;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;box-sizing:border-box;}
+#editorLayer .editor_section.explore {background:#f0f0f0;}
+#editorLayer .editor_section.explore .body_editor {-webkit-flex:1;-ms-flex:1;flex:1;background:#fff;margin:0 5px 5px;padding:5px 10px;border:1px solid #ccc}
+#editorLayer .editor_section .head_editor{min-height:40px;padding:10px 5px;}
+#editorLayer .editor_section .head_editor .title {font-size:14px;}
+#editorLayer .editor_section .head_editor .btn_square {margin-left:5px;width:15px;}
+#editorLayer .editor_section .head_editor .control {margin-top:5px;}
+#editorLayer .editor_section .head_editor .control .btn_ctrl {width:16px;height:16px;padding:2px;margin-right:5px;box-sizing:border-box;}
+#editorLayer .editor_section .body_editor{overflow:auto}
+#editorLayer .editor_section .tree_menu{}
+#editorLayer .editor_section .tree_menu li {position:relative;padding-left:10px;}
+
+#editorLayer .editor_section .tree_menu li.depth:before {content:'';position:absolute;left:2px;top:7px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-left:4px solid #000;-webkit-transition:all .3s ease-out; transition:all .3s ease-out;}
+#editorLayer .editor_section .tree_menu > li.depth {}
+#editorLayer .editor_section .tree_menu li.depth.on:before {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+#editorLayer .editor_section .tree_menu > li .icon {display:inline-block;width:14px;margin-right:4px;text-align:center}
+#editorLayer .editor_section .tree_menu > li .icon img {vertical-align:middle;}
+#editorLayer .editor_section .tree_menu > li {font-size:14px;}
+#editorLayer .editor_section .tree_menu > li  ul {display:none;margin-left:20px;}
+#editorLayer .editor_section .tree_menu > li .btn_fold {display:-webkit-flex;display:-ms-flex;display:flex;text-align:left;}
+
+#editorLayer .editor_section.detail {width:500px;padding:10px;}
+#editorLayer .editor_section.detail .tab_view {-webkit-flex:1;-ms-flex:1;flex:1;overflow:auto;}
+
+
+/* tab_default */
+.tab_default { display:-webkit-flex;display:-ms-flex;display:flex; position:relative; height:46px; box-sizing:border-box; border-left:1px solid #c6cbd2;}
+.tab_default li { -webkit-flex:1;-ms-flex:1;flex:1; box-sizing:border-box; }
+.tab_default li a { display:block; text-decoration:none; position:relative; height:46px; /* min-width:145px; */ margin-left:-1px; padding:0 20px; border-right:1px solid #c6cbd2;border-top:1px solid #c6cbd2;border-bottom:1px solid #c6cbd2; font-size:14px; line-height:44px; color:#526a8a; text-align:center; box-sizing:border-box; }
+.tab_default li.selected a { line-height:43px; font-weight:bold; border-top:2px solid #3e87e6; }
+
+/* tit_area */
+.tit_area {margin:10px 0 5px;}
+.tit_area h3.title {font-size:16px;color:#000;}
+
+/* list_default */
+.list_default {margin-bottom:40px;}
+.list_default li {display:-webkit-flex;display:-ms-flex;display:flex;word-break:break-all;}
+.list_default li + li {margin-top:5px;}
+.list_default li .label {width:70px;color:#000;}
+.list_default.col2 li .label {width:110px;}
+.list_default li .value {-webkit-flex:1;-ms-flex:1;flex:1;}
+.list_default li a {color:#3e87e6;text-decoration:underline;}
+
+
+/* brd_comp */
+/* board 정렬 */
+.brd_comp td.center { text-align:center; }
+.brd_comp td.right { text-align:right; }
+.brd_comp td.left { text-align:left; }
+.brd_comp tbody.left td { text-align:left; }
+.brd_comp tbody.left td.center { text-align:center; }
+.brd_comp tbody.left td.right { text-align:right; }
+.brd_comp tbody.right td { text-align:right; }
+.brd_comp tbody.right td.center { text-align:center; }
+.brd_comp tbody.right td.left { text-align:left; }
+  /* type_view */
+    .brd_comp.type_view {  }
+    /* .brd_comp.type_view th { height:28px; font-weight:500; color:#111; background:#f7f7f7; } */
+    .brd_comp.type_view thead th { border:1px solid #b7c0ca; padding:10px 0 9px; color:#111; font-size:14px; font-weight:400; background:#e5ebf2; }
+    .brd_comp.type_view tbody { text-align:center; }
+    /* .brd_comp.type_view tbody th { padding:10px 20px 0; } */
+    .brd_comp.type_view tbody { }
+    .brd_comp.type_view td { height:28px; padding:6px 5px; font-size:14px; font-weight:400; color:#7d7d7d; background:#fff; border:1px solid #e1e1e1; }
+    .brd_comp.type_view td.left {padding-left:20px;padding-right:20px;}
+    .brd_comp.type_view tfoot td {background:#f5f5f5;text-align:center;color:#111;}
+    .brd_comp.type_view tfoot td [class*="btn_link"] {color:#111;}
+    /* type_write */
+    .brd_comp.type_write { margin-top:30px; border-top:1px solid #e1e1e1; background:#fff; }
+    .brd_comp.type_write tr { border-bottom:1px solid #e1e1e1;}
+    .brd_comp.type_write th { padding:0 0 0 60px;; font-weight:400; color:#111; text-align:left; }
+    .brd_comp.type_write th {height:59px;padding:0 0 0 60px;; font-weight:400; color:#111; text-align:left;vertical-align:middle;}
+    .brd_comp.type_write tr > th:first-child {padding-left:0;}
+    .brd_comp.type_write td { padding:11px 0 12px; height:37px; font-weight:300;}
+    /* type_detail */
+    .brd_comp.type_detail { margin-top:30px; border-top:1px solid #e1e1e1; background:#fff; }
+      .brd_comp.type_detail + .brd_comp.type_detail {margin-top:20px;}
+    .brd_comp.type_detail tr { border-bottom:1px solid #e1e1e1;}
+    .brd_comp.type_detail th { padding:0 0 0 60px;; font-weight:400; color:#111; text-align:left; }
+    .brd_comp.type_detail tr > th:first-child {padding-left:0;}
+    .brd_comp.type_detail td {height:36px; padding:11px 0 12px;font-weight:300;}
