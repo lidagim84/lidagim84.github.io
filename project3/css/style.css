@@ -9,6 +9,7 @@ body {height:100%;}
 #editorbar .lnb li.selected a {background:#afad2c;}
 #editorbar .lnb li + li {margin-top:20px}
 #editorbar .lnb li > a {display:block;width:60px;height:60px;padding:7px;box-sizing:border-box;background:#fff;}
+#editorbar .lnb li > a .material-icons {font-size:45px;}
 #editorLayer {display:-webkit-flex;display:-ms-flex;display:flex;position:fixed;left:90px;top:0;bottom:0;}
 #editorLayer .editor_section {width:250px;border-right:1px solid #ccc;display:-webkit-flex;display:-ms-flex;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;box-sizing:border-box;}
 #editorLayer .editor_section.explore {background:#f0f0f0;}
@@ -26,6 +27,7 @@ body {height:100%;}
 #editorLayer .editor_section .tree_menu > li.depth {}
 #editorLayer .editor_section .tree_menu li.depth.on:before {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
 #editorLayer .editor_section .tree_menu > li .icon {display:inline-block;width:14px;margin-right:4px;text-align:center}
+#editorLayer .editor_section .tree_menu > li .icon .material-icons {font-size:15px;vertical-align:-3px;}
 #editorLayer .editor_section .tree_menu > li .icon img {vertical-align:middle;}
 #editorLayer .editor_section .tree_menu > li {font-size:14px;}
 #editorLayer .editor_section .tree_menu > li  ul {display:none;margin-left:20px;}
