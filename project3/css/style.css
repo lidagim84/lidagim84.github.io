@@ -6,17 +6,24 @@ body {height:100%;}
 #editorbar {width:90px;background:#222;}
 #editorbar .lnb {width:60px;margin:40px auto;}
 #editorbar .lnb li {}
-#editorbar .lnb li.selected a {background:#afad2c;}
+/* #editorbar .lnb li.selected a {background:#afad2c;} */
 #editorbar .lnb li + li {margin-top:20px}
-#editorbar .lnb li > a {display:block;width:60px;height:60px;padding:7px;box-sizing:border-box;background:#fff;}
-#editorbar .lnb li > a .material-icons {font-size:45px;}
+#editorbar .lnb li > a {display:block;width:60px;height:60px;padding:7px;background:#6c8492;box-sizing:border-box;border-radius:60px;}
+#editorbar .lnb li > a .material-icons {font-size:45px;color:#fff;}
+
+#editorbar .lnb li.theme1 > a {background:#188038;}
+#editorbar .lnb li.theme2 > a {background:#129eaf;}
+#editorbar .lnb li.theme3 > a {background:#c5221f;}
+#editorbar .lnb li.theme4 > a {background:#e37400;}
+
 #editorLayer {display:-webkit-flex;display:-ms-flex;display:flex;position:fixed;left:90px;top:0;bottom:0;}
 #editorLayer .editor_section {width:250px;border-right:1px solid #ccc;display:-webkit-flex;display:-ms-flex;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;box-sizing:border-box;}
 #editorLayer .editor_section.explore {background:#f0f0f0;}
 #editorLayer .editor_section.explore .body_editor {-webkit-flex:1;-ms-flex:1;flex:1;background:#fff;margin:0 5px 5px;padding:5px 10px;border:1px solid #ccc}
 #editorLayer .editor_section .head_editor{min-height:40px;padding:10px 5px;}
 #editorLayer .editor_section .head_editor .title {font-size:14px;}
-#editorLayer .editor_section .head_editor .btn_square {margin-left:5px;width:15px;}
+#editorLayer .editor_section .head_editor .btn_square {margin-left:3px;width:15px;}
+#editorLayer .editor_section .head_editor .btn_square .material-icons {font-size:15px;}
 #editorLayer .editor_section .head_editor .control {margin-top:5px;}
 #editorLayer .editor_section .head_editor .control .btn_ctrl {width:16px;height:16px;padding:2px;margin-right:5px;box-sizing:border-box;}
 #editorLayer .editor_section .body_editor{overflow:auto}
@@ -34,6 +41,7 @@ body {height:100%;}
 #editorLayer .editor_section .tree_menu > li .btn_fold {display:-webkit-flex;display:-ms-flex;display:flex;text-align:left;}
 
 #editorLayer .editor_section.detail {width:500px;padding:10px;}
+#editorLayer .editor_section.detail .btn_close {width:50px;-webkit-align-self:flex-end;-ms-align-self:flex-end;align-self:flex-end;}
 #editorLayer .editor_section.detail .tab_view {-webkit-flex:1;-ms-flex:1;flex:1;overflow:auto;}
 
 

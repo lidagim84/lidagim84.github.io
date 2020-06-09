@@ -5,7 +5,7 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
     <script type="text/javascript" src="js/ui.js"></script>
@@ -18,8 +18,11 @@
     <div id="container">
         <div id="editorbar">
             <ul class="lnb">
+                <li class="theme1"><a href="#none"><span class="material-icons">layers</span></a></li>
+                <li class="theme2 selected "><a href="#none"><span class="material-icons">storage</span></a></li>
+                <li class="theme3"><a href="#none"><span class="material-icons">layers</span></a></li>
+                <li class="theme4"><a href="#none"><span class="material-icons">layers</span></a></li>
                 <li><a href="#none"><span class="material-icons">layers</span></a></li>
-                <li class="selected "><a href="#none"><span class="material-icons">storage</span></a></li>
             </ul>
         </div>
         <div id="editorLayer">
@@ -27,8 +30,8 @@
                 <div class="head_editor">
                     <div class="gridSet">
                         <h2 class="title grid">탐색기</h2>
-                        <button type="button" class="btn_square"><i class="fa fa-cog" aria-hidden="true"></i></button>
-                        <button type="button" class="btn_square"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        <button type="button" class="btn_square"><span class="material-icons">settings</span></button>
+                        <button type="button" class="btn_square"><span class="material-icons">close</span></button>
                     </div>
                     <div class="control">
                         <button type="button" class="btn_ctrl"><img src="images/ico_ctrl1.png" alt=""></button>
@@ -158,6 +161,7 @@
                 </div>
             </div>
             <div class="editor_section detail">
+                <button type="button" class="btn_close"><span class="material-icons">close</span></button>
                 <ul class="tab_default eTab">
                     <li><a href="#" class="link_tab">메타정보</a></li>
                     <li><a href="#" class="link_tab">미리보기</a></li>
@@ -308,6 +312,7 @@
                         </table>
                     </div>
                 </div>
+
             </div>
         </div>
         <div id="contents">
