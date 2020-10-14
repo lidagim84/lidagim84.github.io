@@ -1,2 +1,13 @@
-#header { height:100px; background:blue; }
+#header { display:flex; align-items:center; padding:10px 20px; background:#fff; box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);}
+#header .inner { display:flex; align-items:center; width:100%; }
+#header .h1-logo { font-size:18px; }
+#header .search-area { display:flex; align-items:center; margin:0 10px; }
+#header .search-area .inp-search { width:250px; font-size:14px; padding:6px 30px 6px 0; margin-left:15px; border:1px solid #ddd; border-width:0 0 1px; }
+#header .search-area .btn-search { margin:5px 0 0 -24px; }
+#header .control-area { display:flex; align-items:center; margin-left:auto; flex-shrink:0; }
+#header .control-area [class^="btn-"] { margin-left:15px; }
+#header .btn-setting {  }
+#header .btn-alarm {  }
+#header .btn-my { width:30px; height:30px; border-radius:30px; background:#ddd; }
+
 #footer { height:100px; background:pink; }
