@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -39,32 +41,329 @@
         </div>
         <div class="gnb-area">
             <ul class="list-gnb">
-                <li><a href="">프로젝트</a></li>
+                <li class="selected"><a href="">프로젝트</a></li>
                 <li><a href="">레이어</a></li>
                 <li><a href="">프로젝트</a></li>
                 <li><a href="">Geo processing</a></li>
             </ul>
             <div class="menu-depth2">
+                <!-- 프로젝트 선택시
                 <ul>
-                    <li><a href="">신규</a></li>
-                    <li><a href="">열기</a></li>
-                    <li><a href="">저장</a></li>
-                    <li><a href="">import</a></li>
-                    <li><a href="">exort</a></li>
-                    <li><a href="">퍼블리싱</a></li>
+                    <li><a href="" class="btn-depth2">신규</a></li>
+                    <li><a href="" class="btn-depth2">열기</a></li>
+                    <li><a href="" class="btn-depth2">저장</a></li>
+                    <li><a href="" class="btn-depth2">import</a></li>
+                    <li><a href="" class="btn-depth2">exort</a></li>
+                    <li><a href="" class="btn-depth2">퍼블리싱</a></li>
+                </ul>
+                -->
+                <ul>
+                    <li><a href="" class="btn-depth2">속성</a></li>
+                    <li><a href="" class="btn-depth2">필터</a></li>
+                    <li><a href="" class="btn-depth2">데이터</a></li>
+                    <li><a href="" class="btn-depth2">분석</a></li>
+                    <li><a href="" class="btn-circle-b">+</a></li>
+                    <li><a href="" class="btn-circle-b">-</a></li>
                 </ul>
             </div>
         </div>
     </div>
+<style>
+#container { display:flex;  }
+.layer-tree { overflow-y:auto; width:300px; max-width:100%; min-height:700px; border-right:1px solid #ddd; }   
+
+.layer-tree .tree-body { padding:10px;  }
+
+.layer-tree .tree_menu{}
+.layer-tree .tree_menu li {position:relative;padding-left:20px;}
+.layer-tree .tree_menu li + li { margin-top:6px; }
+.layer-tree .tree_menu li.depth {}
+.layer-tree .tree_menu li .layer-item { display:flex; font-size:14px; margin-bottom:4px; }
+.layer-tree .tree_menu li .layer-item .inp-checkbox { flex-shrink:0; }
+.layer-tree .tree_menu li .layer-item .inp-checkbox .label:before { top:2px; }
+.layer-tree .tree_menu li .layer-item .btn-layer { display:flex; margin-left:5px; text-align:left; word-break:break-all; }
+.layer-tree .tree_menu li .icon { flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; width:14px; height:14px; margin-top:4px; margin-right:5px;text-align:center; box-sizing:border-box;}
+.layer-tree .tree_menu li .icon > .material-icons { font-size:14px; }
+.layer-tree .tree_menu li .icon.colorchip { border:1px solid #ddd; }
+.layer-tree .tree_menu li .icon.line { height:3px; margin-top:10px; }
+.layer-tree .tree_menu li {font-size:14px;}
+.layer-tree .tree_menu li .btn_fold { display:none; position:absolute;left:0;top:0;width:20px;height:20px; -webkit-transition:all .3s ease-out; transition:all .3s ease-out;}
+.layer-tree .tree_menu li.depth .btn_fold {display:block;}
+.layer-tree .tree_menu li .btn_fold > span { font-size:20px; }
+.layer-tree .tree_menu li .btn_fold.open > span {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+.layer-tree .tree_menu .children { display:none; margin:5px 0 0 25px; }
+</style>
     <div id="container">
-        <div id="sidebar">사이드바</div>
+        <div class="layer-tree">
+            <div class="tree-body">
+                <ul class="tree_menu">
+                    <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                        <button type="button" class="btn_fold">
+                            <span class="material-icons">
+                            keyboard_arrow_right
+                            </span>
+                        </button>
+                        <div class="layer-item">
+                            <div class="inp-checkbox">
+                                <input type="checkbox">
+                                <label class="label"></label>
+                            </div>
+                            <button type="button" class="btn-layer">
+                                <span class="icon"><span class="material-icons">attach_file</span></span>02.경계
+                            </button>
+                        </div>
+                        <div class="children">
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon"></span>경계1</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!-- 하위메뉴 없는 경우 -->
+                        <div class="layer-item">
+                            <div class="inp-checkbox">
+                                <input type="checkbox">
+                                <label class="label"></label>
+                            </div>
+                            <button type="button" class="btn-layer">
+                                <span class="icon"><span class="material-icons">attach_file</span></span>03.도로
+                            </button>
+                        </div>
+                    </li>
+                    <li class="depth">
+                        <button type="button" class="btn_fold">
+                            <span class="material-icons">
+                            keyboard_arrow_right
+                            </span>
+                        </button>
+                        <div class="layer-item">
+                            <div class="inp-checkbox">
+                                <input type="checkbox">
+                                <label class="label"></label>
+                            </div>
+                            <button type="button" class="btn-layer">
+                                <span class="icon"><span class="material-icons">attach_file</span></span>04.행정경계
+                            </button>
+                        </div>
+                        <div class="children">
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon"></span>행정경계1</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                        <button type="button" class="btn_fold open"><!-- 임시 클래스 : open -->
+                            <span class="material-icons">
+                            keyboard_arrow_right
+                            </span>
+                        </button>
+                        <div class="layer-item">
+                            <div class="inp-checkbox">
+                                <input type="checkbox">
+                                <label class="label"></label>
+                            </div>
+                            <button type="button" class="btn-layer">
+                                <span class="icon"><span class="material-icons">attach_file</span></span>05.건물 및 수계
+                            </button>
+                        </div>
+                        <div class="children" style="display:block;"><!--임시 css -->
+                            <ul>
+                                <li class="depth">
+                                    <button type="button" class="btn_fold">
+                                        <span class="material-icons">
+                                        keyboard_arrow_right
+                                        </span>
+                                    </button>
+                                    <div class="layer-item">
+                                        <div class="inp-checkbox">
+                                            <input type="checkbox">
+                                            <label class="label"></label>
+                                        </div>
+                                        <button type="button" class="btn-layer">
+                                            <span class="icon"><span class="material-icons">attach_file</span></span>A(지하철/철도라인(L11_14)
+                                        </button>
+                                    </div>
+                                    <div class="children">
+                                        <div class="layer-item">
+                                            <div class="inp-checkbox">
+                                                <input type="checkbox">
+                                                <label class="label"></label>
+                                            </div>
+                                            <button type="button" class="btn-layer"><span class="icon line" style="background:red;"></span>DT_TRAINROAD_LINE_1201(고속철도)</button>
+                                        </div>
+                                        <div class="layer-item">
+                                            <div class="inp-checkbox">
+                                                <input type="checkbox">
+                                                <label class="label"></label>
+                                            </div>
+                                            <button type="button" class="btn-layer"><span class="icon line" style="background:purple;"></span>DT_TRAINROAD_LINE_1201(공항철도)</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+                                    <button type="button" class="btn_fold">
+                                        <span class="material-icons">
+                                        keyboard_arrow_right
+                                        </span>
+                                    </button>
+                                    <div class="layer-item">
+                                        <div class="inp-checkbox">
+                                            <input type="checkbox">
+                                            <label class="label"></label>
+                                        </div>
+                                        <button type="button" class="btn-layer">
+                                            <span class="icon"><span class="material-icons">attach_file</span></span>A(건물(L10))
+                                        </button>
+                                    </div>
+                                    <div class="children">
+                                        <div class="layer-item">
+                                            <div class="inp-checkbox">
+                                                <input type="checkbox">
+                                                <label class="label"></label>
+                                            </div>
+                                            <button type="button" class="btn-layer"><span class="icon colorchip" style="background:grey;"></span>DT_BLD_POLY_705(대형일반건물)</button>
+                                        </div>
+                                        <div class="layer-item">
+                                            <div class="inp-checkbox">
+                                                <input type="checkbox">
+                                                <label class="label"></label>
+                                            </div>
+                                            <button type="button" class="btn-layer"><span class="icon colorchip" style="background:grey;"></span>DT_BLD_POLY_707(아파트)</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:red;"></span>DT_BLD_POLY_701(단독건물)</button>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:green;"></span>DT_BLD_POLY_702(기타건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                            <div class="layer-item">
+                                <div class="inp-checkbox">
+                                    <input type="checkbox">
+                                    <label class="label"></label>
+                                </div>
+                                <button type="button" class="btn-layer"><span class="icon colorchip" style="background:gray;"></span>DT_BLD_POLY_703(소형일반건물)</ㅠ>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
         <div id="contents">
             <div class="section">섹션</div>
             <div class="section">섹션</div>
             <div class="section">섹션</div>
         </div>
     </div>
-    <div id="footer" class="footer">footer</div>
 </div>
 </body>
 </html>
