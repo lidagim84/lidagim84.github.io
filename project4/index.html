@@ -68,31 +68,6 @@
             </div>
         </div>
     </div>
-<style>
-#container { display:flex;  }
-.layer-tree { overflow-y:auto; width:300px; max-width:100%; min-height:700px; border-right:1px solid #ddd; }   
-
-.layer-tree .tree-body { padding:10px;  }
-
-.layer-tree .tree_menu{}
-.layer-tree .tree_menu li {position:relative;padding-left:20px;}
-.layer-tree .tree_menu li + li { margin-top:6px; }
-.layer-tree .tree_menu li.depth {}
-.layer-tree .tree_menu li .layer-item { display:flex; font-size:14px; margin-bottom:4px; }
-.layer-tree .tree_menu li .layer-item .inp-checkbox { flex-shrink:0; }
-.layer-tree .tree_menu li .layer-item .inp-checkbox .label:before { top:2px; }
-.layer-tree .tree_menu li .layer-item .btn-layer { display:flex; margin-left:5px; text-align:left; word-break:break-all; }
-.layer-tree .tree_menu li .icon { flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; width:14px; height:14px; margin-top:4px; margin-right:5px;text-align:center; box-sizing:border-box;}
-.layer-tree .tree_menu li .icon > .material-icons { font-size:14px; }
-.layer-tree .tree_menu li .icon.colorchip { border:1px solid #ddd; }
-.layer-tree .tree_menu li .icon.line { height:3px; margin-top:10px; }
-.layer-tree .tree_menu li {font-size:14px;}
-.layer-tree .tree_menu li .btn_fold { display:none; position:absolute;left:0;top:0;width:20px;height:20px; -webkit-transition:all .3s ease-out; transition:all .3s ease-out;}
-.layer-tree .tree_menu li.depth .btn_fold {display:block;}
-.layer-tree .tree_menu li .btn_fold > span { font-size:20px; }
-.layer-tree .tree_menu li .btn_fold.open > span {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
-.layer-tree .tree_menu .children { display:none; margin:5px 0 0 25px; }
-</style>
     <div id="container">
         <div class="layer-tree">
             <div class="tree-body">
@@ -359,9 +334,25 @@
         
         </div>
         <div id="contents">
-            <div class="section">섹션</div>
-            <div class="section">섹션</div>
-            <div class="section">섹션</div>
+            <div class="section">         
+                <div class="map-toolbox">
+                    <input type="checkbox" id="toolOpen">
+                    <label for="toolOpen" class="btn-tool-open">
+                        <span class="material-icons-outlined"></span>
+                        <span class=""></span>
+                    </label>
+                    <div class="toolbox">
+                        <button type="button" class="btn-tool">베이스<br>맵</button>
+                        <button type="button" class="btn-tool">그리기</button>
+                        <button type="button" class="btn-tool">측정</button>
+                        <button type="button" class="btn-tool">저장</button>
+                        <button type="button" class="btn-tool">인쇄</button>
+                        <button type="button" class="btn-tool">KT</button>
+                        <button type="button" class="btn-tool">네이버</button>
+                        <button type="button" class="btn-tool">다음</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,7 +1,8 @@
 body,
 #wrap { min-height:100%; height:100%; }
-#wrap { display:flex; flex-direction:column; }
-#wrap #container { flex:1; }
+#container { display:flex;  }
+#wrap #container { height:calc(100% - 172px); }
+#wrap #container #contents{ flex:1; }
 
 #header { display:flex; flex-direction:column; background:#fff;}
 #header .inner { display:flex; align-items:center; width:100%; padding:10px 20px;  box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); box-sizing:border-box; }
@@ -27,30 +28,60 @@ body,
 #header .gnb-area .menu-depth2 li > a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center; width:32px; height:32px; margin-right:10px; border-radius:100%; border:1px solid #007bff; color:#007bff; font-size:18px; background:#fff; }
 
 
+.layer-tree { overflow-y:auto; width:300px; max-width:100%; min-height:700px; border-right:1px solid #ddd; }   
+.layer-tree .tree-body { padding:10px;  }
+.layer-tree .tree_menu{}
+.layer-tree .tree_menu li {position:relative;padding-left:20px;}
+.layer-tree .tree_menu li + li { margin-top:6px; }
+.layer-tree .tree_menu li.depth {}
+.layer-tree .tree_menu li .layer-item { display:flex; align-items:flex-start; font-size:14px; margin-bottom:4px; }
+.layer-tree .tree_menu li .layer-item .inp-checkbox { flex-shrink:0; }
+.layer-tree .tree_menu li .layer-item .inp-checkbox .label:before { top:2px; }
+.layer-tree .tree_menu li .layer-item .btn-layer { display:flex; margin-left:5px; text-align:left; word-break:break-all; }
+.layer-tree .tree_menu li .icon { flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; width:14px; height:14px; margin-top:4px; margin-right:5px;text-align:center; box-sizing:border-box;}
+.layer-tree .tree_menu li .icon > .material-icons { font-size:14px; }
+.layer-tree .tree_menu li .icon.colorchip { border:1px solid #ddd; }
+.layer-tree .tree_menu li .icon.line { height:3px; margin-top:10px; }
+.layer-tree .tree_menu li {font-size:14px;}
+.layer-tree .tree_menu li .btn_fold { display:none; position:absolute;left:0;top:0;width:20px;height:20px; -webkit-transition:all .3s ease-out; transition:all .3s ease-out;}
+.layer-tree .tree_menu li.depth .btn_fold {display:block;}
+.layer-tree .tree_menu li .btn_fold > span { font-size:20px; }
+.layer-tree .tree_menu li .btn_fold.open > span {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+.layer-tree .tree_menu .children { display:none; margin:5px 0 0 25px; }
+
+.map-toolbox { position: fixed; right:10px; top:190px; }  
+.map-toolbox input[type="checkbox"] { display:none; }
+.map-toolbox .btn-tool-open { display:inline-flex; align-items:center; justify-content:center; position: absolute; right:0; width:40px; height:40px; color:#fff;  border-radius:100%; background:#886ab5;
+transition:transform .3s; }
+.map-toolbox .btn-tool-open .material-icons-outlined:before { content:'apps'; }
+.map-toolbox input:checked + .btn-tool-open { background:#505050; transform:rotate(-90deg);}
+.map-toolbox input:checked + .btn-tool-open .material-icons-outlined:before { content:'close';  }
+.map-toolbox .toolbox { display:flex; flex-wrap:wrap; position: absolute; right:0; top:50px; width:230px; padding:5px 5px 10px; opacity:0; transition:opacity .3s; text-align:right; background:#fff; box-shadow:0px 5px 20px 0px rgba(62, 44, 90, 0.3) }
+.map-toolbox .toolbox [class*="btn"] { width:40px; height:40px; border-radius:100%; background:#886ab5; margin:5px 0 0 5px; font-size:10px; color:#fff;}
+.map-toolbox input:checked ~ .toolbox { opacity:1; }
 
 .section + .section { margin-top:20px; }
 
 
-.inp-text { width:200px; padding:5px; border-radius:5px; border:1px solid #ddd; box-sizing:border-box; }
+/* form */
+.inp-text { width:200px; height:32px; padding:5px; border-radius:5px; border:1px solid #ddd; box-sizing:border-box; }
+.inp-text.opacity { width:80px; }
 .inp-textarea { width:200px; padding:5px; border-radius:5px; border:1px solid #ddd; resize:none; box-sizing:border-box; }
 
 .inp-radio { display:inline-block; position:relative; }
 .inp-radio input { position:absolute; left:0; top:0; z-index:-1; opacity:0; width:100%; height:100%; }
-
 .inp-radio .label { display:inline-flex; align-items:center; position:relative; cursor:pointer; vertical-align:top; padding-left:20px; }
 .inp-radio .label:before { content:''; position:absolute; left:0;top:0; width:20px; height:20px; border-radius:100%; border:1px solid #ddd; box-sizing:border-box; background:#fff;}
 .inp-radio .label .flabel { margin-left:5px; }
 .inp-radio input:checked + .label:before { border:0; background:burlywood; }
 .inp-radio input:checked + .label:after { content:''; position:absolute; left:5px; top:5px; width:10px; height:10px; border-radius:100%; background:#fff; }
 
-
-
 .inp-checkbox { display:inline-block; position:relative; min-width:16px; min-height:16px; }
-.inp-checkbox input { position:absolute; left:0; top:0; z-index:1; opacity:0; width:100%; height:100%; }
-.inp-checkbox .label { display:inline-flex; align-items:center; position:relative; cursor:pointer; vertical-align:top; padding-left:16px; }
+.inp-checkbox input { position:absolute; left:0; top:0; z-index:1; opacity:0; width:100%; height:100%; cursor:pointer; }
+.inp-checkbox .label { display:inline-flex; align-items:center; position:relative; cursor:pointer; vertical-align:top; padding-left:16px;  }
 .inp-checkbox .label:before { content:''; position:absolute; left:0; top:0; width:16px; height:16px; border:1px solid #ddd; box-sizing:border-box; background:#fff; }
 .inp-checkbox .label .flabel { margin-left:5px; }
-.inp-checkbox input:checked + .label:before { content:'\2713'; font-size:11px; font-weight:700; color:#fff; text-align:center; border:0; background:burlywood; }
+.inp-checkbox input:checked + .label:before { content:'\2713'; font-size:11px; font-weight:700; color:#fff; text-align:center; border:0; background:#007bff;}
 
 .form-area:not([class*="grid"]) .inp-radio,
 .form-area:not([class*="grid"]) .inp-checkbox { margin:5px 15px 5px 0; }
@@ -66,35 +97,27 @@ body,
 .form-area.grid3 .inp-checkbox { width:33.3%; }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* button */
 [class*="btn"].lg { min-height:42px; font-size:15px; }
 .btn-strong { background:#337ab7; min-height:32px; min-width:80px; border-radius:3px; vertical-align:middle; box-sizing:border-box; color:#fff; }
 .btn-normal { background:#fff; min-height:32px; min-width:80px; border-radius:3px; vertical-align:middle; box-sizing:border-box; border:1px solid #ddd; }
 
 
-
+/* layer */
 .comp-layer { position:fixed; left:0; top:0; z-index:999; width:100%; height:100%; overflow-x:hidden; overflow-y:auto; background:rgba(0,0,0,.5); }
 .comp-layer > .inner { width:500px; margin:100px auto; border-radius:5px; background:#fff; box-shadow:0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);}
 .comp-layer.medium > .inner { width:800px; }
+.comp-layer.large > .inner { width:1000px; }
 .comp-layer .layer-head { display:flex; flex-wrap:wrap; min-height:48px; align-items:center; padding:0 10px 0 20px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);}
 .comp-layer .layer-head .title { font-size:16px; }
 .comp-layer .layer-head .btn-close { flex-shrink:0; width:24px; height:24px; margin-left:auto; }
 .comp-layer .layer-body { padding:15px 20px; }
 .comp-layer .layer-foot { display:flex; padding:15px 10px; justify-content:flex-end; box-shadow: 0 -1px 3px 0 rgba(0,0,0,.1), 0 -1px 2px 0 rgba(0,0,0,.06); }
 .comp-layer .layer-foot [class*="btn"] + [class*="btn"] { margin-left:8px; }
-
 .comp-layer .title-line { font-weight:500; font-size:15px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #ddd; }
 
+
+/* tab */
 .comp-tab { }
 .comp-tab .tab-nav { display:flex; background:#fff; border-bottom:1px solid #ddd; }
 .comp-tab .tab-nav .btn-tab { display:inline-flex; align-items:center; justify-content:center; position:relative; min-width:100px; min-height:48px; margin-bottom:-1px; padding:5px 10px; margin-right:2px; font-size:15px; border:1px solid transparent; color:#555; }
@@ -108,3 +131,105 @@ body,
 .flex-list .flex-item { display:flex; padding:5px 0; }
 .flex-list .flex-item .title { width:110px; flex-shrink:0; box-sizing:border-box; padding-right:10px; }
 .flex-list .flex-item .detail { word-break:break-all; }
+
+
+.btn-colorpicker { width:32px; height:32px; border:1px solid #ddd; box-sizing:border-box; vertical-align:middle; }
+.form-select { display:inline-flex; position:relative; }
+.form-select .material-icons { position: absolute; right:1px; top:4px; font-size:19px; }
+.form-select .material-icons:after { content:'arrow_drop_down'; }
+.form-select select { min-width:200px; height:32px; padding:5px 20px 5px 5px; border:1px solid #ddd; box-sizing:border-box;}
+.form-select.unit select { min-width:80px; }
+
+.inp-number { display:inline-flex; position:relative; }
+.inp-number input { border:0; min-width:200px; height:32px; padding:5px 20px 5px 5px; border:1px solid #ddd; box-sizing:border-box; }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.inp-number [class*="btn"] { display:inline-flex; align-items:center; position:absolute; right:0; width:20px; height:15px; text-align:center; }
+.inp-number [class*="btn"] .material-icons { font-size:19px; line-height:15px; }
+.inp-number .btn-up { top:1px;}
+.inp-number .btn-up .material-icons:before { content:'arrow_drop_up'; }
+.inp-number .btn-down { bottom:1px; }
+.inp-number .btn-down .material-icons:before { content:'arrow_drop_down'; }
+
+.inp-range { min-width:200px; }
+.inp-range:focus { outline: none; }
+/*webkit (Chrome)의 경우*/
+.inp-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2497E3;
+}
+.inp-range::-webkit-slider-thumb {
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px; /*chrome의 경우 margin-top값을 부여해야합니다.*/
+}
+.inp-range:focus::-webkit-slider-runnable-track {
+    background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
+/*Firefox의 경우*/
+.inp-range::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2497E3;
+}
+.inp-range::-moz-range-thumb {
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+/*IE의 경우*/
+.inp-range::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.inp-range::-ms-fill-lower {
+    background: #2497E3;
+}
+.inp-range::-ms-fill-upper {
+    background: #2497E3;
+}
+.inp-range::-ms-thumb {
+    margin-top: 1px;
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.inp-range:focus::-ms-fill-lower {
+    background: #2497E3;/*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
+.inp-range:focus::-ms-fill-upper {
+    background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
+
+.dropdown-select { display:inline-flex; position:relative; }
+.dropdown-select .btn-dropdown { display:inline-flex; align-items:center; position:relative; min-width:200px; height:32px; padding:5px 20px 5px 5px; border:1px solid #ddd; box-sizing:border-box; text-align:left; }
+.dropdown-select .btn-dropdown .material-icons { position:absolute; right:0; width:20px; font-size:19px; }
+.dropdown-select .btn-dropdown .material-icons:after { content:'arrow_drop_down'; }
+.dropdown-select.on .btn-dropdown .material-icons { transform:rotate(-180deg); }
+.dropdown-select .option { position:absolute; left:0; top:100%; z-index:1; margin-top:-1px; display:none; }
+.dropdown-select.on .option { display:block; background:#fff; border:1px solid #ddd; width:100%; box-sizing:border-box; }
+.dropdown-select.on .option li { display:flex; align-items:center; height:25px; padding:0 5px; }
+.dropdown-select .icon { display:inline-flex; align-items:center; width:16px; height:16px; margin-right:5px;  }
+.dropdown-select .icon.stroke { width:40px; }
+.dropdown-select .icon.style { width:40px; }
