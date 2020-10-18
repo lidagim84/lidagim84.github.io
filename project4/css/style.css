@@ -22,7 +22,7 @@ body,
 #header .gnb-area .list-gnb li > a { display:block; position:relative; font-size:16px; padding:15px 10px; text-align:center; }
 #header .gnb-area .list-gnb li.selected > a {color:#007bff; }
 #header .gnb-area .list-gnb li.selected > a:after { content:''; position:absolute; left:0; right:0; bottom:0; height:3px; background:#007bff;}
-#header .gnb-area .menu-depth2 { padding:15px 20px; background:#ddd; }
+#header .gnb-area .menu-depth2 { padding:15px 50px 15px 20px; background:#ddd; }
 #header .gnb-area .menu-depth2 ul {  display:flex; }
 #header .gnb-area .menu-depth2 li > a.btn-depth2 { display:inline-flex; justify-content:center; align-items:center; min-width:70px; padding:6px 10px; border-radius:10px; font-size:14px; margin-right:10px; background:#fff; }
 #header .gnb-area .menu-depth2 li > a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center; width:32px; height:32px; margin-right:10px; border-radius:100%; border:1px solid #007bff; color:#007bff; font-size:18px; background:#fff; }
@@ -56,7 +56,7 @@ transition:transform .3s; }
 .map-toolbox .btn-tool-open .material-icons-outlined:before { content:'apps'; }
 .map-toolbox input:checked + .btn-tool-open { background:#505050; transform:rotate(-90deg);}
 .map-toolbox input:checked + .btn-tool-open .material-icons-outlined:before { content:'close';  }
-.map-toolbox .toolbox { display:flex; flex-wrap:wrap; position: absolute; right:0; top:50px; width:230px; padding:5px 5px 10px; opacity:0; transition:opacity .3s; text-align:right; background:#fff; box-shadow:0px 5px 20px 0px rgba(62, 44, 90, 0.3) }
+.map-toolbox .toolbox { display:flex; flex-wrap:wrap; position: absolute; right:40px; top:-4px; width:230px; opacity:0; transition:opacity .3s; text-align:right;}
 .map-toolbox .toolbox [class*="btn"] { width:40px; height:40px; border-radius:100%; background:#886ab5; margin:5px 0 0 5px; font-size:10px; color:#fff;}
 .map-toolbox input:checked ~ .toolbox { opacity:1; }
 
@@ -128,9 +128,10 @@ transition:transform .3s; }
 .comp-tab .tab-cont { padding:10px; }
 
 .flex-list {  }
-.flex-list .flex-item { display:flex; padding:5px 0; }
+.flex-list .flex-item { display:flex; align-items:center; padding:5px 0; }
 .flex-list .flex-item .title { width:110px; flex-shrink:0; box-sizing:border-box; padding-right:10px; }
 .flex-list .flex-item .detail { word-break:break-all; }
+.flex-list .flex-item .detail + .title { padding-left:15px; }
 
 
 .btn-colorpicker { width:32px; height:32px; border:1px solid #ddd; box-sizing:border-box; vertical-align:middle; }
