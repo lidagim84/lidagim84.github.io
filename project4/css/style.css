@@ -128,22 +128,25 @@ transition:transform .3s; }
 .comp-tab .tab-cont { padding:10px; }
 
 .flex-list {  }
-.flex-list .flex-item { display:flex; align-items:center; padding:5px 0; }
-.flex-list .flex-item .title { width:110px; flex-shrink:0; box-sizing:border-box; padding-right:10px; }
-.flex-list .flex-item .detail { word-break:break-all; }
-.flex-list .flex-item .detail .row  + .row { margin-top:10px; }
-.flex-list .flex-item .detail + .title { padding-left:15px; }
+.flex-item { display:flex; align-items:center; padding:5px 0; }
+.flex-item .title { width:110px; flex-shrink:0; box-sizing:border-box; padding-right:10px; }
+.flex-item .detail { word-break:break-all; }
+.flex-item .detail .row  + .row { margin-top:10px; }
+.flex-item .detail + .title { padding-left:15px; }
+.flex-item .f-col { display:flex; flex-direction:column; flex:1; }
+.flex-item .f-col + .f-col { margin-left:10px; }
+.flex-item .f-col .title { display:flex; width:100%; margin-bottom:5px; }
 
 
 .btn-colorpicker { width:32px; height:32px; border:1px solid #ddd; box-sizing:border-box; vertical-align:middle; }
-.form-select { display:inline-flex; position:relative; }
+.form-select { display:inline-flex; position:relative; min-width:200px; }
 .form-select .material-icons { position: absolute; right:1px; top:4px; font-size:19px; }
 .form-select .material-icons:after { content:'arrow_drop_down'; }
-.form-select select { min-width:200px; height:32px; padding:5px 20px 5px 5px; border:1px solid #ddd; box-sizing:border-box;}
+.form-select select { width:100%; height:32px; padding:5px 20px 5px 5px; border:1px solid #ddd; box-sizing:border-box;}
 .form-select.unit select { min-width:80px; }
 
-.inp-number { display:inline-flex; position:relative; }
-.inp-number input { border:0; min-width:200px; height:32px; padding:5px; border:1px solid #ddd; box-sizing:border-box; }
+.inp-number { display:inline-flex; position:relative; min-width:200px; }
+.inp-number input { border:0; width:100%; height:32px; padding:5px; border:1px solid #ddd; box-sizing:border-box; }
 /* input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
