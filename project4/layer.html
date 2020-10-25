@@ -34,6 +34,1027 @@
             <button type="button" class="btn-tab">서비스배포</button>
           </div>
 
+          <!-- 데이터 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                데이터
+              </div>
+              <div class="ctrl-data">
+                <div>
+                  <button type="button" class="btn-normal">모두선택</button>
+                  <button type="button" class="btn-normal">모두선택</button>
+                  <button type="button" class="btn-normal">선택해제</button>
+                  <button type="button" class="btn-normal">선택해제</button>
+                  <button type="button" class="btn-normal">선택맞게 확대/축소</button>
+                </div>
+                <div>
+                  <button type="button" class="btn-square">
+                    <span class="material-icons">
+                      filter_alt
+                      </span>
+                  </button>
+                </div>
+              </div>
+              <div class="comp-table type-list bg">
+                <table>
+                  <colgroup>
+                    <col style="width:30px;">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">gid</th>
+                      <th scope="col">poi_id</th>
+                      <th scope="col">poi_cd</th>
+                      <th scope="col">dp_cd</th>
+                      <th scope="col">x</th>
+                      <th scope="col">y</th>
+                      <th scope="col">label_cd</th>
+                      <th scope="col">icon_cd</th>
+                      <th scope="col">label_plac</th>
+                      <th scope="col">nm_dp</th>
+                      <th scope="col">nm_dp1</th>
+                      <th scope="col">nm_dp2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td class="a-right">1</td>
+                      <td>0000101-109</td>
+                      <td>70000</td>
+                      <td>500000</td>
+                      <td class="a-right">100000000</td>
+                      <td class="a-right">3040494059595</td>
+                      <td>001</td>
+                      <td>038</td>
+                      <td>2</td>
+                      <td>리한셀렉트</td>
+                      <td>리한셀렉트</td>
+                      <td>리한셀렉트</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="a-right">1</td>
+                      <td>0000101-109</td>
+                      <td>70000</td>
+                      <td>500000</td>
+                      <td class="a-right">100000000</td>
+                      <td class="a-right">3040494059595</td>
+                      <td>001</td>
+                      <td>038</td>
+                      <td>2</td>
+                      <td>리한셀렉트</td>
+                      <td>리한셀렉트</td>
+                      <td>리한셀렉트</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- //데이터 -->
+
+
+          <!-- 필터 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                필터
+              </div>
+              <div class="ctrl-filter">
+                <div class="divide">
+                  <div class="line-box filter-field">
+                    <div class="inner">
+                      <strong class="tit-line">
+                        <span class="material-icons"></span>
+                        필드
+                      </strong>
+                      <ul class="line-list">
+                        <li>gid</li>
+                        <li>poi_id</li>
+                        <li>poi_cd</li>
+                        <li>x</li>
+                        <li>y</li>
+                        <li>label_cd</li>
+                        <li>icon_cd</li>
+                        <li>label_plac</li>
+                        <li>nm_dp</li>
+                        <li>nm_dp1</li>
+                        <li>nm_dp2</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="line-box filter-value">
+                    <div class="inner">
+                      <strong class="tit-line">
+                        <span class="material-icons"></span>
+                        값
+                      </strong>
+                      <input type="search" placeholder="Search...." class="inp-search w100p">
+                      <ul class="line-list">
+                        <li>gid</li>
+                        <li>poi_id</li>
+                        <li>poi_cd</li>
+                        <li>x</li>
+                        <li>y</li>
+                        <li>label_cd</li>
+                        <li>icon_cd</li>
+                        <li>label_plac</li>
+                        <li>nm_dp</li>
+                        <li>nm_dp1</li>
+                        <li>nm_dp2</li>
+                      </ul>
+                      <div class="btn-area type-flex">
+                        <button type="button" class="btn-normal">샘플</button>
+                        <button type="button" class="btn-normal">모두</button>
+                      </div>
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox8">
+                        <label class="label" for="checkbox8"><span class="flabel">필터링되지 않은 레이어 사용</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="line-box">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      연산자
+                    </strong>
+                    <div class="btn-area">
+                      <button type="button" class="btn-normal">=</button>
+                      <button type="button" class="btn-normal">&lt;</button>
+                      <button type="button" class="btn-normal">&gt;</button>
+                      <button type="button" class="btn-normal">LIKE</button>
+                      <button type="button" class="btn-normal">%</button>
+                      <button type="button" class="btn-normal">IN</button>
+                      <button type="button" class="btn-normal">NOT IN</button>
+                    </div>
+                    <div class="btn-area mt-5">
+                      <button type="button" class="btn-normal">&lt;=</button>
+                      <button type="button" class="btn-normal">&gt;=</button>
+                      <button type="button" class="btn-normal">!=</button>
+                      <button type="button" class="btn-normal">ILIKE</button>
+                      <button type="button" class="btn-normal">AND</button>
+                      <button type="button" class="btn-normal">OR</button>
+                      <button type="button" class="btn-normal">NOT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="line-box">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      제공자 전용 필터 표현식
+                    </strong>
+                    <textarea class="inp-textarea w100p"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- //필터 -->
+
+          <!-- 서비스배포 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                서비스 배포
+              </div>
+              <div class="flex-list">
+                <div class="flex-item">
+                  <div class="title">서버 유형</div>
+                  <div class="detail">
+                    <div class="form-area">
+                      <span class="inp-radio">
+                        <input type="radio" name="sevicename" id="sevicename1">
+                        <label class="label" for="sevicename1"><span class="flabel">Cepo server</span></label>
+                      </span>
+                      <span class="inp-radio">
+                        <input type="radio" name="sevicename" id="sevicename2">
+                        <label class="label" for="sevicename2"><span class="flabel">Gep server</span></label>
+                      </span>
+                      <span class="inp-radio">
+                        <input type="radio" name="sevicename" id="sevicename3">
+                        <label class="label" for="sevicename3"><span class="flabel">Arcgis Server</span></label>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">서비스명</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <input type="text" class="inp-text flex1">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">설명</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <textarea class="inp-textarea flex1">설명설명설명</textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">서버 유형</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <input type="text" class="inp-text flex1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- 서비스배포 -->
+
+          <!-- 렌더링 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                렌더링
+              </div>
+              <div class="flex-item">
+                <div class="f-col">
+                  <div class="title">Minimum(exclusive)</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <span class="material-icons">
+                        zoom_out
+                      </span>
+                      <div class="form-select flex1">
+                        <select>
+                          <option>1:100000000</option>
+                        </select>
+                        <span class="material-icons"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-col">
+                  <div class="title">Maximum(inclusive)</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <span class="material-icons">
+                        zoom_in
+                      </span>
+                      <div class="form-select flex1">
+                        <select>
+                          <option>0</option>
+                        </select>
+                        <span class="material-icons"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line-box">
+                <div class="inner">
+                  <strong class="tit-line">
+                    <span class="material-icons"></span>
+                    <div class="inp-checkbox">
+                      <input type="checkbox" id="checkbox4">
+                      <label class="label" for="checkbox4"><span class="flabel">Simplify Geometry</span></label>
+                    </div>
+                  </strong>
+                  <p><strong>주의:</strong> 객체 단순화는 랜더링 속도를 향상시키지만 렌더링의 일관성을 해칠 수도 있습니다.</p>
+                  <div class="flex-item">
+                    <div class="title w330">단순화 한계값(값이 클수록 더 단순화됩니다.)</div>
+                    <div class="detail">
+                      <div class="inp-number">
+                        <input type="number" placeholder="선택" step="0.1">
+                      </div>
+                      픽셀
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="title w330">단순화 알고리즘</div>
+                    <div class="detail">
+                      <div class="form-select flex1">
+                        <select>
+                          <option>거리</option>
+                        </select>
+                        <span class="material-icons"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="title w330">
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox5">
+                        <label class="label" for="checkbox5"><span class="flabel">가능한 경우 제공자 쪽에서 단순화</span></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="title w330">레이어를 단순화해야 할 최대 축척(1:1 -항상 단순화)</div>
+                    <div class="detail">
+                      <div class="form-select flex1">
+                        <select>
+                          <option>1:1</option>
+                        </select>
+                        <span class="material-icons"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item">
+                <div class="inp-checkbox">
+                  <input type="checkbox" id="checkbox6">
+                  <label class="label" for="checkbox6"><span class="flabel">레이어를 래스터로 강제 렌더링 (내보내기 파일 용량을 줄일 수도 있습니다)</span></label>
+                </div>
+              </div>
+              <div class="flex-item">
+                <div class="inp-checkbox">
+                  <input type="checkbox" id="checkbox7">
+                  <label class="label" for="checkbox7"><span class="flabel">일정 간격(초 단위)으로 레이어 새로고침</span></label>
+                </div>
+                <div class="inp-number ml-10">
+                  <input type="number" step="0.01">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //렌더링 -->
+
+          <!-- 속성필드 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                속성 필드
+              </div>
+              <div class="comp-table type-list">
+                <table>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">명칭</th>
+                      <th scope="col">별칭</th>
+                      <th scope="col">유형</th>
+                      <th scope="col">유형명</th>
+                      <th scope="col">길이</th>
+                      <th scope="col">정밀도</th>
+                      <th scope="col">비고</th>
+                      <th scope="col">WMS</th>
+                      <th scope="col">WFS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><sup>123</sup>0</td>
+                      <td>gid</td>
+                      <td></td>
+                      <td>int</td>
+                      <td>int4</td>
+                      <td>-1</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>
+                        <div class="inp-checkbox">
+                          <input type="checkbox" id="checkbox3-1">
+                          <label class="label" for="checkbox3-1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="inp-checkbox">
+                          <input type="checkbox" id="checkbox3-2">
+                          <label class="label" for="checkbox3-2"></label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><sup>123</sup>1</td>
+                      <td>floor</td>
+                      <td></td>
+                      <td>int</td>
+                      <td>int4</td>
+                      <td>-1</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>
+                        <div class="inp-checkbox">
+                          <input type="checkbox" id="checkbox4-1">
+                          <label class="label" for="checkbox4-1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="inp-checkbox">
+                          <input type="checkbox" id="checkbox4-2">
+                          <label class="label" for="checkbox4-2"></label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- //속성필드 -->
+
+          <!-- 차트 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                차트
+              </div>
+            
+              <div class="form-select">
+                <select>
+                  <option>파이차트, 히스토그램</option>
+                </select>
+                <span class="material-icons"></span>
+              </div>
+              <div class="diagram-set">
+                <div class="tab-diagram">
+                  <ul>
+                    <li><a href="">속성</a></li>
+                    <li><a href="">랜더링</a></li>
+                    <li><a href="">크기</a></li>
+                    <li><a href="">배치</a></li>
+                    <li><a href="">옵션</a></li>
+                    <li><a href="">범례</a></li>
+                  </ul>
+                </div>
+                <strong class="tit-diagram">속성</strong>
+                <div class="ctrl-attr">
+                  <div class="left">
+                    <strong class="attr">가능한 속성</strong>
+                    <div class="box">
+                      <div class="box-col">
+                        <div class="title">Atrribute</div>
+                        <div class="item">"gid"</div>
+                        <div class="item">"floor"</div>
+                        <div class="item">"pid"</div>
+                        <div class="item">"sid"</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ctrl-btns">
+                    <button type="button" class="btn-square"></button>
+                    <button type="button" class="btn-square"><span class="material-icons">add</span></button>
+                    <button type="button" class="btn-square"><span class="material-icons">remove</span></button>
+                  </div>
+                  <div class="right">
+                    <strong class="attr">부여된 속성</strong>
+                    <div class="box">
+                      <div class="box-col">
+                        <div class="title">속성</div>
+                        <div class="item">"gid"</div>
+                        <div class="item">"floor"</div>
+                        <div class="item">"pid"</div>
+                        <div class="item">"sid"</div>
+                      </div>
+                      <div class="box-col">
+                        <div class="title">색상</div>
+                        <div class="item color" style="background-color:gray;"></div>
+                        <div class="item color" style="background-color:plum;"></div>
+                        <div class="item color" style="background-color:green;"></div>
+                        <div class="item color" style="background-color:burlywood;"></div>
+                      </div>
+                      <div class="box-col">
+                        <div class="title">범례</div>
+                        <div class="item">gid</div>
+                        <div class="item">floor</div>
+                        <div class="item">pid</div>
+                        <div class="item">sid</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="diagram-set">
+                <strong class="tit-diagram">랜더링</strong>
+                <div class="line-box">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      형식
+                    </strong>
+                    <div class="flex-item">
+                      <div class="title">불투명도</div>
+                      <div class="detail">
+                        <div class="flex-form">
+                          <input type="range" class="inp-range flex1">
+                          <div class="inp-number w100">
+                            <input type="number" placeholder="선택" step="0.1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-item">
+                      <div class="title">라인 색상</div>
+                      <div class="detail">
+                        <div class="flex-form">
+                          <input type="text" class="inp-text" readonly value="#FFFFFF">
+                          <button type="button" class="btn-colorpicker">
+                            <span class="material-icons">
+                            colorize
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-item">
+                      <div class="title">라인 너비</div>
+                      <div class="detail">
+                        <div class="flex-form">
+                          <div class="inp-number flex1">
+                            <input type="number" placeholder="선택" step="0.1">
+                          </div>
+                          <div class="form-select w100">
+                            <select>
+                              <option>단위</option>
+                              <option>밀리미터</option>
+                              <option>포인트</option>
+                              <option>픽셀</option>
+                              <option>Meter at scale</option>
+                              <option>맵단위</option>
+                              <option>인치</option>
+                            </select>
+                            <span class="material-icons"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="line-box">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox1-1">
+                        <label class="label" for="checkbox1-1"><span class="flabel">축척에 따라 표시</span></label>
+                      </div>
+                    </strong>
+                  
+                    <div class="flex-item">
+                      <div class="f-col">
+                        <div class="title">Minimum(exclusive)</div>
+                        <div class="detail">
+                          <div class="flex-form">
+                            <span class="material-icons">
+                              zoom_out
+                            </span>
+                            <div class="form-select flex1">
+                              <select>
+                                <option>1:100000000</option>
+                              </select>
+                              <span class="material-icons"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="f-col">
+                        <div class="title">Maximum(inclusive)</div>
+                        <div class="detail">
+                          <div class="flex-form">
+                            <span class="material-icons">
+                              zoom_in
+                            </span>
+                            <div class="form-select flex1">
+                              <select>
+                                <option>0</option>
+                              </select>
+                              <span class="material-icons"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            
+              <div class="diagram-set">
+                <strong class="tit-diagram">크기</strong>
+                <div class="flex-item">
+                  <div class="title">크기 단위</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <div class="form-select flex1">
+                        <select>
+                          <option>밀리미터</option>
+                        </select>
+                        <span class="material-icons"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">
+                    <span class="inp-radio">
+                      <input type="radio" name="radio1" id="radio1-1">
+                      <label class="label" for="radio1-1"><span class="flabel">고정 크기</span></label>
+                    </span>
+                  </div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <div class="inp-number flex1">
+                        <input type="number" value="0.26" step="0.01">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="f-col">
+                    <div class="title">
+                      <span class="inp-radio">
+                        <input type="radio" name="radio1" id="radio1-2">
+                        <label class="label" for="radio1-2"><span class="flabel">조정된 크기</span></label>
+                      </span>
+                    </div>
+                    <div class="detail ml-25">
+                      Bar length:Scale linearly, so that the following value matches the specified bar length:
+                      <div class="flex-form">
+                        <strong class="form-title">속성</strong> 
+                        <div class="form-select flex1">
+                          <select>
+                            <option>밀리미터</option>
+                          </select>
+                          <span class="material-icons"></span>
+                        </div>
+                      </div>
+                      <div class="flex-form">
+                        <strong class="form-title">최대값</strong>
+                        <div class="inp-number flex1">
+                          <input type="number" value="0.26" step="0.01">
+                        </div>
+                        <button type="button" class="btn-normal">찾기</button>
+                      </div>
+                      <div class="flex-form">
+                        <strong class="form-title">Bar length</strong>
+                        <div class="inp-number">
+                          <input type="number" value="0.26" step="0.01">
+                        </div>
+                        <button type="button" class="btn-normal">확인</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="diagram-set">
+                <strong class="tit-diagram">배치</strong>
+                <div class="form-area">
+                  <span class="inp-radio">
+                    <input type="radio" name="radio2" id="radio2-1">
+                    <label class="label" for="radio2-1"><span class="flabel">Around Centroid</span></label>
+                  </span>
+                  <span class="inp-radio">
+                    <input type="radio" name="radio2" id="radio2-2">
+                    <label class="label" for="radio2-2"><span class="flabel">Inside Polygon</span></label>
+                  </span>
+                  <span class="inp-radio">
+                    <input type="radio" name="radio2" id="radio2-3">
+                    <label class="label" for="radio2-3"><span class="flabel">Over Centroid</span></label>
+                  </span>
+                  <span class="inp-radio">
+                    <input type="radio" name="radio2" id="radio2-4">
+                    <label class="label" for="radio2-4"><span class="flabel">둘레 사용</span></label>
+                  </span>
+                </div>
+            
+                <div class="flex-item">
+                  <div class="title">거리</div>
+                  <div class="detail">
+                    <div class="flex-form">
+                      <div class="inp-number flex1">
+                        <input type="number" value="0.26" step="0.01">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="diagram-set">
+                <strong class="tit-diagram">범례</strong>
+                <div class="form-area">
+                  <div class="inp-checkbox">
+                    <input type="checkbox" id="checkbox2">
+                    <label class="label" for="checkbox2"><span class="flabel">Show legnd entries for diagram attributes</span></label>
+                  </div>
+                </div>
+                <button type="button" class="btn-normal">legend Entries for Diagram Size...</button>
+              </div>
+            </div>
+          </div>
+          <!-- //차트 -->
+
+          <!-- 라벨 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="title-line">
+                라벨스타일
+              </div>
+              <div class="flex-list">
+                <div class="flex-item">
+                  <div class="title">라벨필드</div>
+                  <div class="detail">
+                    <div class="form-select">
+                      <select>
+                        <option>라벨필드</option>
+                      </select>
+                      <span class="material-icons"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">폰트</div>
+                  <div class="detail">
+                    <div class="form-select">
+                      <select>
+                        <option>폰트</option>
+                      </select>
+                      <span class="material-icons"></span>
+                    </div>
+                    <div class="line-box">
+                      <div class="inner">
+                        <strong class="tit-line">
+                          <span class="material-icons"></span>
+                          텍스트버퍼
+                        </strong>
+                        <div class="flex-item">
+                          <div class="title">색상</div>
+                          <div class="detail">
+                            <div class="flex-form">
+                              <input type="text" class="inp-text" readonly value="#FFFFFF">
+                              <button type="button" class="btn-colorpicker">
+                                <span class="material-icons">
+                                colorize
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-item">
+                          <div class="title">크기</div>
+                          <div class="detail">
+                            <div class="flex-form">
+                              <div class="inp-number flex1">
+                                <input type="number" placeholder="선택" step="1">
+                              </div>
+                              <div class="form-select w100">
+                                <select>
+                                  <option>단위</option>
+                                  <option>밀리미터</option>
+                                  <option>포인트</option>
+                                  <option>픽셀</option>
+                                  <option>Meter at scale</option>
+                                  <option>맵단위</option>
+                                  <option>인치</option>
+                                </select>
+                                <span class="material-icons"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-item">
+                          <div class="title">투명도</div>
+                          <div class="detail">
+                            <div class="flex-form">
+                              <input type="range" class="inp-range">
+                              <div class="inp-number w100">
+                                <input type="number" placeholder="선택" step="0.1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flex-item">
+                  <div class="title">스타일</div>
+                  <div class="detail">
+                    <div class="dropdown-select"><!-- 선택시 on 클래스 부여 -->
+                      <button type="button" class="btn-dropdown"><span class="icon style"><img src="./images/style1.png" alt=""></span>채우기 <span class="material-icons"></span></button>
+                      <ul class="option">
+                        <li><span class="icon style"><img src="./images/style1.png" alt=""></span>채우기</li>
+                        <li><span class="icon style"><img src="./images/style2.png" alt=""></span>No Brush</li>
+                        <li><span class="icon style"><img src="./images/style3.png" alt=""></span>수평</li>
+                        <li><span class="icon style"><img src="./images/style4.png" alt=""></span>수직</li>
+                        <li><span class="icon style"><img src="./images/style5.png" alt=""></span>십자선</li>
+                        <li><span class="icon style"><img src="./images/style6.png" alt=""></span>상향사선</li>
+                        <li><span class="icon style"><img src="./images/style7.png" alt=""></span>하향사선</li>
+                        <li><span class="icon style"><img src="./images/style8.png" alt=""></span>X사선</li>
+                        <li><span class="icon style"><img src="./images/style9.png" alt=""></span>패턴1</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">크기</div>
+                  <div class="detail">
+                    <div class="inp-number">
+                      <input type="number" value="0.26" step="0.01">
+                    </div>
+                    <div class="form-select unit">
+                      <select>
+                        <option>단위</option>
+                        <option>밀리미터</option>
+                        <option>포인트</option>
+                        <option>픽셀</option>
+                        <option>Meter at scale</option>
+                        <option>맵단위</option>
+                        <option>인치</option>
+                      </select>
+                      <span class="material-icons"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">색상</div>
+                  <div class="detail">
+                    <input type="text" class="inp-text" readonly value="#FFFFFF">
+                    <button type="button" class="btn-colorpicker">
+                      <span class="material-icons">
+                      colorize
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">투명도</div>
+                  <div class="detail">
+                    <input type="range" class="inp-range">
+                    <input type="text" class="inp-text opacity" value="0.5" readonly>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">줄바꿈</div>
+                  <div class="detail">
+                    <div class="form-select unit">
+                      <select>
+                        <option>줄바꿈</option>
+                      </select>
+                      <span class="material-icons"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">오프셋</div>
+                  <div class="detail">
+                    <div class="row">
+                      <span>X</span>  
+                      <div class="inp-number">
+                        <input type="number" placeholder="선택" step="0.1">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span>Y</span> 
+                      <div class="inp-number">
+                        <input type="number" placeholder="선택" step="0.1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //라벨 스타일 -->
+
+            <div class="section">
+              <div class="title-line">
+                폴리라인스타일
+              </div>
+              <div class="flex-list">
+                <div class="flex-item">
+                  <div class="title">선색상</div>
+                  <div class="detail">
+                    <input type="text" class="inp-text" readonly value="#FFFFFF">
+                    <button type="button" class="btn-colorpicker">
+                      <span class="material-icons">
+                      colorize
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">선굵기</div>
+                  <div class="detail">
+                    <div class="inp-number">
+                      <input type="number" value="0.26" step="0.01">
+                    </div>
+                    <div class="form-select unit">
+                      <select>
+                        <option>단위</option>
+                        <option>밀리미터</option>
+                        <option>포인트</option>
+                        <option>픽셀</option>
+                        <option>Meter at scale</option>
+                        <option>맵단위</option>
+                        <option>인치/option>
+                      </select>
+                      <span class="material-icons"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">선스타일</div>
+                  <div class="detail">
+                    <div class="dropdown-select"><!-- 선택시 on 클래스 부여 -->
+                      <button type="button" class="btn-dropdown"><span class="icon stroke"><img src="./images/stroke1.png" alt=""></span>실선 <span class="material-icons"></span></button>
+                      <ul class="option">
+                        <li><span class="icon stroke"><img src="./images/stroke1.png" alt=""></span>실선</li>
+                        <li><span class="icon stroke"></span>펜 없음</li>
+                        <li><span class="icon stroke"><img src="./images/stroke2.png" alt=""></span>쇄선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke3.png" alt=""></span>점선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke4.png" alt=""></span>일점쇄선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke5.png" alt=""></span>이점쇄선</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">오프셋</div>
+                  <div class="detail">
+                    <div class="row">
+                      <span>X</span>  
+                      <div class="inp-number">
+                        <input type="number" placeholder="선택" step="0.1">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span>Y</span> 
+                      <div class="inp-number">
+                        <input type="number" placeholder="선택" step="0.1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">대시패턴</div>
+                  <div class="detail">
+                    <div class="dropdown-select"><!-- 선택시 on 클래스 부여 -->
+                      <button type="button" class="btn-dropdown"><span class="icon stroke"><img src="./images/stroke1.png" alt=""></span>실선 <span class="material-icons"></span></button>
+                      <ul class="option">
+                        <li><span class="icon stroke"><img src="./images/stroke1.png" alt=""></span>실선</li>
+                        <li><span class="icon stroke"></span>펜 없음</li>
+                        <li><span class="icon stroke"><img src="./images/stroke2.png" alt=""></span>쇄선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke3.png" alt=""></span>점선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke4.png" alt=""></span>일점쇄선</li>
+                        <li><span class="icon stroke"><img src="./images/stroke5.png" alt=""></span>이점쇄선</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="title">간격</div>
+                  <div class="detail">
+                    <div class="inp-number">
+                      <input type="number" placeholder="선택" step="0.1">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-item">
+                  <div class="title">투명도</div>
+                  <div class="detail">
+                    <input type="range" class="inp-range">
+                    <input type="text" class="inp-text opacity" value="0.5" readonly>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- //스타일 -->
+
           <!-- 스타일 -->
           <div class="tab-cont">
             <div class="section">
@@ -176,7 +1197,7 @@
                         <option>픽셀</option>
                         <option>Meter at scale</option>
                         <option>맵단위</option>
-                        <option>인치/option>
+                        <option>인치</option>
                       </select>
                       <span class="material-icons"></span>
                     </div>
@@ -248,9 +1269,10 @@
               </div>
             </div>
           </div>
+          <!-- //스타일 -->
 
 
-
+          <!-- 정보 -->
           <div class="tab-cont">
             <section class="section">
               <div class="title-line">
@@ -349,22 +1371,8 @@
               </div>
             </section>
           </div>
-
-          
+          <!-- //정보 -->
         </div>
-
-        <div class="comp-tab type-flex">
-          <div class="tab-nav">
-            <button type="button" class="btn-tab active">tab1</button>
-            <button type="button" class="btn-tab">tab2</button>
-            <button type="button" class="btn-tab">tab3</button>
-            <button type="button" class="btn-tab">tab4</button>
-          </div>
-        </div>
-
-
-
-
       </div>
 
       <div class="layer-foot">

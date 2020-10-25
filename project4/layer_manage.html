@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>cgs</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font/notosans.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div class="comp-layer">
+    <div class="inner">
+      <div class="layer-head">
+        <strong class="title">레이어 속성</strong>
+        <button type="button" class="btn-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="layer-body">
+        <div class="tree-manage">
+          <button type="button" class="btn-tree-manage"><span class="material-icons">layers</span></button>
+          <button type="button" class="btn-tree-manage"><span class="material-icons">filter_alt</span></button>
+          <button type="button" class="btn-tree-manage"><span class="material-icons">arrow_downward</span></button>
+          <button type="button" class="btn-tree-manage"><span class="material-icons">arrow_upward</span></button>
+          <button type="button" class="btn-tree-manage"><span class="material-icons">delete</span></button>
+        </div>
+        <ul class="tree_menu">
+          <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+              <button type="button" class="btn_fold">
+                  <span class="material-icons">
+                  keyboard_arrow_right
+                  </span>
+              </button>
+              <div class="layer-item">
+                  <div class="inp-checkbox">
+                      <input type="checkbox">
+                      <label class="label"></label>
+                  </div>
+                  <button type="button" class="btn-layer">
+                      <span class="icon"><span class="material-icons">attach_file</span></span>group2
+                  </button>
+              </div>
+              <div class="children">
+                <ul>
+                    <li>
+                        <div class="layer-item">
+                            <div class="inp-checkbox">
+                                <input type="checkbox">
+                                <label class="label"></label>
+                            </div>
+                            <button type="button" class="btn-layer">
+                                <span class="icon"><span class="material-icons">attach_file</span></span>sub-group1
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+          </li>
+          <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
+            <button type="button" class="btn_fold">
+                <span class="material-icons">
+                keyboard_arrow_right
+                </span>
+            </button>
+            <div class="layer-item">
+                <div class="inp-checkbox">
+                    <input type="checkbox">
+                    <label class="label"></label>
+                </div>
+                <button type="button" class="btn-layer">
+                    <span class="icon"><span class="material-icons">attach_file</span></span>group3
+                </button>
+            </div>
+            <div class="children">
+              <ul>
+                  <li>
+                      <div class="layer-item">
+                          <div class="inp-checkbox">
+                              <input type="checkbox">
+                              <label class="label"></label>
+                          </div>
+                          <button type="button" class="btn-layer">
+                              <span class="icon"><span class="material-icons">attach_file</span></span>OpenStreetMAp
+                          </button>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="layer-item">
+                        <div class="inp-checkbox">
+                            <input type="checkbox">
+                            <label class="label"></label>
+                        </div>
+                        <button type="button" class="btn-layer">
+                            <span class="icon"><span class="material-icons">attach_file</span></span>sub-group1
+                        </button>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

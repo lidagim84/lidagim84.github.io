@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/ui.js"></script>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="menu-open"><!-- btn-menu-toggle 클릭시 추가 -->
     <div id="header" class="header">
         <div class="inner">
             <h1 class="h1-logo">CGS ADMIN</h1>
@@ -46,9 +46,8 @@
                 <li><a href="">프로젝트</a></li>
                 <li><a href="">Geo processing</a></li>
             </ul>
-            <div class="menu-depth2">
-                <!-- 프로젝트 선택시
-                <ul>
+            <div class="toggle-area">
+                <ul class="menu-depth2">
                     <li><a href="" class="btn-depth2">신규</a></li>
                     <li><a href="" class="btn-depth2">열기</a></li>
                     <li><a href="" class="btn-depth2">저장</a></li>
@@ -56,20 +55,36 @@
                     <li><a href="" class="btn-depth2">exort</a></li>
                     <li><a href="" class="btn-depth2">퍼블리싱</a></li>
                 </ul>
-                -->
-                <ul>
-                    <li><a href="" class="btn-depth2">속성</a></li>
-                    <li><a href="" class="btn-depth2">필터</a></li>
-                    <li><a href="" class="btn-depth2">데이터</a></li>
-                    <li><a href="" class="btn-depth2">분석</a></li>
-                    <li><a href="" class="btn-circle-b">+</a></li>
-                    <li><a href="" class="btn-circle-b">-</a></li>
-                </ul>
+                <div class="choice-menu">
+                    <div class="form-select">
+                        <select>
+                            <option>포인트</option>
+                            <option>Open with</option>
+                            <option>Save attachment</option>
+                        </select>
+                        <span class="material-icons"></span>
+                    </div>
+                </div>
             </div>
+            <button type="button" class="btn-menu-toggle">
+                <span class="material-icons"></span>
+            </button>
         </div>
     </div>
     <div id="container">
         <div class="layer-tree">
+            <div class="tree-head">
+                <ul class="tree-ctrl">
+                    <li><a href="" class="btn-tree">속성</a></li>
+                    <li><a href="" class="btn-tree">필터</a></li>
+                    <li><a href="" class="btn-tree">데이터</a></li>
+                    <li><a href="" class="btn-tree">분석</a></li>
+                    <li><a href="" class=""><span class="material-icons">arrow_downward</span></a></li>
+                    <li><a href="" class=""><span class="material-icons">arrow_upward</span></a></li>
+                    <li><a href="" class="btn-circle-b">+</a></li>
+                    <li><a href="" class="btn-circle-b">-</a></li>
+                </ul>
+            </div>
             <div class="tree-body">
                 <ul class="tree_menu">
                     <li class="depth"><!-- 접혀있는 하위 메뉴가 있는 경우 depth 클래스 추가 -->
@@ -331,7 +346,10 @@
                     </li>
                 </ul>
             </div>
-        
+            <div class="tree-tab">
+                <a href="" class="btn-tree-tab selected">레이어</a>
+                <a href="" class="btn-tree-tab">데이터소스</a>
+            </div>
         </div>
         <div id="contents">
             <div class="section">         

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>cgs</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font/notosans.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <div class="comp-layer">
+    <div class="inner" style="width:600px">
+      <div class="layer-head">
+        <strong class="title">데이터소스탐색</strong>
+        <button type="button" class="btn-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="layer-body">
+        <div class="comp-tab type-flex">
+          <div class="tab-nav">
+            <button type="button" class="btn-tab active">로컬</button>
+            <button type="button" class="btn-tab">wfs</button>
+            <button type="button" class="btn-tab">wms</button>
+            <button type="button" class="btn-tab">cepo server</button>
+          </div>
+          <!-- 로컬 -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="form-area grid5">
+                <span class="inp-radio">
+                  <input type="radio" name="local" id="local1">
+                  <label class="label" for="local1"><span class="flabel">Shape file</span></label>
+                </span>
+                <span class="inp-radio">
+                  <input type="radio" name="local" id="local2">
+                  <label class="label" for="local2"><span class="flabel">geojson</span></label>
+                </span>
+                <span class="inp-radio">
+                  <input type="radio" name="local" id="local3">
+                  <label class="label" for="local3"><span class="flabel">topojson</span></label>
+                </span>
+                <span class="inp-radio">
+                  <input type="radio" name="local" id="local4">
+                  <label class="label" for="local4"><span class="flabel">geopackage</span></label>
+                </span>
+                <span class="inp-radio">
+                  <input type="radio" name="local" id="local5">
+                  <label class="label" for="local5"><span class="flabel">csv</span></label>
+                </span>
+              </div>
+              <div class="btn-area right mt-10">
+                <div class="btn-file">
+                  <input type="file">
+                  <button type="button" class="btn-normal">추가</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //로컬 -->
+          <!-- wfs/wms -->
+          <div class="tab-cont">
+            <div class="section">
+              <div class="line-box">
+                <div class="inner">
+                  <strong class="tit-line">
+                    <span class="material-icons"></span>
+                    서비스 정보
+                  </strong>
+                  <div class="flex-item">
+                    <div class="title">명칭</div>
+                    <div class="detail">
+                      <div class="flex-form">
+                        <input type="text" class="inp-text flex1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="title">URL</div>
+                    <div class="detail">
+                      <div class="flex-form">
+                        <input type="text" class="inp-text flex1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-area right">
+                    <div class="btn-file">
+                      <input type="file">
+                      <button type="button" class="btn-normal">추가</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="divide mt-20">
+                <div class="line-box h80">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      서비스 목록
+                    </strong>
+                    <ul class="service-list">
+                      <li>서울 지하철 base 서비스</li>
+                      <li>서울 지하철 base 서비스</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="line-box h80">
+                  <div class="inner">
+                    <strong class="tit-line">
+                      <span class="material-icons"></span>
+                      서비스 레이어
+                    </strong>
+                    <div class="form-area grid1">
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox1-1">
+                        <label class="label" for="checkbox1-1"><span class="flabel">도로</span></label>
+                      </div>
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox1-2">
+                        <label class="label" for="checkbox1-2"><span class="flabel">건물</span></label>
+                      </div>
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox1-3">
+                        <label class="label" for="checkbox1-3"><span class="flabel">지하철</span></label>
+                      </div>
+                      <div class="inp-checkbox">
+                        <input type="checkbox" id="checkbox1-4">
+                        <label class="label" for="checkbox1-4"><span class="flabel">C권한그룹</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-area right mt-10">
+                <div class="btn-file">
+                  <input type="file">
+                  <button type="button" class="btn-normal">추가</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //wfs/wms -->
+        </div>
+      </div>
+
+      <div class="layer-foot">
+        <button type="button" class="btn-strong lg">추가</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
