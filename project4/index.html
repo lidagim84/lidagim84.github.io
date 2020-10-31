@@ -16,7 +16,7 @@
 <div id="wrap" class="menu-open"><!-- btn-menu-toggle 클릭시 추가 -->
     <div id="header" class="header">
         <div class="inner">
-            <h1 class="h1-logo">CGS ADMIN</h1>
+            <h1 class="h1-logo"><span class="blind">CGS ADMIN</span></h1>
             <div class="search-area">
                 <input type="search" placeholder="search" class="inp-search">
                 <button type="button" class="btn-search">
@@ -26,17 +26,12 @@
                 </button>
             </div>
             <div class="control-area">
-                <a href="" class="btn-setting">
-                    <span class="material-icons-outlined">
-                        settings
-                    </span>
-                </a>
+                <a href="" class="btn-user">홍길동님</a>
                 <a href="" class="btn-alarm">
-                    <span class="material-icons-outlined">
-                        notifications
-                    </span>
+                    <span class="blind">알림</span>
+                    <span class="num">99</span>
                 </a>
-                <a href="" class="btn-my"></a>
+                <a href="" class="btn-setting"><span class="blind">설정</span></a>
             </div>
         </div>
         <div class="gnb-area">
@@ -48,21 +43,30 @@
             </ul>
             <div class="toggle-area">
                 <ul class="menu-depth2">
-                    <li><a href="" class="btn-depth2">신규</a></li>
-                    <li><a href="" class="btn-depth2">열기</a></li>
-                    <li><a href="" class="btn-depth2">저장</a></li>
-                    <li><a href="" class="btn-depth2">import</a></li>
-                    <li><a href="" class="btn-depth2">exort</a></li>
-                    <li><a href="" class="btn-depth2">퍼블리싱</a></li>
+                    <li class="selected"><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_11.png" alt=""></span>신규</a></li>
+                    <li><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_12.png" alt=""></span>열기</a></li>
+                    <li><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_13.png" alt=""></span>저장</a></li>
+                    <li><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_14.png" alt=""></span>import</a></li>
+                    <li><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_15.png" alt=""></span>exort</a></li>
+                    <li><a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_16.png" alt=""></span>퍼블리싱</a></li>
                 </ul>
                 <div class="choice-menu">
-                    <div class="form-select">
-                        <select>
-                            <option>포인트</option>
-                            <option>Open with</option>
-                            <option>Save attachment</option>
-                        </select>
-                        <span class="material-icons"></span>
+                    <div class="menu selected">
+                        <a href="" class="btn-depth2"><span class="icon"><img src="./images/ico_depth2_point.png" alt=""></span>퍼블리싱</a>
+                        <div class="drop-layer">
+                            <div class="option">
+                                <span class="icon"><img src="./images/ico_point.png" alt=""></span>
+                                <span class="text">멀티포인트</span>    
+                            </div>
+                            <div class="option">
+                                <span class="icon"><img src="./images/ico_line.png" alt=""></span>
+                                <span class="text">라인</span>
+                            </div>
+                            <div class="option">
+                                <span class="icon"><img src="./images/ico_polygon.png" alt=""></span>
+                                <span class="text">폴리곤</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,15 +79,16 @@
         <div class="layer-tree">
             <div class="tree-head">
                 <ul class="tree-ctrl">
-                    <li><a href="" class="btn-tree">속성</a></li>
-                    <li><a href="" class="btn-tree">필터</a></li>
-                    <li><a href="" class="btn-tree">데이터</a></li>
-                    <li><a href="" class="btn-tree">분석</a></li>
-                    <li><a href="" class=""><span class="material-icons">arrow_downward</span></a></li>
-                    <li><a href="" class=""><span class="material-icons">arrow_upward</span></a></li>
-                    <li><a href="" class="btn-circle-b">+</a></li>
-                    <li><a href="" class="btn-circle-b">-</a></li>
+                    <li class="selected"><a href="" class="btn-tree ctrl1"><span class="blind">속성</span></a></li>
+                    <li><a href="" class="btn-tree ctrl2"><span class="blind">필터</span></a></li>
+                    <li><a href="" class="btn-tree ctrl3"><span class="blind">데이터</span></a></li>
+                    <li><a href="" class="btn-tree ctrl4"><span class="blind">분석</span></a></li>
+                    <li><a href="" class="btn-tree ctrl5"><span class="blind">아래로</span></a></li>
+                    <li><a href="" class="btn-tree ctrl6"><span class="blind">위로</span></a></li>
+                    <li><a href="" class="btn-tree ctrl7"><span class="blind">+</span></a></li>
+                    <li><a href="" class="btn-tree ctrl8"><span class="blind">-</span></a></li>
                 </ul>
+                <button type="button" class="btn-close-layer"><span class="blind">닫기</span></button>
             </div>
             <div class="tree-body">
                 <ul class="tree_menu">
@@ -360,14 +365,16 @@
                         <span class=""></span>
                     </label>
                     <div class="toolbox">
-                        <button type="button" class="btn-tool">베이스<br>맵</button>
-                        <button type="button" class="btn-tool">그리기</button>
-                        <button type="button" class="btn-tool">측정</button>
-                        <button type="button" class="btn-tool">저장</button>
-                        <button type="button" class="btn-tool">인쇄</button>
-                        <button type="button" class="btn-tool">KT</button>
-                        <button type="button" class="btn-tool">네이버</button>
-                        <button type="button" class="btn-tool">다음</button>
+                        <button type="button" class="btn-tool"><img src="./images/btn_tool1.png" alt="베이스맵"></button>
+                        <button type="button" class="btn-tool"><img src="./images/btn_tool2.png" alt="그리기"></button>
+                        <button type="button" class="btn-tool"><img src="./images/btn_tool3.png" alt="측정"></button>
+                        <button type="button" class="btn-tool"><img src="./images/btn_tool4.png" alt="저장"></button>
+                        <button type="button" class="btn-tool"><img src="./images/btn_tool5.png" alt="인쇄"></button>
+                        <div class="sns-tool">
+                            <button type="button" class="btn-tool"><img src="./images/btn_kt.png" alt="KT"></button>
+                            <button type="button" class="btn-tool"><img src="./images/btn_naver.png" alt="네이버"></button>
+                            <button type="button" class="btn-tool"><img src="./images/btn_daum.png" alt="다음"></button>
+                        </div>
                     </div>
                 </div>
             </div>

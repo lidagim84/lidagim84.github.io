@@ -11,7 +11,8 @@ th,td { border:0; word-wrap:break-word; }
 input,select,textarea { font-size:14px; font-family:'Noto Sans KR', 'Dotum', '돋움', 'arial', 'verdana', sans-serif; color:#333;vertical-align:middle; -webkit-appearance:none; outline:0; -webkit-border-radius:0; }
 label { cursor:pointer; }
 caption { overflow:hidden; width:1px; font-size:1px; line-height:0; text-indent:150%; white-space:nowrap; }
-legend,.blind { display:block; overflow:hidden; position:absolute; font-size:1px; line-height:0; color:transparent; text-indent:-150%; white-space:nowrap; }
+legend { display:block; overflow:hidden; position:absolute; font-size:1px; line-height:0; color:transparent; text-indent:-150%; white-space:nowrap; }
+.blind {position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden; }
 hr.layout { display:none; }
 button { overflow:visible; padding:0; margin:0; border:0; outline:0; font-size:14px; font-family:'Noto Sans KR', 'Dotum', '돋움', 'arial', 'verdana', sans-serif; cursor:pointer; -webkit-user-select:none; background:transparent; } /* -webkit-user-select:none; 필요 없을시 삭제 */
 button::-moz-focus-inner { padding:0; border:0; }
