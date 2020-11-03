@@ -51,8 +51,8 @@ body,
 a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center; width:20px; height:20px; border-radius:100%; border:1px solid #007bff; color:#007bff; font-size:14px; background:#fff; }
 
 
-.layer-tree { width:300px; padding-right:10px; background:#f2f2f2; border-right:1px solid #ddd; box-sizing:border-box;}   
-.layer-tree .tree-head { position: relative; margin-right:-10px; padding:9px 2px 5px; background:#f2f2f2;}
+.layer-tree { width:300px; background:#f2f2f2; border-right:1px solid #ddd; box-sizing:border-box;}   
+.layer-tree .tree-head { position: relative; padding:9px 2px 5px; background:#f2f2f2;}
 .layer-tree .tree-head .tree-ctrl { display:flex; justify-content:space-between; }
 .layer-tree .tree-head .tree-ctrl li + li { margin-left:4px; }
 .layer-tree .tree-head .btn-close-layer { position: absolute; right:4px; top:4px; width:10px; height:10px; background:url('../images/btn_close_layer.png') no-repeat center center; background-size:100%;}
@@ -74,7 +74,7 @@ a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center
 .tree_menu li {position:relative;padding-left:20px;}
 .tree_menu li + li { margin-top:6px; }
 .tree_menu li.depth {}
-.tree_menu li .layer-item { display:flex; align-items:flex-start; font-size:14px; margin-bottom:4px; }
+.tree_menu li .layer-item { display:flex; align-items:flex-start; font-size:13px; margin-bottom:4px; }
 .tree_menu li .layer-item .inp-checkbox { flex-shrink:0; }
 .tree_menu li .layer-item .inp-checkbox .label:before { top:2px; }
 .tree_menu li .layer-item .btn-layer { display:flex; margin-left:5px; text-align:left; word-break:break-all; }
