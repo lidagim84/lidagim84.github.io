@@ -51,8 +51,8 @@ body,
 a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center; width:20px; height:20px; border-radius:100%; border:1px solid #007bff; color:#007bff; font-size:14px; background:#fff; }
 
 
-.layer-tree { width:300px; border-right:1px solid #ddd; }   
-.layer-tree .tree-head { position: relative; padding:9px 2px 5px; background:#f2f2f2;}
+.layer-tree { width:300px; padding-right:10px; background:#f2f2f2; border-right:1px solid #ddd; box-sizing:border-box;}   
+.layer-tree .tree-head { position: relative; margin-right:-10px; padding:9px 2px 5px; background:#f2f2f2;}
 .layer-tree .tree-head .tree-ctrl { display:flex; justify-content:space-between; }
 .layer-tree .tree-head .tree-ctrl li + li { margin-left:4px; }
 .layer-tree .tree-head .btn-close-layer { position: absolute; right:4px; top:4px; width:10px; height:10px; background:url('../images/btn_close_layer.png') no-repeat center center; background-size:100%;}
@@ -69,7 +69,7 @@ a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center
 .selected .btn-tree { background:#fff; border:1px solid #ccc; border-radius:2px;}
 
 .layer-tree .tree-head .tree-ctrl .material-icons { font-size:18px; }
-.layer-tree .tree-body { overflow-y:auto; height:calc(100% - 90px); padding:10px; border-bottom:1px solid #ddd; }
+.layer-tree .tree-body { overflow-y:auto; height:calc(100% - 90px); padding:10px; border-bottom:1px solid #ddd; background:#fff; }
 .tree_menu{}
 .tree_menu li {position:relative;padding-left:20px;}
 .tree_menu li + li { margin-top:6px; }
@@ -89,9 +89,9 @@ a.btn-circle-b { display:inline-flex; justify-content:center; align-items:center
 .tree_menu li .btn_fold.open > span {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
 .tree_menu .children { display:none; margin:5px 0 0 25px; }
 .layer-tree .tree-tab { display:flex; height:25px; padding-left:6px; box-sizing:border-box; position: relative; top:-1px; }
-.layer-tree .tree-tab .btn-tree-tab { display:flex; align-items:center; justify-content:center; width:98px; border:1px solid #ccc; border-width:0 1px; background:#ccc; box-sizing:border-box; font-size:12px; }
-.layer-tree .tree-tab .btn-tree-tab + .btn-tree-tab { border-left:1px solid #ddd; }
-.layer-tree .tree-tab .btn-tree-tab.selected { background:#fff; font-weight:700; font-size:13px; }
+.layer-tree .tree-tab .btn-tree-tab { display:flex; align-items:center; justify-content:center; width:98px; height:23px; border:1px solid #ccc; border-width:0 1px; background:#ccc; box-sizing:border-box; font-size:12px; }
+.layer-tree .tree-tab .btn-tree-tab + .btn-tree-tab { }
+.layer-tree .tree-tab .btn-tree-tab.selected { height:25px; background:#fff; font-weight:700; font-size:13px; }
 
 .map-toolbox { position: fixed; right:10px; top:170px; }  
 .map-toolbox input[type="checkbox"] { display:none; }
